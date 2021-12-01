@@ -8,8 +8,8 @@
 define('URL',       'https://empleo.fenditrabajo.com/');           //PARA ENVIAR COMIT DESCOMENTAR ESTE #define('URL',       '');
 define('HOST', 'localhost');       //PARA ENVIAR COMIT DESCOMENTAR ESTE #define('HOST', 'localhost');
 
-#define('URL',       'http://localhost/FenditrabajoEmpleo/'); // Y COMENTAR ESTE define('URL',       'http://empleo.fenditrabajo.com/');
-#define('HOST',      '151.106.110.194');                 // Y COMENTAR ESTE define('HOST',      '151.106.110.194');
+ #define('URL',       'http://localhost/FenditrabajoEmpleo/'); // Y COMENTAR ESTE define('URL',       'http://empleo.fenditrabajo.com/');
+ #define('HOST',      '151.106.110.194');                 // Y COMENTAR ESTE define('HOST',      '151.106.110.194');
  define('DB',        'u230156310_empleo');
  define('USER',      'u230156310_empleo');
  define('PASSWORD',  '0;h8pNt+]Cx');
