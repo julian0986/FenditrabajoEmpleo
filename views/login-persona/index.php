@@ -48,7 +48,10 @@
 </head>
 <style>
 .fondo2 {
-    background-image: url("<?php echo constant('URL'); ?>public/images/FEN-05.png");
+    background: #f0f0f0;
+    padding: 50px 0;
+    min-height: 400px;
+    /*   background-image: url("<?php echo constant('URL'); ?>public/images/FEN-05.png");
     background-repeat: no-repeat !important;
     background-attachment: scroll !important;
     background-position: center center !important;
@@ -56,19 +59,30 @@
     background-size: cover !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    -o-background-size: cover !important; */
 }
 
-.zero {
-    padding: 0;
-    margin: 0;
+.socialLogin {
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    background-color: #fff;
 }
 
-.pd-mx {
-    padding-right: 15%;
-    padding-left: 15%;
-    padding-bottom: 2%;
-    padding-top: 2%
+.formpanel .btn {
+    width: 100%;
+    background: #1b4573;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logemp {
+    background-color: #fff;
 }
 </style>
 
@@ -86,53 +100,67 @@ function myFunction() {
 <body>
     <?php require "views/header/header.php"; ?>
     <div class="fondo2">
-        <div class="container pd-mx">
-            <div class="card" style="width: 100%; border-color:blue; background-color: rgba(255,255,255,0.8)">
-                <div class="card-header">
-                    <h4 class="card-title text-center">Ya tiene cuenta ingresa aqui</h4>
-                </div>
-                <div class="card-body">
-                    <form action="<?php echo constant('URL'); ?>loginPersona/login" method="POST">
-                        <div class="form-row pd-mx">
-                            <div class="form-group col-md-12">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                            <ion-icon name="at-outline" style="color:black;"></ion-icon>
-                                        </span>
-                                    </div>
-                                    <input type="email" name="email" class="form-control" id="inputEmail"
-                                        placeholder="Ingrese el correo electronico" required>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-12">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                            <ion-icon name="lock-closed-outline" style="color:black;"></ion-icon>
-                                        </span>
-                                    </div>
-                                    <input type="password" name="password" class="form-control" id="password"
-                                        placeholder="Ingrese la contraseña" required>
-                                </div>
-                                <input type="checkbox" onclick="myFunction()"> Mostrar contraseña
-                            </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="card">
+                        <div class="card-header socialLogin">
+                            <img src="https://www.fenditrabajo.com/fenditrabajo/src/view/assets/img/logo.png"
+                                class="logo" width="50%" height="50%" alt="" />
+                            <h4>Inicie sesion como Persona</h4>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Ingresar usuario</button>
+                        <div class="card-body">
+                            <form action="<?php echo constant('URL'); ?>loginPersona/login" method="POST">
+                                <div class="form-row pd-mx">
+                                    <div class="form-group col-md-12">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <ion-icon name="at-outline" style="color:black;"></ion-icon>
+                                                </span>
+                                            </div>
+                                            <input type="email" name="email" class="form-control" id="inputEmail"
+                                                placeholder="Ingrese el correo electronico" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <ion-icon name="lock-closed-outline" style="color:black;">
+                                                    </ion-icon>
+                                                </span>
+                                            </div>
+                                            <input type="password" name="password" class="form-control" id="password"
+                                                placeholder="Ingrese la contraseña" required>
+                                        </div>
+                                        <input type="checkbox" onclick="myFunction()"> Mostrar contraseña
+                                    </div>
+                                </div>
+                                <div class="text-center formpanel">
+                                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                                </div>
+                                <div class="card-footer text-center logemp">
+                                    <p>Aun no tienes cuenta, registrate <a
+                                            href="<?php echo constant('URL'); ?>registroPersona"
+                                            style="color:#055eb0;">aqui</a></p>
+                                </div>
+                            </form>
                         </div>
-                    </form>
-                </div>
-                <div class="card-footer text-center">
-                    <a style="color: #0069d9;" href="<?php echo constant('URL'); ?>recuperarUsuario">¿Olvidó su
-                        contraseña?</a>
+                        <div class="card-footer text-center logemp">
+                            <a style="color: #0069d9;" href="<?php echo constant('URL'); ?>recuperarUsuario">¿Olvidó su
+                                contraseña?</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
         </div>
     </div>
 
-    <div class="card text-center mt mb" style="border-color: transparent">
+    <!-- Codigo de csursos, se deja mientras comentado -->
+
+    <!--  <div class="card text-center mt mb" style="border-color: transparent">
         <div class="row">
             <div class="col-md-12">
                 <h1>Cursos virtuales</h1>
@@ -164,8 +192,10 @@ function myFunction() {
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card text-center mt mb" style="border-color: transparent">
+    </div> -->
+
+    <!-- Codigo de publicidad -->
+    <!-- <div class="card text-center mt mb" style="border-color: transparent">
         <div class="row">
             <div class="col-md-12">
                 <h1>Nuestros anunciantes</h1>
@@ -194,7 +224,7 @@ function myFunction() {
             </div>
         </div>
     </div>
-
+ -->
 
     <?php require "views/footer/footer.php"; ?>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
