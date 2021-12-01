@@ -5,11 +5,11 @@
 #    define('USER', 'id12406512_admin');
 #    define('PASSWORD', "1234a");
 #    define('CHARSET', 'utf8mb4');
+#define('URL',       '');
+ #define('HOST', 'localhost');
 
- #define('URL',       'http://empleo.fenditrabajo.com/');
- #define('HOST',      '151.106.110.194');
- define('URL',       '');
- define('HOST', 'localhost');
+ define('URL',       'http://empleo.fenditrabajo.com/');
+ define('HOST',      '151.106.110.194');
  define('DB',        'u230156310_empleo');
  define('USER',      'u230156310_empleo');
  define('PASSWORD',  '0;h8pNt+]Cx');
