@@ -109,7 +109,7 @@ function myFunction() {
                         <div class="card-header socialLogin">
                             <img src="https://www.fenditrabajo.com/fenditrabajo/src/view/assets/img/logo.png"
                                 class="logo" width="50%" height="50%" alt="" />
-                            <h3>Empresa</h3>
+                            <h3>Inicia sesión como empresa</h3>
                         </div>
                         <div class="card-body text-center">
                             <form action="<?php echo constant('URL'); ?>loginEmpresa/loginEmpresa" method="POST">
@@ -155,10 +155,11 @@ function myFunction() {
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Codigo de csursos, se deja mientras comentado -->
+    <!-- Codigo de csursos, se deja mientras comentado -->
 
-        <!--     <div class="card text-center mt mb" style="border-color: transparent">
+    <!--     <div class="card text-center mt mb" style="border-color: transparent">
         <div class="row">
             <div class="col-md-12">
                 <h1>Cursos virtuales</h1>
@@ -192,9 +193,9 @@ function myFunction() {
         </div>
     </div> -->
 
-        <!-- Codigo de publicidad -->
+    <!-- Codigo de publicidad -->
 
-        <!-- <div class="card text-center mt mb" style="border-color: transparent">
+    <!-- <div class="card text-center mt mb" style="border-color: transparent">
         <div class="row">
             <div class="col-md-12">
                 <h1>Nuestros anunciantes</h1>
@@ -225,16 +226,16 @@ function myFunction() {
     </div> 
  codigo publicidad fin-->
 
-        <?php require "views/footer/footer.php"; ?>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    <?php require "views/footer/footer.php"; ?>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
