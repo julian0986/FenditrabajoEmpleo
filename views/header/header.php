@@ -44,7 +44,7 @@
             <ion-icon name="time-outline" style="color:black; font-size:30px;"></ion-icon>
           </div>
           <div class="col-md-11">
-            <p>Lun - Martes 8 - 11</p>
+            <p>Lun - Martes 8 - 12</p>
           </div>
           <div class="col-md-1">
             <ion-icon name="mail-outline" style="color:black; font-size:30px;"></ion-icon>
