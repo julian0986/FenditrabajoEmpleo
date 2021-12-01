@@ -5,10 +5,10 @@
 #    define('USER', 'id12406512_admin');
 #    define('PASSWORD', "1234a");
 #    define('CHARSET', 'utf8mb4');
-define('URL',       '');           //PARA ENVIAR COMIT DESCOMENTAR ESTE #define('URL',       '');
+define('URL',       'https://empleo.fenditrabajo.com/');           //PARA ENVIAR COMIT DESCOMENTAR ESTE #define('URL',       '');
 define('HOST', 'localhost');       //PARA ENVIAR COMIT DESCOMENTAR ESTE #define('HOST', 'localhost');
 
-#define('URL',       'http://empleo.fenditrabajo.com/'); // Y COMENTAR ESTE define('URL',       'http://empleo.fenditrabajo.com/');
+#define('URL',       'http://localhost/FenditrabajoEmpleo/'); // Y COMENTAR ESTE define('URL',       'http://empleo.fenditrabajo.com/');
 #define('HOST',      '151.106.110.194');                 // Y COMENTAR ESTE define('HOST',      '151.106.110.194');
  define('DB',        'u230156310_empleo');
  define('USER',      'u230156310_empleo');

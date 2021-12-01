@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="container-lg">
+    <!-- <div class="container-lg">
         <br />
         <hr style="border: 1px solid;" />
         <div class="row">
@@ -23,11 +23,11 @@
             </div>
             <div class="col-md-6 text-center">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5976434969825!2d-74.05968608133955!3d4.665604394101011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a58b24764af%3A0x3b44017d264fc06b!2sCra.%2018%20%2378-40!5e0!3m2!1ses!2sco!4v1590362035551!5m2!1ses!2sco" title="Fendipetroleo Nacional" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.1494108742456!2d-74.05968608133955!3d4.665604394101011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b20a14f3f53%3A0x2a1db3969c04dda4!2sFondo%20de%20Protecci%C3%B3n%20Solidaria%20-%20SOLDICOM!5e0!3m2!1ses!2sco!4v1590362418574!5m2!1ses!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.1494108742456!2d-74.05968608133955!3d4.665604394101011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b20a14f3f53%3A0x2a1db3969c04dda4!2sFondo%20de%20Protecci%C3%B3n%20Solidaria%20-%20SOLDICOM!5e0!3m2!1ses!2sco!4v1590362418574!5m2!1ses!2sco" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
         <hr />
-    </div>
+    </div> -->
     <div class="card text-center container-fluid bg-dark text-white" style="margin-top: 25px">
         <div class="card-footer text-muted">
             <img class="block" id="u2248_img" src="<?php echo constant('URL'); ?>public/images/logoFooter.png">

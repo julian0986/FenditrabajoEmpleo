@@ -14,7 +14,7 @@
   <div id="header" class="main-header">
     <div class="row">
       <div class="col-sm-12 col-md-8 centrar-contenido">
-        <a href="https://fendipetroleo.com/nuevoF/"><img src="<?php echo constant('URL'); ?>public/images/nuevo-logo.png" width="60%"></a>
+        <a href="#"><img src="<?php echo constant('URL'); ?>public/images/nuevo-logo.png" width="60%"></a>
       </div>
       <div class="col-sm-4 col-md-4">
         <div class="row">
@@ -37,20 +37,6 @@
             <a href="https://www.youtube.com/channel/UCh3AwxiWRRvuhhjHWmZ-5-g/featured">
               <img src="<?php echo constant('URL'); ?>public/icon/youtube.png" width="20px" style="margin: 2px;" alt="F">
             </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
-            <ion-icon name="time-outline" style="color:black; font-size:30px;"></ion-icon>
-          </div>
-          <div class="col-md-11">
-            <p>Lun - Martes 8 - 2</p>
-          </div>
-          <div class="col-md-1">
-            <ion-icon name="mail-outline" style="color:black; font-size:30px;"></ion-icon>
-          </div>
-          <div class="col-md-11">
-            <p>Contactenos: informacion@fendipetroleo.com</p>
           </div>
         </div>
       </div>
