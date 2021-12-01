@@ -1,0 +1,2 @@
+Comando para cuando la cague y desee ignorar una carpeta o archivo en .gitignore
+git update-index --skip-worktree -- config/config.php
