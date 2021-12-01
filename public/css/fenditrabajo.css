@@ -1,0 +1,54 @@
+.main-header {
+    background-color: white;
+	z-index: 200;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: sticky; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: thistle;
+    text-decoration: none;
+}
+.link-registro{
+    color: thistle;
+    text-decoration: none;
+}
+.link-registro:hover{
+    color: gray;
+    text-decoration: none;
+}
+.pd{
+    padding:2%;
+}
+.pd-m{
+    padding: 5%;
+}
+.mg{
+    margin: 2%;
+}
+.mt{
+    margin-top: 5%;
+}
+.mb{
+    margin-bottom: 5%;
+}
+.centrar-contenido{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.bg-blue{
+    background-color: #055eb0 ;
+    color: white;
+}
+
+.link-m:hover{
+    color: rgba(255,255,255,.6) !important;
+    text-decoration: none;
+}

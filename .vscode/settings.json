@@ -1,0 +1,5 @@
+{
+    "php.validate.enable": true,
+    "php.validate.executablePath" : "C:/laragon/bin/php",
+    "php.validate.rum": "onSave"
+}
