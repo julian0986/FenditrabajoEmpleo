@@ -6,7 +6,7 @@
 #    define('PASSWORD', "1234a");
 #    define('CHARSET', 'utf8mb4');
 
- define('URL',       '');
+ define('URL',       'http://empleo.fenditrabajo.com/');
  define('HOST',      '151.106.110.194');
  define('DB',        'u230156310_empleo');
  define('USER',      'u230156310_empleo');
