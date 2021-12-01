@@ -42,7 +42,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link link-m" href="<?php echo constant('URL'); ?>registroPersona" >
-              <ion-icon name="person-add-sharp"></ion-icon> REGISTRAR HOJA DE VIDA
+              <ion-icon name="person-add-sharp"></ion-icon> REGISTRARSE
             </a>
           </li>
           <li class="nav-item">
