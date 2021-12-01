@@ -17,9 +17,8 @@
       <div class="col-sm-12 col-md-8 centrar-contenido">
         <a href="#"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
       </div>
-      
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark color:grey">
+    <nav class="navbar navbar-expand-lg navbar-light text-dark bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,32 +26,32 @@
       <div class="collapse navbar-collapse text-center justify-content-center " id="navbarSupportedContent">
         <ul class="nav navbar-nav">
           <li class="nav-item">
-            <a class="nav-link link-m" href="#" style="color: white;">
+            <a class="nav-link link-m" href="#">
               <ion-icon name="home-outline"></ion-icon>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo" style="color: white;">
+            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo" >
               <ion-icon name="search-sharp"></ion-icon> BUSCAR OFERTAS
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>publicarOfertas" style="color: white;">
+            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>publicarOfertas" >
               <ion-icon name="newspaper-sharp"></ion-icon> PUBLICAR OFERTA
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>registroPersona" style="color: white;">
+            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>registroPersona" >
               <ion-icon name="person-add-sharp"></ion-icon> REGISTRAR HOJA DE VIDA
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>registroPersona" style="color: white;">
+            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>registroPersona" >
               <ion-icon name="layers-outline"></ion-icon> POLÍTICAS
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">
+            <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
               <ion-icon name="desktop-sharp"></ion-icon> INICIAR SESIÓN
             </a>
             <div class="dropdown-menu">
