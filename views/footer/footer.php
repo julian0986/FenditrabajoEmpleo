@@ -28,37 +28,34 @@
         </div>
         <hr />
     </div> -->
-    <div class="card text-center container-fluid bg-dark text-white" style="margin-top: 25px">
+    <div class="card text-center container-fluid bg- text-white" style="margin-top: 25px">
         <div class="card-footer text-muted">
-            <img class="block" id="u2248_img" src="<?php echo constant('URL'); ?>public/images/logoFooter.png">
-            <p>PBX: (571) 621 8275 FAX: (571) 621 8284 Cra. 18 No. 78 - 40 Oficina 402 Bogotá D.C. - Colombia</p>
-            <p style="margin:0px">Todos los derechos reservados © 2020</p>
+            <img class="block" id="u2248_img" src="<?php echo constant('URL'); ?>public/logos/logo.png" width="500px">
             <br />
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-1">
                     <a href="https://www.facebook.com/fendinaloficial">
-                        <img src="<?php echo constant('URL'); ?>public/icon/facebook.png" width="20px" style="margin: 2px;" alt="F">
+                        <img src="<?php echo constant('URL'); ?>public/icon/facebook.png" width="20px" alt="F">
                     </a></div>
                 <div class="col-md-1">
                     <a href="https://www.instagram.com/fendipetroleonacional/">
-                        <img src="<?php echo constant('URL'); ?>public/icon/instagram.png" width="20x" style="margin: 2px;" alt="F">
+                        <img src="<?php echo constant('URL'); ?>public/icon/instagram.png" width="20x"  alt="F">
                     </a>
                 </div>
                 <div class="col-md-1">
                     <a href="https://twitter.com/Fendipetroleo">
-                        <img src="<?php echo constant('URL'); ?>public/icon/twitter.png" width="20px" style="margin: 2px;" alt="F">
+                        <img src="<?php echo constant('URL'); ?>public/icon/twitter.png" width="20px"  alt="F">
                     </a>
                 </div>
-                <div class="col-md-1">
+               <div class="col-md-1">
                     <a href="https://www.youtube.com/channel/UCh3AwxiWRRvuhhjHWmZ-5-g/featured">
-                        <img src="<?php echo constant('URL'); ?>public/icon/youtube.png" width="20px" style="margin: 2px;" alt="F">
+                        <img src="<?php echo constant('URL'); ?>public/icon/youtube.png" width="20px"  alt="F">
                     </a>
                 </div>
             </div>
+            <p style="margin:0px">Todos los derechos reservados © 2021</p>
         </div>
     </div>
-
 </body>
-
 </html>
