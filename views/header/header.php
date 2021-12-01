@@ -13,11 +13,11 @@
 <body>
   <header id="header" class="main-header">
 
-    <div class="row">
-      <div class="col-sm-12 col-md-8 centrar-contenido">
-        <a href="#"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
-      </div>
+
+    <div class="logito">
+      <a href="#"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
     </div>
+
     <nav class="navbar navbar-expand-lg navbar-light text-dark bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

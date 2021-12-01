@@ -1,3 +1,18 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.logito a img{
+    width: 400px;
+    height: auto;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+}
 .main-header {
     background-color: white;
 	z-index: 200;
@@ -5,6 +20,9 @@
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
 	position: sticky; /* Hacemos que la cabecera tenga una posición fija */
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 a{
@@ -52,3 +70,4 @@ a:hover{
     color: #1b4573 !important;
     text-decoration: none;
 }
+
