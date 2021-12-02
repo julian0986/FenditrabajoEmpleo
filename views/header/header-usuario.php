@@ -63,7 +63,7 @@
         <ul class="nav navbar-nav">
           <li class="nav-item">
             <a class="nav-link link-m" href="<?php echo constant('URL'); ?>inicioPersona" style="color: white;">
-              <ion-icon name="person-sharp"></ion-icon> MI AREA
+              <ion-icon name="person-sharp"></ion-icon> PERFIL
             </a>
           </li>
           <li class="nav-item">
