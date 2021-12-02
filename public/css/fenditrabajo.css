@@ -96,4 +96,45 @@ a:hover{
     font-weight: 200;
 
 }
+.howlist {
+    list-style: none;
+  }
+  .howlist li {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .howlist li .iconcircle {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #1b4573;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 115px;
+    margin-bottom: 15px;
+    display: inline-block;
+    background: #1b4573;
+  }
+  .howlist li:nth-child(2) .iconcircle {
+    background: #1b4573;
+    border-color: #1b4573;
+  }
+  .howlist li:last-child .iconcircle {
+    background: #1b4573;
+    border-color: #1b4573;
+  }
+  .howlist li .iconcircle i {
+    font-size: 48px;
+    color: #fff;
+  }
+  .howlist li h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .howlist li p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #555;
+  }
 
