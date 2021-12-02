@@ -167,11 +167,15 @@ a:hover {
   font-weight: 600;
 }
 
-/* estilos page inicio persona */
+/* estilos botones*/
 .btninicioper .btn {
   background: #1b4573;
 }
 
 .btninicioper .btn:hover {
   background: #4d83bd;
+}
+
+.siguiente {
+  background: #1b4573;
 }
