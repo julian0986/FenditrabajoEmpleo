@@ -198,7 +198,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h4>Cursos en linea</h4>
+                        <h4>Telleres de formación</h4>
                     </div>
                     <div class="card-body">
                         <?php

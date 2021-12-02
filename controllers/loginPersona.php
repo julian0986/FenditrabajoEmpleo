@@ -55,6 +55,6 @@ class LoginPersona extends Controller
     {
         session_unset();
         session_destroy();
-        echo "<script type='text/javascript'>location.href = '" . constant('URL') . "loginPersona';</script>";
+        echo "<script type='text/javascript'>location.href = '" . constant('URL') . "buscarTrabajo';</script>";
     }
 }
