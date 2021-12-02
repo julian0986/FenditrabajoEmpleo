@@ -26,36 +26,36 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo">
-                            <ion-icon name="home-outline"></ion-icon>
+                        <i class="fas fa-gas-pump"></i>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>quienesSomos">
-                            <ion-icon name="business-sharp"></ion-icon> QUIENES SOMOS
+                        <i class="far fa-newspaper"></i> QUIENES SOMOS
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>publicarOfertas">
-                            <ion-icon name="newspaper-sharp"></ion-icon> PUBLICAR OFERTA
+                        <i class="fas fa-user-edit"></i> PUBLICAR OFERTA
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown" href="#" role="button"
                             aria-haspopup="true" aria-expanded="false">
-                            <ion-icon name="person-add-sharp"></ion-icon> REGISTRARSE
+                            <i class="fas fa-user-check"></i> REGISTRARSE
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>registroPersona">
-                                <ion-icon name="person-sharp"></ion-icon> PERSONA
+                            <i class="fas fa-user-tie"></i> PERSONA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>registroEmpresa">
-                                <ion-icon name="business-sharp"></ion-icon> MI EMPRESA
+                            <i class="fas fa-building"></i> MI EMPRESA
                             </a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>quienesSomos">
-                            <ion-icon name="layers-outline"></ion-icon> POLÍTICAS
+                        <i class="fas fa-gavel"></i> POLÍTICAS
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -65,13 +65,13 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginPersona">
-                                <ion-icon name="person-sharp"></ion-icon> PERSONA
+                            <i class="fas fa-user-tie"></i> PERSONA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginEmpresa">
-                                <ion-icon name="business-sharp"></ion-icon> MI EMPRESA
+                            <i class="fas fa-building"></i> MI EMPRESA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginPersona">
-                                <ion-icon name="construct-outline"></ion-icon> ADMINISTRADOR
+                            <i class="fas fa-user-cog"></i> ADMINISTRADOR
                             </a>
                         </div>
                     </li>
