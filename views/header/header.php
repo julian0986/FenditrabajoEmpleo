@@ -30,8 +30,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo">
-                            <ion-icon name="search-sharp"></ion-icon> INICIO
+                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>quienesSomos">
+                            <ion-icon name="business-sharp"></ion-icon> QUIENES SOMOS
                         </a>
                     </li>
                     <li class="nav-item">
@@ -39,13 +39,22 @@
                             <ion-icon name="newspaper-sharp"></ion-icon> PUBLICAR OFERTA
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>registroPersona">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
                             <ion-icon name="person-add-sharp"></ion-icon> REGISTRARSE
                         </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="<?php echo constant('URL'); ?>registroPersona">
+                                <ion-icon name="person-sharp"></ion-icon> PERSONA
+                            </a>
+                            <a class="dropdown-item" href="<?php echo constant('URL'); ?>registroEmpresa">
+                                <ion-icon name="business-sharp"></ion-icon> MI EMPRESA
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>registroPersona">
+                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>quienesSomos">
                             <ion-icon name="layers-outline"></ion-icon> POLÍTICAS
                         </a>
                     </li>
