@@ -1,173 +1,173 @@
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logito a img{
-    width: 400px;
-    height: auto;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-
+.logito a img {
+  width: 400px;
+  height: auto;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 .main-header {
-    background-color: white;
-	z-index: 200;
-	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-	left: 0; /* Posicionamos la cabecera al lado izquierdo */
-	top: 0; /* Posicionamos la cabecera pegada arriba */
-	position: sticky; /* Hacemos que la cabecera tenga una posición fija */
-    margin: 1rem 0rem;
-    display: flex;
-    justify-content: space-between;
+  background-color: white;
+  z-index: 200;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: sticky; /* Hacemos que la cabecera tenga una posición fija */
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-a{
-    color: white;
-    text-decoration: none;
+a {
+  color: white;
+  text-decoration: none;
 }
-a:hover{
-    color: thistle;
-    text-decoration: none;
+a:hover {
+  color: thistle;
+  text-decoration: none;
 }
-.link-registro{
-    color: thistle;
-    text-decoration: none;
+.link-registro {
+  color: thistle;
+  text-decoration: none;
 }
-.link-registro:hover{
-    color: gray;
-    text-decoration: none;
+.link-registro:hover {
+  color: gray;
+  text-decoration: none;
 }
-.pd{
-    padding:2%;
+.pd {
+  padding: 2%;
 }
-.pd-m{
-    padding: 5%;
+.pd-m {
+  padding: 5%;
 }
-.mg{
-    margin: 2%;
+.mg {
+  margin: 2%;
 }
-.mt{
-    margin-top: 5%;
+.mt {
+  margin-top: 5%;
 }
-.mb{
-    margin-bottom: 5%;
+.mb {
+  margin-bottom: 5%;
 }
-.centrar-contenido{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.centrar-contenido {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-.bg-blue{
-    background-color: #055eb0 ;
-    color: white;
+.bg-blue {
+  background-color: #1b4573;
+  color: white;
 }
 
-.link-m:hover{
-    color: #1b4573 !important;
-    text-decoration: none;
+.link-m:hover {
+  color: #1b4573 !important;
+  text-decoration: none;
 }
 
 /*Estilos julian*/
 
-.titleTop{
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    
+.titleTop {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
-.titleTop .subtitle{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #888;
+.titleTop .subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #888;
 }
 
-.titleTop h3{
-    font-size: 3rem;
-    font-weight: 500;
-    color: #000;
+.titleTop h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #000;
 }
-.titleTop h3 span{
-    font-size: 3rem;
-    color:#1b4573;
-    font-weight: 200;
-
+.titleTop h3 span {
+  font-size: 3rem;
+  color: #1b4573;
+  font-weight: 200;
 }
 .howlist {
-    list-style: none;
-  }
-  .howlist li {
-    margin-top: 30px;
-    text-align: center;
-  }
-  .howlist li .iconcircle {
-    width: 100px;
-    height: 100px;
-    border: 3px solid #1b4573;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 115px;
-    margin-bottom: 15px;
-    display: inline-block;
-    background: #1b4573;
-  }
-  .howlist li:nth-child(2) .iconcircle {
-    background: #1b4573;
-    border-color: #1b4573;
-  }
-  .howlist li:last-child .iconcircle {
-    background: #1b4573;
-    border-color: #1b4573;
-  }
-  .howlist li .iconcircle i {
-    font-size: 48px;
-    color: #fff;
-  }
-  .howlist li h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 10px;
-  }
-  .howlist li p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #555;
-  }
+  list-style: none;
+}
+.howlist li {
+  margin-top: 30px;
+  text-align: center;
+}
+.howlist li .iconcircle {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #1b4573;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 115px;
+  margin-bottom: 15px;
+  display: inline-block;
+  background: #1b4573;
+}
+.howlist li:nth-child(2) .iconcircle {
+  background: #1b4573;
+  border-color: #1b4573;
+}
+.howlist li:last-child .iconcircle {
+  background: #1b4573;
+  border-color: #1b4573;
+}
+.howlist li .iconcircle i {
+  font-size: 48px;
+  color: #fff;
+}
+.howlist li h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+.howlist li p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+}
 
+/*pagina Quienes Somos iconos*/
+.whatList {
+  list-style: none;
+  margin-top: 50px;
+}
+.whatList li {
+  text-align: center;
+}
+.whatList li .iconWrap {
+  display: inline-block;
+  border: 4px solid #ddd;
+  border-radius: 100%;
+  padding: 10px;
+}
+.whatList li .icon {
+  font-size: 103px;
+  color: #fff;
+  background: #1b4573;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  line-height: 180px;
+  border-radius: 100%;
+}
+.whatList li h3 {
+  font-size: 30px;
+  color: #333;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
 
-  /*pagina Quienes Somos iconos*/
-  .whatList {
-    list-style: none;
-    margin-top: 50px;
-  }
-  .whatList li {
-    text-align: center;
-  }
-  .whatList li .iconWrap {
-    display: inline-block;
-    border: 4px solid #ddd;
-    border-radius: 100%;
-    padding: 10px;
-  }
-  .whatList li .icon {
-    font-size: 103px;
-    color: #fff;
-    background: #1b4573;
-    width: 180px;
-    height: 180px;
-    text-align: center;
-    line-height: 180px;
-    border-radius: 100%;
-  }
-  .whatList li h3 {
-    font-size: 30px;
-    color: #333;
-    padding-top: 30px;
-    margin-bottom: 15px;
-    font-weight: 600;
-  }
-
+/* estilos page inicio persona */
+.btninicioper .btn {
+  background: #1b4573;
+}
