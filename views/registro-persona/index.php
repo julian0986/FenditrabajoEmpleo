@@ -125,7 +125,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="g-recaptcha"
-                                            data-sitekey="6LcTkskZAAAAAENUR6h9uG1DOABLmOu_fHZ9OQXm"></div>
+                                            data-sitekey="a171ed32-f758-428d-8f81-ef9f1d3fa18e"></div>
                                     </div>
                                 </div>
                                 <br />
