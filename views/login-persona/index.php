@@ -107,7 +107,7 @@ function myFunction() {
                         <div class="card-header socialLogin">
                             <img src="https://www.fenditrabajo.com/fenditrabajo/src/view/assets/img/logo.png"
                                 class="logo" width="50%" height="50%" alt="" />
-                            <h4>Inicie sesion como Persona</h4>
+                            <h4>Inicia sesión como Persona</h4>
                         </div>
                         <div class="card-body">
                             <form action="<?php echo constant('URL'); ?>loginPersona/login" method="POST">
