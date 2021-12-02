@@ -78,7 +78,7 @@
     <div class="card text-center mt mb" style="border-color: transparent">
         <div class="row">
             <div class="col-md-12">
-                <h1>Cursos virtuales</h1>
+                <h1>Talleres virtuales</h1>
             </div>
             <div class="col-md-12">
                 <div id="carruselCursosVirtuales" class="carousel slide" data-ride="carousel">
