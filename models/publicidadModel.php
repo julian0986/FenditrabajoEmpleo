@@ -114,7 +114,7 @@ class PublicidadModel extends Model
     function detallesPublicidad($id)
     {
         try {
-            $query = $tshis->db->connect()->prepare('SELECT * FROM tb_publicidad WHERE pu_id =:id ');
+            $query = $this->db->connect()->prepare('SELECT * FROM tb_publicidad WHERE pu_id =:id ');
             $query->execute(['id' => $id]);
             $item = new Publicidad();
             while ($row = $query->fetch()) {
