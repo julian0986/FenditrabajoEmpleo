@@ -103,7 +103,7 @@ function myFunction() {
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6 col-md-offset-3">
-                    <div class="card">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
                         <div class="card-header socialLogin">
                             <img src="https://www.fenditrabajo.com/fenditrabajo/src/view/assets/img/logo.png"
                                 class="logo" width="50%" height="50%" alt="" />
