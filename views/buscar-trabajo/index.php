@@ -160,7 +160,7 @@
   <ul class="howlist row">
     <!--step 1-->
     <li class="col-md-4 col-sm-4">
-      <div class="iconcircle"><i class="fa fa-user" aria-hidden="true"></i></div>
+      <div class="iconcircle"><i class="fas fa-user-alt" aria-hidden="true"></i></div>
       <h4>Crea una cuenta</h4>
       <p>Para publicar ofertas laborales o postularte a ellas debes estar registrado.</p>
     </li>

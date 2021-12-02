@@ -71,3 +71,29 @@ a:hover{
     text-decoration: none;
 }
 
+/*Estilos julian*/
+
+.titleTop{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    
+}
+.titleTop .subtitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #888;
+}
+
+.titleTop h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+}
+.titleTop h3 span{
+    font-size: 3rem;
+    color:#1b4573;
+    font-weight: 200;
+
+}
+
