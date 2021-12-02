@@ -66,6 +66,21 @@
     margin: 0;
 }
 
+.inner-page {
+    padding: 50px 0;
+}
+
+.inner-page .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.inner-page .title>span {
+    color: #292929;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
 .inner-page .title h2 {
     color: #1b4573;
     font-size: 40px;
@@ -74,23 +89,64 @@
     margin: 0;
 }
 
-
-
-.inner-page .title>span {
-    color: #292929;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.inner-page .title {
-    text-align: center;
-    margin-bottom: 40px;
+.inner-page .title>p {
+    line-height: 24px;
 }
 
 .contact {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 30px;
+}
+
+.contact>span {
+    color: #1b4573;
+    float: left;
+    font-size: 50px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    width: 70px;
+}
+
+.inner-page .fa-home:before {
+    content: "\f015";
+}
+
+.information {
+    overflow: hidden;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.information>strong {
+    color: #000;
+    display: table;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.information>p {
+    line-height: 22px;
+    margin: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    color: #8c8c8c;
+    float: left;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.contact-form {
+    text-align: right;
 }
 
 .contact-form button {
@@ -105,6 +161,7 @@
     margin-top: 20px;
 }
 
+
 /* .pd-mx {
     padding-right: 10%;
     padding-left: 10%;
@@ -112,40 +169,9 @@
     padding-top: 5%
 }
  */
-.contact-form input,
-.contact-form textarea {
-    color: #8c8c8c;
-    float: left;
-    border: 1px solid #ddd;
-    font-size: 12px;
-    line-height: 32px;
-    margin-bottom: 15px;
-    padding: 10px 20px;
-    width: 100%;
-}
 
-.information p {
-    line-height: 22px;
-    margin: 0;
-}
-
-.information>strong {
-    color: #000;
-    display: table;
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-
-.contact>span {
-    color: #1b4573;
-    float: left;
-    font-size: 50px;
-    line-height: 30px;
-    margin-right: 10px;
-    text-align: center;
-    width: 70px;
+.card {
+    padding: 20px;
 }
 </style>
 
@@ -165,44 +191,45 @@
     <!-- Contact us -->
     <div class="inner-page">
         <div class="container">
-            <div class="contact-wrap">
-                <div class="row">
-                    <div class="col-md-12 column">
-                        <div class="title"> <span>Estamos aquí para ayudarte</span>
-                            <br /><br />
-                            <h2>CONTACTENOS</h2>
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="contact-wrap">
+                    <div class="row">
+                        <div class="col-md-12 column">
+                            <div class="title"> <span>Estamos aquí para ayudarte</span>
+                                <br /><br />
+                                <h2>CONTACTENOS</h2>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Contact Info -->
-                    <div class="col-md-4 column">
-                        <div class="contact-now">
-                            <div class="contact"> <span><i class="fa fa-home"></i></span>
-                                <div class="information"> <strong>Dirección:</strong>
-                                    <p>Cra. 18 #78-40, Localidad de Chapinero, Bogotá</p>
+                        <!-- Contact Info -->
+                        <div class="col-md-4 column">
+                            <div class="contact-now">
+                                <div class="contact"> <span><i class="fa fa-home"></i></span>
+                                    <div class="information"> <strong>Dirección:</strong>
+                                        <p>Cra. 18 #78-40, Localidad de Chapinero, Bogotá</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Contact Info -->
-                            <div class="contact"> <span><i class="fa fa-envelope"></i></span>
-                                <div class="information"> <strong>Correo Electrónico:</strong>
-                                    <p>info@fenditrabajo.com</p>
+                                <!-- Contact Info -->
+                                <div class="contact"> <span><i class="fa fa-envelope"></i></span>
+                                    <div class="information"> <strong>Correo Electrónico:</strong>
+                                        <p>info@fenditrabajo.com</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Contact Info -->
-                            <div class="contact"> <span><i class="fa fa-phone"></i></span>
-                                <div class="information"> <strong>Teléfono:</strong>
-                                    <p>601 621 8275</p>
-                                    <!-- <p>+057 XXX XX XX XXX</p> -->
+                                <!-- Contact Info -->
+                                <div class="contact"> <span><i class="fa fa-phone"></i></span>
+                                    <div class="information"> <strong>Teléfono:</strong>
+                                        <p>601 621 8275</p>
+                                        <!-- <p>+057 XXX XX XX XXX</p> -->
+                                    </div>
                                 </div>
+                                <!-- Contact Info -->
                             </div>
-                            <!-- Contact Info -->
+                            <!-- Contact Now -->
                         </div>
-                        <!-- Contact Now -->
-                    </div>
 
-                    <!-- Contact form -->
-                    <div class="col-md-8 column">
-                        <?php 
+                        <!-- Contact form -->
+                        <div class="col-md-8 column">
+                            <?php 
             if(isset($mensaje)){
                 echo "<div class='alert alert-danger alert-dismissible' role='alert' style='text-align: center;'>
                                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -213,25 +240,26 @@
             
             ?>
 
-                        <div class="contact-form">
-                            <div id="message"></div>
-                            <form method="post" action="" name="contact_form" id="contact_form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" name="cnt_nombre" id="cnt_nombre" placeholder="Nombre">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" name="cnt_apellido" id="cnt_apellido" placeholder="Apellido">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" name="cnt_telefono" id="cnt_telefono"
-                                            placeholder="Número de Teléfono">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" name="cnt_email" id="cnt_email"
-                                            placeholder="Correco Electrónico">
-                                    </div>
-                                    <!--  <div class="col-md-6">
+                            <div class="contact-form">
+                                <div id="message"></div>
+                                <form method="post" action="" name="contact_form" id="contact_form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="cnt_nombre" id="cnt_nombre" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="cnt_apellido" id="cnt_apellido"
+                                                placeholder="Apellido">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="cnt_telefono" id="cnt_telefono"
+                                                placeholder="Número de Teléfono">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" name="cnt_email" id="cnt_email"
+                                                placeholder="Correco Electrónico">
+                                        </div>
+                                        <!--  <div class="col-md-6">
                   <select class="form-control" name="cnt_tipodocumento" id="cnt_tipodocumento" required="required">
                      <option value= "" >Tipo de Documento</option>
                      <option value="CC">Cédula de Ciudania</option>
@@ -245,16 +273,17 @@
                   <input  type="text" name="cnt_numerodocumento" id="cnt_numerodocumento" placeholder="Documento de Identidad">
                 </div> -->
 
-                                    <div class="col-md-12">
-                                        <textarea rows="4" name="cnt_solicitud" id="cnt_solicitud"
-                                            placeholder="Solicitud"></textarea>
+                                        <div class="col-md-12">
+                                            <textarea rows="4" name="cnt_solicitud" id="cnt_solicitud"
+                                                placeholder="Solicitud"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button class="button" type="submit" name="envio_contacto"
+                                                id="envio_contacto">Enviar</button>
+                                        </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <button class="button" type="submit" name="envio_contacto"
-                                            id="envio_contacto">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
