@@ -10,13 +10,17 @@
 </head>
 
 <body>
+  <header>
+
+
+
   <div id="header" class="main-header">
     <div class="row">
       <div class="col-sm-12 col-md-8 centrar-contenido">
         <a href=""><img src="<?php echo constant('URL'); ?>public/images/nuevo-logo.png" width="60%"></a>
       </div>
-      <div class="col-sm-4 col-md-4">
-        <div class="row">
+     <!--  <div class="col-sm-4 col-md-4">
+       <!--  <div class="row">
           <div class="col-md-6"></div>
           <div class="col-md-1">
             <a href="https://www.facebook.com/fendinaloficial">
@@ -37,8 +41,8 @@
               <img src="<?php echo constant('URL'); ?>public/icon/youtube.png" width="20px" style="margin: 2px;" alt="F">
             </a>
           </div>
-        </div>
-        <div class="row">
+        </div> -->
+        <!-- <div class="row">
           <div class="col-md-1">
             <ion-icon name="time-outline" style="color:black; font-size:30px;"></ion-icon>
           </div>
@@ -53,7 +57,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #004C92;">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -85,7 +89,8 @@
       </div>
     </nav>
   </div>
-  <div class="" style="position: fixed;top: 38%;right: 1px;z-index: 200;">
+  </header>
+  <!-- <div class="" style="position: fixed;top: 38%;right: 1px;z-index: 200;">
     <div style="background-color: rgba(250, 250, 250, 0.9); border-radius: 10px; border: 1px solid; ">
       <a href="https://www.facebook.com/fendinaloficial">
         <img src="<?php echo constant('URL'); ?>public/icon/facebook.png" width="25px" style="margin: 2px;" alt="F">
@@ -100,7 +105,7 @@
         <img src="<?php echo constant('URL'); ?>public/icon/youtube.png" width="25px" style="margin: 2px;" alt="F">
       </a>
     </div>
-  </div>
+  </div> -->
   <script src="https://kit.fontawesome.com/11638189dd.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"> </script>
 </body>

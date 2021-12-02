@@ -12,8 +12,6 @@
 
 <body>
   <header id="header" class="main-header">
-
-
     <div class="logito">
       <a href="#"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
     </div>
