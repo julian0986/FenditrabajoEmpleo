@@ -171,3 +171,7 @@ a:hover {
 .btninicioper .btn {
   background: #1b4573;
 }
+
+.btninicioper .btn:hover {
+  background: #4d83bd;
+}
