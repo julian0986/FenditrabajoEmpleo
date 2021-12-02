@@ -55,13 +55,15 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" style="height: 400px;position: relative;">
                 <div class="carousel-item active">
-                    <img src="<?php echo constant('URL'); ?>/public/images/imgindex.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo constant('URL'); ?>/public/images/imgindex.png" class="d-block w-100"
+                        alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="<?php echo constant('URL'); ?>/public/images/FEN-02.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo constant('URL'); ?>/public/images/imgindex.png" class="d-block w-100" alt="...">
+                    <img src="<?php echo constant('URL'); ?>/public/images/imgindex.png" class="d-block w-100"
+                        alt="...">
                 </div>
                 <div class="container pd" style="padding-top: 8%">
                     <div class="card"
@@ -149,45 +151,44 @@
     </div>
     <div class="section howitwrap">
 
-<div class="container">
-  <!-- title start -->
-  <div class="titleTop">
-    <div class="subtitle">Aquí puedes ver</div>
-    <h3>Cómo <span> Aplicar</span></h3>
-  </div>
+        <div class="container">
+            <!-- title start -->
+            <div class="titleTop">
+                <div class="subtitle">Aquí puedes ver</div>
+                <h3>Cómo <span> Aplicar</span></h3>
+            </div>
 
-  <!-- title end -->
-  <ul class="howlist row">
-    <!--step 1-->
-    <li class="col-md-4 col-sm-4">
-      <div class="iconcircle"><i class="fas fa-user-alt" aria-hidden="true"></i></div>
-      <h4>Crea una cuenta</h4>
-      <p>Para publicar ofertas laborales o postularte a ellas debes estar registrado.</p>
-    </li>
-    <!--step 1 end-->
-    <!--step 3-->
-    <li class="col-md-4 col-sm-4">
-      <div class="iconcircle"><i class="fa fa-file-text" aria-hidden="true"></i></div>
-      <h4>Perfil laboral</h4>
-      <p>Crea un perfil laboral completo que permita a los potenciales empleadores conocerte.</p>
-    </li>
-    <!--step 3 end-->
-    <!--step 2-->
-    <li class="col-md-4 col-sm-4">
-      <div class="iconcircle"><i class="fa fa-black-tie" aria-hidden="true"></i></div>
-      <h4>Busca empleo</h4>
-      <p>Ingresa para conocer todas las ofertas de empleo que tenemos disponibles.</p>
-    </li>
-    <!--step 2 end-->
-  </ul>
-</div>
+            <!-- title end -->
+            <ul class="howlist row">
+                <!--step 1-->
+                <li class="col-md-4 col-sm-4">
+                    <div class="iconcircle"><i class="fas fa-user-alt" aria-hidden="true"></i></div>
+                    <h4>Crea una cuenta</h4>
+                    <p>Para publicar ofertas laborales o postularte a ellas debes estar registrado.</p>
+                </li>
+                <!--step 1 end-->
+                <!--step 3-->
+                <li class="col-md-4 col-sm-4">
+                    <div class="iconcircle"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+                    <h4>Perfil laboral</h4>
+                    <p>Crea un perfil laboral completo que permita a los potenciales empleadores conocerte.</p>
+                </li>
+                <!--step 3 end-->
+                <!--step 2-->
+                <li class="col-md-4 col-sm-4">
+                    <div class="iconcircle"><i class="fa fa-black-tie" aria-hidden="true"></i></div>
+                    <h4>Busca empleo</h4>
+                    <p>Ingresa para conocer todas las ofertas de empleo que tenemos disponibles.</p>
+                </li>
+                <!--step 2 end-->
+            </ul>
+        </div>
+    </div>
 
-</div>
 
-
-    <!-- <div class="card text-center mt mb" style="border-color: transparent">
+    <div class="card text-center mt mb" style="border-color: transparent">
             <div>
-                <h1>Cursos virtuales</h1>
+                <h1>Talleres</h1>
             </div>
             <div>
                 <div id="carruselCursosVirtuales" class="carousel slide" data-ride="carousel">
@@ -215,155 +216,151 @@
                     </div>
                 </div>
             </div>
-    </div> -->
-    <div class="card text-center mt mb" style="border-color: transparent">
-      
-            <div>
-                <h1>Nuestras ofertas</h1>
-            </div>
-            <div>
-                <div id="carruselOfertas" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-interval="3000"
-                            style="padding-left:2%; padding-right: 2%">
-                            <div class="card-deck">
-                                <div class="card text-center" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/Administrador.png"
-                                            width="80px" alt="">
-                                        <h5 class="card-title">Administradores</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Administradores"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+    </div>
+    <!-- <div class="card text-center mt mb" style="border-color: transparent">
+
+        <div>
+            <h1>Nuestras ofertas</h1>
+        </div>
+        <div>
+            <div id="carruselOfertas" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="3000" style="padding-left:2%; padding-right: 2%">
+                        <div class="card-deck">
+                            <div class="card text-center" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/Administrador.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Administradores</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Administradores"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/ingeniero.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Ingenieros</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Ingenieros"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/ingeniero.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Ingenieros</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Ingenieros"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/contador.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Contadores</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Contadores"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/contador.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Contadores</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Contadores"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/programador.png"
-                                            width="80px" alt="">
-                                        <h5 class="card-title">Programadores</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Programadores"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/programador.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Programadores</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/Programadores"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" data-interval="3000" style="padding-left:2%; padding-right: 2%">
-                            <div class="card-deck">
-                                <div class="card text-center" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/cajero.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Cajeros</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/cajeros"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000" style="padding-left:2%; padding-right: 2%">
+                        <div class="card-deck">
+                            <div class="card text-center" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/cajero.png" width="80px" alt="">
+                                    <h5 class="card-title">Cajeros</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/cajeros"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/camarero.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Camareros</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/camareros"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/camarero.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Camareros</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/camareros"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/conductor.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Conductores</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/conductores"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/conductor.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Conductores</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/conductores"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/limpieza.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Oficios varios</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/oficios"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/limpieza.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Oficios varios</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/oficios"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item" data-interval="3000" style="padding-left:2%; padding-right: 2%">
-                            <div class="card-deck">
-                                <div class="card text-center" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/islero.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Isleros</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/isleros"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000" style="padding-left:2%; padding-right: 2%">
+                        <div class="card-deck">
+                            <div class="card text-center" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/islero.png" width="80px" alt="">
+                                    <h5 class="card-title">Isleros</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/isleros"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/mensajero.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Asesor comercial</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/mensajero"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/mensajero.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Asesor comercial</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/mensajero"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/operador.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Operadores</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/operador"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/operador.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Operadores</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/operador"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
-                                <div class="card" style="border-color: transparent">
-                                    <div class="card-body">
-                                        <img style="padding-bottom: 10px"
-                                            src="<?php echo constant('URL'); ?>public/icono/secretario.png" width="80px"
-                                            alt="">
-                                        <h5 class="card-title">Secretarias</h5>
-                                        <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/secretaria"
-                                            class="btn btn-primary">Ver ofertas</a>
-                                    </div>
+                            </div>
+                            <div class="card" style="border-color: transparent">
+                                <div class="card-body">
+                                    <img style="padding-bottom: 10px"
+                                        src="<?php echo constant('URL'); ?>public/icono/secretario.png" width="80px"
+                                        alt="">
+                                    <h5 class="card-title">Secretarias</h5>
+                                    <a href="<?php echo constant('URL'); ?>resultadosGeneral/buscarSugerido/secretaria"
+                                        class="btn btn-primary">Ver ofertas</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-       
-    </div>
+        </div>
+
+    </div> -->
     <div class="card text-center mt mb" style="border-color: transparent">
-   
         <div>
             <h1>Nuestros anunciantes</h1>
         </div>
@@ -388,7 +385,7 @@
                 </div>
             </div>
         </div>
-    
+
     </div>
 
     <!--    <hr />
