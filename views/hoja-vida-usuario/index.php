@@ -62,7 +62,7 @@ function confirmar() {
 <body>
     <?php require "views/header/header-usuario.php"; ?>
     <div class="container pd">
-        <h1 class="text-center">Mi Hoja de vida</h1>
+        <h1 class="text-center">HOJA DE VIDA</h1>
         <div class="row">
             <div class="col-md-8">
                 <form action="<?php echo constant('URL') . 'hojaVidaUsuario/agregarHojaVida/' . $this->hoja->id; ?>"
