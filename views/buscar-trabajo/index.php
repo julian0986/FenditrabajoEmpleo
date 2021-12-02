@@ -137,9 +137,9 @@
                                         </div>
                                         <p style="font-size: 15px;"> Trabaje a nivel nacional</p>
                                     </div>
-                                    <div class="form-gruop col-md-3 text-center">
+                                    <div class="form-gruop col-md-3 text-center btninicioper">
                                         <button type="submit" class="btn btn-primary btn-block">Buscar
-                                            oportunidades</button>
+                                            </button>
                                     </div>
                                 </div>
                             </form>
@@ -207,7 +207,7 @@
                                         width="300px" height="200px">
                                     <div class="card-footer" style="border-color: transparent; background: transparent">
                                         <h5 class="card-title"><?php echo $curso->nombre; ?></h5>
-                                        <a href="<?php echo $curso->link; ?>" class="btn btn-primary">Ir al Curso</a>
+                                        <a href="<?php echo $curso->link; ?>" class="btn btn-primary">Ir a Taller</a>
                                     </div>
                                 </div>
                                 <?php } ?>
@@ -362,7 +362,7 @@
     </div> -->
     <div class="card text-center mt mb" style="border-color: transparent">
         <div>
-            <h1>Nuestros anunciantes</h1>
+            <h1>Publicidad</h1>
         </div>
         <div>
             <div id="carruselOfertas" class="carousel slide" data-ride="carousel">

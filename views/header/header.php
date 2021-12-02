@@ -13,7 +13,7 @@
 <body>
     <header id="header" class="main-header">
         <div class="logito">
-            <a href="#"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
+            <a href="<?php echo constant('URL'); ?>buscarTrabajo"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light text-dark ">
@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse text-center justify-content-center " id="navbarSupportedContent">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link link-m" href="#">
+                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo">
                             <ion-icon name="home-outline"></ion-icon>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo">
-                            <ion-icon name="search-sharp"></ion-icon> BUSCAR OFERTAS
+                            <ion-icon name="search-sharp"></ion-icon> INICIO
                         </a>
                     </li>
                     <li class="nav-item">
