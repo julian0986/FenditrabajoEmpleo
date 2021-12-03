@@ -80,8 +80,8 @@
         <div class="col-md-12 fondo2 zero">
             <div class="pd-mx btninicioper"
                 style="background-color: rgba(255, 255, 255, 0.7);background-size: cover !important;">
-                <h2>¡Apreciado distribuidor minorista, regístrate ahora y publica tus ofertas de empleo !</h2>
-                <a href="<?php echo constant('URL'); ?>registroEmpresa" class="btn btn-lg btn-primary mg">Publica tus
+                <h2>¡Apreciado distribuidor minorista, regístrate ahora y pública tus ofertas de empleo !</h2>
+                <a href="<?php echo constant('URL'); ?>registroEmpresa" class="btn btn-lg btn-primary mg">Pública tus
                     ofertas</a>
             </div>
         </div>
