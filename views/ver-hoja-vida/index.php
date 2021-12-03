@@ -76,7 +76,7 @@
                                     <input type="number" name="numeroId" value="<?php echo $this->hoja->numero; ?>" class="form-control" id="inputNIdentificacion" readonly>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="inputTelefono">Telefono</label>
+                                    <label for="inputTelefono">Teléfono</label>
                                     <input type="number" name="numeroId" value="<?php echo $this->hoja->telefono; ?>" class="form-control" id="inputTelefono" readonly>
                                 </div>
                                 <div class="form-group col-md-4">
@@ -99,7 +99,7 @@
                             </div>
                             <div class="card-body row pd-m">
                                 <div class="form-group col-md-12">
-                                    <label for="estaticoCargoTitulo">Cargo o titulo</label>
+                                    <label for="estaticoCargoTitulo">Cargo o título</label>
                                     <input type="text" name="numeroId" value="<?php echo $this->hoja->titulo; ?>" class="form-control" id="estaticoCargoTitulo" readonly>
                                 </div>
                                 <div class="form-group col-md-12">
