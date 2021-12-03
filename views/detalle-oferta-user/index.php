@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <p class="text-justify">
-                        <strong>Descripcion:</strong> <br>
+                        <strong>Descripción:</strong> <br>
                         <?php echo $this->oferta->descripcion; ?>
                     </p>
                     <a href=<?php echo constant('URL') . 'aplicacionOferta/aplicarOferta/' . $this->oferta->id ?> class="btn btn-primary">APLICAR <ion-icon name="hand-right-outline"></ion-icon></a>
