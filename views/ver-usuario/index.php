@@ -124,7 +124,7 @@
                 <div class="card-body">
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <label for="inputTitulo">Cargo o titulo breve de su hoja de vida</label>
+                            <label for="inputTitulo">Cargo o título breve de su hoja de vida</label>
                             <input type="text" value="<?php echo $this->hoja->titulo; ?>" name="titulo" class="form-control" id="inputTitulo" readonly>
                         </div>
                         <div class="form-group col-md-12">
