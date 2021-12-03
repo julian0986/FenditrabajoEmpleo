@@ -57,7 +57,7 @@
                                     <input type="text" name="centro" value="<?php echo $this->formacion->centro; ?>" class="form-control" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required title="Solo se aceptan letras">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label>Titulo otorgado <strong style="color:red">*</strong></label>
+                                    <label>Título otorgado <strong style="color:red">*</strong></label>
                                     <input type="text" name="tituloF" value="<?php echo $this->formacion->tituloF; ?>" class="form-control" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required title="Solo se aceptan letras">
                                 </div>
                                 <div class="form-group col-md-12">
@@ -85,7 +85,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="inputPeriodo">Periodo<strong style="color: red">*</strong></label>
+                                    <label for="inputPeriodo">Período<strong style="color: red">*</strong></label>
                                     <div class="row">
                                         <div class="col-md-5">
                                             <input type="date" value="<?php echo $this->formacion->fechaInicio; ?>" name="fechaInicio" class="form-control" min="1920-01-01">

@@ -141,9 +141,9 @@ function myFunction() {
                                     <button type="submit" class="btn btn-primary">Ingresar</button>
                                 </div>
                                 <div class="card-footer text-center logemp">
-                                    <p>Aun no tienes cuenta, registrate <a
+                                    <p>Aún no tienes cuenta, registrate <a
                                             href="<?php echo constant('URL'); ?>registroPersona"
-                                            style="color:#055eb0;">aqui</a></p>
+                                            style="color:#055eb0;">aquí</a></p>
                                 </div>
                             </form>
                         </div>

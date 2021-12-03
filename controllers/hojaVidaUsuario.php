@@ -42,7 +42,7 @@ class HojaVidaUsuario extends Controller
     function agregarHojaVida($param = null)
     {
         $this->loadModel('hojaVida');
-        if ($param[0] == '') {
+        if (empty($param[0])) {
             $nombre = $_POST['nombre'];
             $apellido = $_POST['apellido'];
             $tipoId = $_POST['tipoId'];

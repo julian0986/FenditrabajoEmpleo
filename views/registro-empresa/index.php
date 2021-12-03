@@ -104,24 +104,24 @@
                             <h5 class="card-title text-center">Información EDS</h5>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="inputNombreEmpresa">Nombre comercial de la empresa <strong
+                                    <label for="inputNombreEmpresa">Nombre comercial de la Empresa <strong
                                             style="color:red">*</strong></label>
                                     <input type="text" name="nombre" class="form-control" id="inputNombreEmpresa"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,100}" required
                                         title="Solo se aceptan letras">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputNit">NIT de la empresa <strong style="color:red">*</strong></label>
+                                    <label for="inputNit">NIT de la Empresa <strong style="color:red">*</strong></label>
                                     <input type="text" name="nit" class="form-control" id="inputNit"
                                         pattern="[0-9.- ]{8,50}" title="Solo se aceptan numeros">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputCorreoCon">Correo de la empresa<strong
+                                    <label for="inputCorreoCon">Correo de la Empresa<strong
                                             style="color:red">*</strong></label>
                                     <input type="email" name="correoCon" class="form-control" id="inputCorreoCon">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputDireccion">Dirección de la empresa <strong
+                                    <label for="inputDireccion">Dirección de la Empresa <strong
                                             style="color:red">*</strong></label>
                                     <input type="text" name="direccion" class="form-control" id="inputDireccion"
                                         pattern="[a-zA-Záéíóúüñ0-9.,#-°/\$% ]{5,50}" required
@@ -188,7 +188,7 @@
                                         title="Se aceptan letras, numeros y caracteres especiales (.#-°).">
                                 </div> -->
                                 <div class="form-group col-md-8">
-                                    <label for="inputDescripcion">Descripción de la empresa <strong
+                                    <label for="inputDescripcion">Descripción de la Empresa <strong
                                             style="color:red">*</strong></label>
                                     <textarea class="form-control" name="descripcion" id="inputDescripcion"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{10,500}" rows="6"
@@ -236,7 +236,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputTelefono">Telefono persona contacto <strong
+                                    <label for="inputTelefono">Teléfono persona contacto <strong
                                             style="color:red">*</strong></label>
                                     <input type="text" class="form-control" name="telefonoE" class="form-control"
                                         id="inputTelefono" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required

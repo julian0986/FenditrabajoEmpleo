@@ -47,7 +47,7 @@
             <tbody>
                 <tr class="text-center bg-blue">
                     <th colspan="4">
-                        <h2>cPanel</h2>
+                        <h2>Panel de Administración</h2>
                     </th>
                 </tr>
                 <tr class="text-center">

@@ -63,7 +63,7 @@
                             <input type="text" name="nombre" class="form-control" id="inputNombre" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,100}" required title="Solo se aceptan letras y numeros">
                         </div>
                         <div class="form-group col-md-12">
-                            <label for="inputUrl">Url pagina web</label>
+                            <label for="inputUrl">Url página web</label>
                             <input type="text" name="link" class="form-control" id="inputUrl" required>
                         </div>
                         <div class="form-group col-md-12">

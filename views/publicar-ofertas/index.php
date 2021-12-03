@@ -80,8 +80,8 @@
         <div class="col-md-12 fondo2 zero">
             <div class="pd-mx btninicioper"
                 style="background-color: rgba(255, 255, 255, 0.7);background-size: cover !important;">
-                <h2>¡Apreciado distribuidor minorista, regístrate ahora y publica tus ofertas de empleo !</h2>
-                <a href="<?php echo constant('URL'); ?>registroEmpresa" class="btn btn-lg btn-primary mg">Publica tus
+                <h2>¡Apreciado distribuidor minorista, regístrate ahora y pública tus ofertas de empleo !</h2>
+                <a href="<?php echo constant('URL'); ?>registroEmpresa" class="btn btn-lg btn-primary mg">Pública tus
                     ofertas</a>
             </div>
         </div>
@@ -108,7 +108,8 @@
                                         width="300px" height="200px">
                                     <div class="card-footer" style="border-color: transparent; background: transparent">
                                         <h5 class="card-title"><?php echo $curso->nombre; ?></h5>
-                                        <a href="<?php echo $curso->link; ?>" class="btn btn-primary">Ir al Curso</a>
+                                        <!-- <a href="<?php echo $curso->link; ?>" class="btn btn-primary">Ir al Curso</a> -->
+                                        <a href="<?php echo constant('URL'); ?>registroPersona" class="btn btn-primary">Ir al Curso</a>
                                     </div>
                                 </div>
                                 <?php } ?>
