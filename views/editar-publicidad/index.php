@@ -60,11 +60,11 @@
                     <div class="form-row">
                         <div class="col-md-8">
                             <div class="form-group col-md-12">
-                                <label for="inputNombre">Nombre de la empresa</label>
+                                <label for="inputNombre">Nombre de la Empresa</label>
                                 <input type="text" value="<?php echo $this->publicidad->nombre; ?>" name="nombre" class="form-control" id="inputNombre" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,100}" required title="Solo se aceptan letras">
                             </div>
                             <div class="form-group col-md-12">
-                                <label for="inputUrl">Url pagina web</label>
+                                <label for="inputUrl">Url página web</label>
                                 <input type="text" value="<?php echo $this->publicidad->link; ?>" name="link" class="form-control" id="inputUrl" required>
                             </div>
                             <div class="form-group col-md-12">
