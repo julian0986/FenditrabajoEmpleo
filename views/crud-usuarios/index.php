@@ -74,7 +74,6 @@
                     <tr>
                         <th style="width:40%" scope="col">Nombre</th>
                         <th style="width:40%" scope="col">Apellido</th>
-                        <th style="width:40%" scope="col">Correo</th>
                         <th style="width:20%" scope="col">Opciones</th>
                     </tr>
                 </thead>
@@ -88,7 +87,6 @@
                         <tr>
                             <td><?php echo $usuario->nombres; ?></td>
                             <td><?php echo $usuario->apellidos; ?></td>
-                            <td><?php echo $usuario->correo; ?></td>
                             <td class="text-center">
                                 <a class="btn btn-sm btn-info" href="<?php echo constant('URL') . 'verUsuario/detalles/' . $usuario->id; ?>">
                                     <ion-icon style="font-size:20px" name="eye"></ion-icon>
