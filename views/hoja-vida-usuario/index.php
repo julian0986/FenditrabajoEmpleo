@@ -285,7 +285,7 @@ function confirmar() {
                         <div class="card-body">
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <label for="inputTitulo">Cargo o titulo breve de su hoja de vida <strong
+                                    <label for="inputTitulo">Cargo o título breve de su hoja de vida <strong
                                             style="color:red">*</strong></label>
                                     <input type="text" value="<?php echo $this->hoja->titulo; ?>" name="titulo"
                                         class="form-control" id="inputTitulo" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,50}"
@@ -370,7 +370,7 @@ function confirmar() {
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputSectorEmpresa">Sector de la empresa<strong
+                                        <label for="inputSectorEmpresa">Sector de la Empresa<strong
                                                 style="color:red">*</strong></label>
                                         <select id="inputSectorEmpresa" class="form-control" name="sector"
                                             aria-required="true" aria-invalid="false" required>
@@ -408,7 +408,7 @@ function confirmar() {
                                             title="Solo se aceptan letras">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputArea">Area<strong style="color: red">*</strong></label>
+                                        <label for="inputArea">Área<strong style="color: red">*</strong></label>
                                         <select id="inputArea" class="form-control" name="area" aria-required="true"
                                             aria-invalid="false" required>
                                             <option value="">Categorías</option>
@@ -437,7 +437,7 @@ function confirmar() {
                                         </select>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <label for="inputPeriodo">Periodo<strong style="color: red">*</strong></label>
+                                        <label for="inputPeriodo">Período<strong style="color: red">*</strong></label>
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <input type="date" name="fechaInicio" class="form-control"
@@ -510,7 +510,7 @@ function confirmar() {
                                             title="Solo se aceptan letras">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <label>Titulo otorgado <strong style="color:red">*</strong></label>
+                                        <label>Título otorgado <strong style="color:red">*</strong></label>
                                         <input type="text" name="tituloF" class="form-control"
                                             pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
                                             title="Solo se aceptan letras">
@@ -549,7 +549,7 @@ function confirmar() {
                                         </select>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <label for="inputPeriodo">Periodo<strong style="color: red">*</strong></label>
+                                        <label for="inputPeriodo">Período<strong style="color: red">*</strong></label>
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <input type="date" name="fechaInicio" class="form-control"
