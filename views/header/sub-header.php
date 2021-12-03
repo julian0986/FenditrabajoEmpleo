@@ -83,7 +83,7 @@
               SOPORTE
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Contactenos</a>
+              <a class="dropdown-item" href="#">Contáctenos</a>
               <a class="dropdown-item" href="#">Gorreo Corporativo</a>
               <a class="dropdown-item" href="#">Directorio</a>
               <a class="dropdown-item" href="#">Mesa de Ayuda</a>
