@@ -97,7 +97,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputSectorEmpresa">Sector de la empresa<strong style="color:red">*</strong></label>
+                                    <label for="inputSectorEmpresa">Sector de la Empresa<strong style="color:red">*</strong></label>
                                     <select id="inputSectorEmpresa" class="form-control" name="sector" aria-required="true" aria-invalid="false" required>
                                         <option value="">Seleccione</option>
                                         <option <?php if ($this->experiencia->sector == '1') echo 'selected'; ?> value="1">Agricultura / Pesca / Ganadería</option>
@@ -131,7 +131,7 @@
                                     <input type="text" name="cargo" value="<?php echo $this->experiencia->cargo; ?>" class="form-control" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,50}" required title="Solo se aceptan letras">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputArea">Area<strong style="color: red">*</strong></label>
+                                    <label for="inputArea">Área<strong style="color: red">*</strong></label>
                                     <select id="inputArea" class="form-control" name="area" aria-required="true" aria-invalid="false" required>
                                         <option value="">Categorías</option>
                                         <option <?php if ($this->experiencia->sector == '1') echo 'selected'; ?> value="1">Administración / Oficina</option>
@@ -159,7 +159,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="inputPeriodo">Periodo<strong style="color: red">*</strong></label>
+                                    <label for="inputPeriodo">Período<strong style="color: red">*</strong></label>
                                     <div class="row">
                                         <div class="col-md-5">
                                             <input type="date" name="fechaInicio" value="<?php echo $this->experiencia->fechaInicio; ?>" class="form-control" min="1920-01-01">
