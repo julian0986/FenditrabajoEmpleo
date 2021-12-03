@@ -123,8 +123,8 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="g-recaptcha" data-sitekey="6LeVZncdAAAAAApES_kTUWAIy8Kgc9wn0OKhed03"></div>
+                                    <div class="mb-4 mx-auto">
+                                        <div class="h-captcha" data-sitekey="a171ed32-f758-428d-8f81-ef9f1d3fa18e"></div>
                                     </div>
                                 </div>
                                 <br />
