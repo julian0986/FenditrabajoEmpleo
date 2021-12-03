@@ -152,7 +152,7 @@
                                     <option value="Tiempo completo">Tiempo completo</option>
                                     <option value="Medio tiempo">Medio tiempo</option>
                                     <option value="Jornada parcial">Jornada parcial</option>
-                                    <option value="Estudiante en practicas">Estudiante en practicas</option>
+                                    <option value="Estudiante en practicas">Estudiante en prácticas</option>
                                 </select>
                                 <div class="input-group-append btninicioper">
                                     <button class="btn btn-primary" type="submit">jornada</button>
