@@ -30,7 +30,7 @@
     </div> -->
     <div class="card text-center container-fluid bg- text-white" style="margin-top: 25px">
         <div class="card-footer text-muted">
-            <img class="block" id="u2248_img" src="<?php echo constant('URL'); ?>public/logos/logo.png" width="500px">
+            <img class="block" id="u2248_img" src="<?php echo constant('URL'); ?>public/logos/logo.png" width="400px">
             <br />
             <div class="row">
                 <div class="col-md-4"></div>

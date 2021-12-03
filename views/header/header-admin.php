@@ -10,31 +10,12 @@
 </head>
 
 <body>
-  <div id="header" class="main-header">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 centrar-contenido">
-        <a href=""><img src="<?php echo constant('URL'); ?>public/images/nuevo-logo.png" width="60%"></a>
-      </div>
-      <div class="col-sm-4 col-md-4" style="padding-top:2%">
-        <div class="row">
-          <div class="col-md-1">
-            <ion-icon name="time-outline" style="color:black; font-size:30px;"></ion-icon>
-          </div>
-          <div class="col-md-11">
-            <p>Lun - Vie</p>
-          </div>
-          <div class="col-md-1">
-            <ion-icon name="mail-outline" style="color:black; font-size:30px;"></ion-icon>
-          </div>
-          <div class="col-md-11">
-            <p>Contactenos: informacion@fendipetroleo.com</p>
-          </div>
+<header id="header" class="main-header">
+        <div class="logito">
+            <a href="<?php echo constant('URL'); ?>buscarTrabajo"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
         </div>
-        
-        
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #004C92;">
+
+    <nav class="navbar navbar-expand-lg navbar-light text-dark ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,15 +23,16 @@
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
         <ul class="nav navbar-nav">
           <li class="nav-item">
-            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>inicioAdmin" style="color: white;"><ion-icon name="settings-sharp"></ion-icon> cPanel</a>
+            <a class="nav-link link-m h5" href="<?php echo constant('URL'); ?>inicioAdmin"><i class="fas fa-users-cog"></i> Administrar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-m" href="<?php echo constant('URL'); ?>loginPersona/cerrarSesion" style="color: white;"><ion-icon name="exit-sharp"></ion-icon> Cerrar sesión</a>
+            <a class="nav-link link-m h5" href="<?php echo constant('URL'); ?>loginPersona/cerrarSesion"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</a>
           </li>
         </ul>
       </div>
     </nav>
-  </div> 
+ 
+</header>
   <script src="https://kit.fontawesome.com/11638189dd.js" crossorigin="anonymous"></script>
   <script  src = "https://unpkg.com/ionicons@5.0.0/dist/ionicons.js" > </script>  
 </body>
