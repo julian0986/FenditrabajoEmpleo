@@ -44,7 +44,7 @@
     <meta name="twitter:description"
         content="La Federación Nacional de Distribuidores de Combustibles y Energéticos – Fendipetróleo, es una organización gremial, creada en 1971 para representar los intereses de los empresarios distribuidores minoristas de combustibles líquidos y gas natural vehicular, promover la sostenibilidad del sector y contribuir al desarrollo social y económico del país. ">
     <meta name="twitter:image" content="https://fendipetroleo.com/nuevoF/public/icon/favicon.ico">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeVZncdAAAAAApES_kTUWAIy8Kgc9wn0OKhed03"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <style>
 .fondo2 {
@@ -124,7 +124,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                    <div class="g-recaptcha" data-sitekey="6LeVZncdAAAAAApES_kTUWAIy8Kgc9wn0OKhed03"></div>
+                                    <div class="g-recaptcha" data-sitekey="6LeVZncdAAAAALqAVMvujYr2KXWYSW3fbL1lCJ3-"></div>
                                     </div>
                                 </div>
                                 <br />
