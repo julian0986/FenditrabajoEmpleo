@@ -49,7 +49,7 @@
                             <i class="fas fa-user-tie"></i> PERSONA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>registroEmpresa">
-                            <i class="fas fa-building"></i> MI EMPRESA
+                            <i class="fas fa-building"></i> EMPRESA
                             </a>
                         </div>
                     </li>
@@ -68,7 +68,7 @@
                             <i class="fas fa-user-tie"></i> PERSONA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginEmpresa">
-                            <i class="fas fa-building"></i> MI EMPRESA
+                            <i class="fas fa-building"></i> EMPRESA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginPersona">
                             <i class="fas fa-user-cog"></i> ADMINISTRADOR
@@ -82,6 +82,7 @@
     </header>
     <script src="https://kit.fontawesome.com/11638189dd.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"> </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
