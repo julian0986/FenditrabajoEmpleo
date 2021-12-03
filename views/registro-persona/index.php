@@ -123,7 +123,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="mb-4 mx-auto">
+                                    <div class="col-md-6">
                                         <div class="h-captcha" data-sitekey="a171ed32-f758-428d-8f81-ef9f1d3fa18e"></div>
                                     </div>
                                 </div>
