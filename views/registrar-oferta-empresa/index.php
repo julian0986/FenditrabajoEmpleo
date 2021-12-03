@@ -44,7 +44,7 @@
     <?php require "views/header/header-empresa.php"; ?>
 
     <div class="container pd">
-        <h1 class="text-center pd">Publica tu oferta llenando el siguiente formato</h1>
+        <h1 class="text-center pd">Pública tu oferta llenando el siguiente formato</h1>
         <div class="card" style="width: 100%;">
             <div class="card-header">
                 <h4 class="card-title text-center">Datos de registro de oferta</h4>
@@ -128,7 +128,7 @@
                             </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputDescripcion">Descripcion<strong style="color:red">*</strong></label>
+                            <label for="inputDescripcion">Descripción<strong style="color:red">*</strong></label>
                             <textarea class="form-control" name="descripcion" id="inputDescripcion" rows="8" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{10,500}" required title="Solo se aceptan letras y numeros"></textarea>
                         </div>
                     </div>
