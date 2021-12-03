@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputDescripcion">Descripcion<strong style="color:red">*</strong></label>
+                            <label for="inputDescripcion">Descripción<strong style="color:red">*</strong></label>
                             <textarea class="form-control" name="descripcion" id="inputDescripcion" rows="8" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{10,500}" required title="Solo se aceptan letras  y numeros"><?php echo $this->oferta->descripcion; ?></textarea>
                         </div>
                     </div>
