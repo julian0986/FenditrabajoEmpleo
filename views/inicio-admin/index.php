@@ -58,12 +58,6 @@
                         </a>
                     </td>
                     <td style="width:25%">
-                        <a href="<?php echo constant('URL'); ?>crudEmpresas/inicio">
-                            <h5 style="color:black">Ofertas</h5>
-                            <ion-icon style="font-size: 50px; color:black" name="business-outline"></ion-icon>
-                        </a>
-                    </td>
-                    <td style="width:25%">
                         <a href="<?php echo constant('URL'); ?>crudUsuarios/inicio">
                             <h5 style="color:black">Usuarios</h5>
                             <ion-icon style="font-size: 50px; color:black" name="people-outline"></ion-icon>
