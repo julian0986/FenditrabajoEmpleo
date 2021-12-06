@@ -306,25 +306,31 @@ function confirmar() {
                                             style="color:red">*</strong></label>
                                     <select id="inputTipoPoblacion" class="form-control" name="tipoPoblacion" required>
                                         <option value="">Seleccione</option>
-                                        <option <?php if ($this->hoja->tipoPoblacion == 'cc') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'Minoría étnica') echo 'selected'; ?>
                                             value="Minoría étnica">
                                             Minoría étnica</option>
-                                        <option <?php if ($this->hoja->tipoPoblacion == 'ce') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'Discapacidad física') echo 'selected'; ?>
                                             value="Discapacidad física">
                                             Discapacidad física</option>
-                                        <option <?php if ($this->hoja->tipoPoblacion == 'ti') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'Discapacidad cognitiva') echo 'selected'; ?>
                                             value="Discapacidad cognitiva">
                                             Discapacidad cognitiva</option>
                                         <option
-                                            <?php if ($this->hoja->tipoPoblacion == 'p') echo 'selected'; ?>value="Madres cabeza de familia">
+                                            <?php if ($this->hoja->tipoPoblacion == 'Madres cabeza de familia') echo 'selected'; ?>value="Madres cabeza de familia">
                                             Madres cabeza de familia</option>
-                                        <option <?php if ($this->hoja->tipoPoblacion == 'ni') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'En situación de desplazamiento forzoso') echo 'selected'; ?>
                                             value="En situación de desplazamiento forzoso">
                                             En situación de desplazamiento forzoso</option>
-                                        <option <?php if ($this->hoja->tipoPoblacion == 'ni') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'Discapacidad sensorial') echo 'selected'; ?>
                                             value="Discapacidad sensorial">
                                             Discapacidad sensorial</option>
-                                        <option <?php if ($this->hoja->tipoPoblacion == 'ni') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'Miembro de la comunidad LGBTIQ+') echo 'selected'; ?>
                                             value="Miembro de la comunidad LGBTIQ+">
                                             Miembro de la comunidad LGBTIQ+</option>
                                     </select>
@@ -335,9 +341,11 @@ function confirmar() {
                                     <select id="inputCambioResidencia" class="form-control" name="cambioResidencia"
                                         required>
                                         <option value="">Seleccione</option>
-                                        <option <?php if ($this->hoja->tipoId == 'Sí') echo 'selected'; ?> value="Sí">
+                                        <option <?php if ($this->hoja->cambioResidencia == 'Sí') echo 'selected'; ?>
+                                            value="Sí">
                                             Sí</option>
-                                        <option <?php if ($this->hoja->tipoId == 'No') echo 'selected'; ?> value="No">
+                                        <option <?php if ($this->hoja->cambioResidencia == 'No') echo 'selected'; ?>
+                                            value="No">
                                             No</option>
                                     </select>
                                 </div>
@@ -346,13 +354,16 @@ function confirmar() {
                                             style="color:red">*</strong></label>
                                     <select id="inputAspiracionSal" class="form-control" name="aspiracionSal" required>
                                         <option value="">Seleccione</option>
-                                        <option <?php if ($this->hoja->tipoId == 'De 1 a 2 SMMLV') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->aspiracionSal == 'De 1 a 2 SMMLV') echo 'selected'; ?>
                                             value="De 1 a 2 SMMLV">
                                             De 1 a 2 SMMLV</option>
-                                        <option <?php if ($this->hoja->tipoId == 'cDe 2 a 4 SMMLV') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->aspiracionSal == 'cDe 2 a 4 SMMLV') echo 'selected'; ?>
                                             value="De 2 a 4 SMMLV">
                                             De 2 a 4 SMMLV</option>
-                                        <option <?php if ($this->hoja->tipoId == 'De 4 o más SMMLV') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->aspiracionSal == 'De 4 o más SMMLV') echo 'selected'; ?>
                                             value="De 4 o más SMMLV">
                                             De 4 o más SMMLV</option>
                                     </select>
@@ -623,18 +634,6 @@ function confirmar() {
                             <form action="<?php echo constant('URL'); ?>hojaVidaUsuario/agregarFormacion" method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
-                                        <label>Centro educativo <strong style="color:red">*</strong></label>
-                                        <input type="text" name="centro" class="form-control"
-                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
-                                            title="Solo se aceptan letras">
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <label>Título otorgado <strong style="color:red">*</strong></label>
-                                        <input type="text" name="tituloF" class="form-control"
-                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
-                                            title="Solo se aceptan letras">
-                                    </div>
-                                    <div class="form-group col-md-12">
                                         <label for="inputNivelEstudios">Nivel de estudios<strong
                                                 style="color:red">*</strong></label>
                                         <select id="inputNivelEstudios" class="form-control" name="nivel"
@@ -655,7 +654,21 @@ function confirmar() {
                                             </option>
                                             <option value="Postgrado / Maestría">Postgrado / Maestría</option>
                                             <option value="Postgrado / Doctorado">Postgrado / Doctorado</option>
+                                            <option value="Idiomas">Idiomas</option>
+                                            <option value="Cursos">Cursos</option>
                                         </select>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label>Centro educativo <strong style="color:red">*</strong></label>
+                                        <input type="text" name="centro" class="form-control"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
+                                            title="Solo se aceptan letras">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label>Título otorgado <strong style="color:red">*</strong></label>
+                                        <input type="text" name="tituloF" class="form-control"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
+                                            title="Solo se aceptan letras">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputEstado">Estado<strong style="color:red">*</strong></label>
