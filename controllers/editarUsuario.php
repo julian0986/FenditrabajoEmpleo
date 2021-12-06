@@ -55,7 +55,7 @@ class EditarUsuario extends Controller
             if (!$urlHoja) {
                 $urlHoja = "";
             }
-            $persona = $_SESSION['idUserE'];
+            $persona = $_SESSION['idUser'];
 
             if ($this->model->agregarHoja([
                 'nombre' => $nombre,
