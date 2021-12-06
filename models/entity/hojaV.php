@@ -14,8 +14,14 @@ class HojaV
     public $tipoTel;
     public $telefono;
     public $departamento;
+    public $ciudad;
     public $direccion;
     public $nacionalidad;
+    public $ocupacion;
+    public $tipoPoblacion;
+    public $cambioResidencia;
+    public $aspiracionSal;
+    public $tiempoExperiencia;
     public $titulo;
     public $perfil;
     public $foto;

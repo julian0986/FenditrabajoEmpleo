@@ -262,6 +262,25 @@ function confirmar() {
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
+                                    <label for="inputCiudad">Ciudad<strong style="color:red">*</strong></label>
+                                    <select id="inputCiudad" class="form-control" name="ciudad" aria-required="true"
+                                        aria-invalid="false" required>
+                                        <option value="">Seleccione</option>
+                                        <option <?php if ($this->hoja->ciudad == 'Ibague') echo 'selected'; ?>
+                                            value="Ibague">Ibague</option>
+                                        <option <?php if ($this->hoja->ciudad == 'Bucaramanga') echo 'selected'; ?>
+                                            value="Bucaramanga">Bucaramanga</option>
+                                        <option <?php if ($this->hoja->ciudad == 'Medellin') echo 'selected'; ?>
+                                            value="Medellin">Medellin</option>
+                                        <option <?php if ($this->hoja->ciudad == 'Neiva') echo 'selected'; ?>
+                                            value="Neiva">Neiva</option>
+                                        <option <?php if ($this->hoja->ciudad == 'Bogota') echo 'selected'; ?>
+                                            value="Bogota">Bogota
+                                        </option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
                                     <label for="inputDireccion">Dirección<strong style="color:red">*</strong></label>
                                     <input type="text" value="<?php echo $this->hoja->direccion; ?>" name="direccion"
                                         class="form-control" id="inputDireccion" pattern="[a-zA-Záéíóúüñ0-9.#-° ]{3,50}"
@@ -274,6 +293,106 @@ function confirmar() {
                                         name="nacionalidad" class="form-control" id="inputNacionalidad"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,20}" required
                                         title="Solo se aceptan letras">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputOcupacion">Ocupación<strong style="color:red">*</strong></label>
+                                    <input type="text" value="<?php echo $this->hoja->ocupacion; ?>" name="ocupacion"
+                                        class="form-control" id="inputOcupacion"
+                                        pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,20}" required
+                                        title="Solo se aceptan letras">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputTipoPoblacion">Tipo de Población<strong
+                                            style="color:red">*</strong></label>
+                                    <select id="inputTipoPoblacion" class="form-control" name="tipoPoblacion" required>
+                                        <option value="">Seleccione</option>
+                                        <option <?php if ($this->hoja->tipoPoblacion == 'cc') echo 'selected'; ?>
+                                            value="Minoría étnica">
+                                            Minoría étnica</option>
+                                        <option <?php if ($this->hoja->tipoPoblacion == 'ce') echo 'selected'; ?>
+                                            value="Discapacidad física">
+                                            Discapacidad física</option>
+                                        <option <?php if ($this->hoja->tipoPoblacion == 'ti') echo 'selected'; ?>
+                                            value="Discapacidad cognitiva">
+                                            Discapacidad cognitiva</option>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'p') echo 'selected'; ?>value="Madres cabeza de familia">
+                                            Madres cabeza de familia</option>
+                                        <option <?php if ($this->hoja->tipoPoblacion == 'ni') echo 'selected'; ?>
+                                            value="En situación de desplazamiento forzoso">
+                                            En situación de desplazamiento forzoso</option>
+                                        <option <?php if ($this->hoja->tipoPoblacion == 'ni') echo 'selected'; ?>
+                                            value="Discapacidad sensorial">
+                                            Discapacidad sensorial</option>
+                                        <option <?php if ($this->hoja->tipoPoblacion == 'ni') echo 'selected'; ?>
+                                            value="Miembro de la comunidad LGBTIQ+">
+                                            Miembro de la comunidad LGBTIQ+</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputCambioResidencia">Cambio de residencia<strong
+                                            style="color:red">*</strong></label>
+                                    <select id="inputCambioResidencia" class="form-control" name="cambioResidencia"
+                                        required>
+                                        <option value="">Seleccione</option>
+                                        <option <?php if ($this->hoja->tipoId == 'Sí') echo 'selected'; ?> value="Sí">
+                                            Sí</option>
+                                        <option <?php if ($this->hoja->tipoId == 'No') echo 'selected'; ?> value="No">
+                                            No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputAspiracionSal">Aspiración salarial<strong
+                                            style="color:red">*</strong></label>
+                                    <select id="inputAspiracionSal" class="form-control" name="aspiracionSal" required>
+                                        <option value="">Seleccione</option>
+                                        <option <?php if ($this->hoja->tipoId == 'De 1 a 2 SMMLV') echo 'selected'; ?>
+                                            value="De 1 a 2 SMMLV">
+                                            De 1 a 2 SMMLV</option>
+                                        <option <?php if ($this->hoja->tipoId == 'cDe 2 a 4 SMMLV') echo 'selected'; ?>
+                                            value="De 2 a 4 SMMLV">
+                                            De 2 a 4 SMMLV</option>
+                                        <option <?php if ($this->hoja->tipoId == 'De 4 o más SMMLV') echo 'selected'; ?>
+                                            value="De 4 o más SMMLV">
+                                            De 4 o más SMMLV</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputTiempoExperiencia">Tiempo de Experiencia<strong
+                                            style="color:red">*</strong></label>
+                                    <select id="inputTiempoExperiencia" class="form-control" name="tiempoExperiencia"
+                                        required>
+                                        <option value="">Seleccione</option>
+                                        <option
+                                            <?php if ($this->hoja->tiempoExperiencia == 'De 0 a 6 meses') echo 'selected'; ?>
+                                            value="De 0 a 6 meses">
+                                            De 0 a 6 meses</option>
+                                        <option
+                                            <?php if ($this->hoja->tiempoExperiencia == 'De 6 a 12 meses') echo 'selected'; ?>
+                                            value="De 6 a 12 meses">
+                                            De 6 a 12 meses</option>
+                                        <option
+                                            <?php if ($this->hoja->tiempoExperiencia == 'De 1 año a 2 años') echo 'selected'; ?>
+                                            value="De 1 año a 2 años">
+                                            De 1 año a 2 años</option>
+                                        <option
+                                            <?php if ($this->hoja->tiempoExperiencia == 'De 2 año a 3 años') echo 'selected'; ?>
+                                            value="De 2 año a 3 años">
+                                            De 2 año a 3 años</option>
+                                        <option
+                                            <?php if ($this->hoja->tiempoExperiencia == 'De 3 año a 4 años') echo 'selected'; ?>
+                                            value="De 3 año a 4 años">
+                                            De 3 año a 4 años</option>
+                                        <option
+                                            <?php if ($this->hoja->tiempoExperiencia == 'De 4 año a 5 años') echo 'selected'; ?>
+                                            value="De 4 año a 5 años">
+                                            De 4 año a 5 años</option>
+                                        <option
+                                            <?php if ($this->hoja->tiempoExperiencia == 'De 5 año a 10 años') echo 'selected'; ?>
+                                            value="De 5 año a 10 años">
+                                            De 5 año a 10 años</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
