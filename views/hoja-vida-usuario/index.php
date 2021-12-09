@@ -68,7 +68,7 @@ function confirmar() {
                 <form action="<?php echo constant('URL') . 'hojaVidaUsuario/agregarHojaVida/' . $this->hoja->id; ?>"
                     method="POST" enctype="multipart/form-data">
                     <div class="card" style="width: 100%;">
-                        <div class="card-header">
+                        <div class="card-header bg-blue">
                             <h4 class="card-title text-center">Datos personales</h4>
                         </div>
                         <div class="card-body">
@@ -409,7 +409,7 @@ function confirmar() {
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header bg-blue">
                             <h4 class="card-title text-center">Perfil profesional</h4>
                         </div>
                         <div class="card-body">
@@ -436,7 +436,7 @@ function confirmar() {
                     </div>
                 </form>
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header bg-blue">
                         <h4 class="card-title text-center">Experiencias profesionales</h4>
                     </div>
                     <div class="card-body">
@@ -620,7 +620,7 @@ function confirmar() {
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header bg-blue">
                         <h4 class="card-title text-center">Formación</h4>
                     </div>
                     <div class="card-body">

@@ -52,7 +52,7 @@
     <div class="container pd">
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" style="border-width: 3px; border-color: #224b8b;">
                     <div class="card-body row">
                         <div class="col-md-7">
                             <h5><?php echo $this->persona['nombre'] . ' ' . $this->persona['apellido']; ?></h5>
@@ -77,9 +77,9 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="card" style="border-color: #224b8b;">
+                <div class="card shadow-lg  mb-5 bg-white rounded" style="border-color: #224b8b;">
                     <div class="card-header bg-blue">
-                        <h5 class="card-title text-center mb-2">Comienza la busqueda de empleo</h5>
+                        <h4 class="card-title text-center mb-2">Comienza la búsqueda de empleo</h4>
                     </div>
                     <div class="card-body d-flex justify-content-center"
                         style="background-color: rgba(255,255,255,0.5);">
@@ -165,8 +165,8 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="card mb">
-                    <div class="card-header">
+                <div class="card mb shadow-lg  mb-5 bg-white rounded" style="border-color: #224b8b;">
+                    <div class="card-header bg-blue">
                         <h4>Ofertas recomendadas</h4>
                     </div>
                     <div class="card-body">
@@ -196,8 +196,8 @@
                         <?php } ?>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">
+                <div class="card  shadow-lg  mb-5 bg-white rounded" style="border-color: #224b8b;">
+                    <div class="card-header bg-blue">
                         <h4>Telleres de formación</h4>
                     </div>
                     <div class="card-body">
