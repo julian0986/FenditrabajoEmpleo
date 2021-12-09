@@ -9,6 +9,9 @@ class HojaV
     public $tipoId;
     public $numero;
     public $fecha;
+    public $ciudadNacimiento;
+    public $departamentoNacimiento;
+    public $paisNacimiento;
     public $genero;
     public $estado;
     public $tipoTel;

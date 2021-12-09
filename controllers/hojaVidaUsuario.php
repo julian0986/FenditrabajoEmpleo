@@ -48,6 +48,9 @@ class HojaVidaUsuario extends Controller
             $tipoId = $_POST['tipoId'];
             $numeroId = $_POST['numeroId'];
             $fecha = date("Y-m-d", strtotime($_POST['fechaNacimiento']));;
+            $ciudadNacimiento = $_POST['ciudadNacimiento'];
+            $departamentoNacimiento = $_POST['departamentoNacimiento'];
+            $paisNacimiento = $_POST['paisNacimiento'];
             $genero = $_POST['genero'];
             $estadoCivil = $_POST['estadoCivil'];
             $tipoTel = $_POST['tipoTel'];
@@ -76,6 +79,9 @@ class HojaVidaUsuario extends Controller
                 'tipoId' => $tipoId,
                 'numeroId' => $numeroId,
                 'fecha' => $fecha,
+                'ciudadNacimiento' => $ciudadNacimiento,
+                'departamentoNacimiento' => $departamentoNacimiento,
+                'paisNacimiento' => $paisNacimiento,
                 'genero' => $genero,
                 'estadoCivil' => $estadoCivil,
                 'tipoTel' => $tipoTel,
@@ -106,6 +112,9 @@ class HojaVidaUsuario extends Controller
             $tipoId = $_POST['tipoId'];
             $numeroId = $_POST['numeroId'];
             $fecha = date("Y-m-d", strtotime($_POST['fechaNacimiento']));;
+            $ciudadNacimiento = $_POST['ciudadNacimiento'];
+            $departamentoNacimiento = $_POST['departamentoNacimiento'];
+            $paisNacimiento = $_POST['paisNacimiento'];
             $genero = $_POST['genero'];
             $estadoCivil = $_POST['estadoCivil'];
             $tipoTel = $_POST['tipoTel'];
@@ -134,6 +143,9 @@ class HojaVidaUsuario extends Controller
                 'tipoId' => $tipoId,
                 'numeroId' => $numeroId,
                 'fecha' => $fecha,
+                'ciudadNacimiento' => $ciudadNacimiento,
+                'departamentoNacimiento' => $departamentoNacimiento,
+                'paisNacimiento' => $paisNacimiento,
                 'genero' => $genero,
                 'estadoCivil' => $estadoCivil,
                 'tipoTel' => $tipoTel,
