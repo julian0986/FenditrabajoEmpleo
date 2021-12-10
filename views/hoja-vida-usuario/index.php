@@ -120,7 +120,7 @@ function confirmar() {
                                             src="<?php echo constant('URL') . $this->hoja->foto; ?>" alt="" width="90%">
                                     </div>
                                     <div class="form-group col-md-12 ">
-                                        <label for="inputApellidos">Foto de perfil</label>
+                                        <label for="fotoPerfil">Foto de perfil</label>
                                         <input type="file" name="file" class="form-control-file" id="selectLogo">
                                     </div>
                                 </div>
@@ -137,76 +137,107 @@ function confirmar() {
                                         name="departamentoNacimiento" aria-required="true" aria-invalid="false"
                                         required>
                                         <option value="">Seleccione</option>
-                                        <option <?php if ($this->hoja->departamento == 'Bogota') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Bogota') echo 'selected'; ?>
                                             value="Bogota">Bogotá, D.C.</option>
-                                        <option <?php if ($this->hoja->departamento == 'Antioquia') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Antioquia') echo 'selected'; ?>
                                             value="Antioquia">Antioquia</option>
-                                        <option <?php if ($this->hoja->departamento == 'Amazonas') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Amazonas') echo 'selected'; ?>
                                             value="Amazonas">Amazonas</option>
-                                        <option <?php if ($this->hoja->departamento == 'Arauca') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Arauca') echo 'selected'; ?>
                                             value="Arauca">Arauca</option>
-                                        <option <?php if ($this->hoja->departamento == 'SanAndres') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'SanAndres') echo 'selected'; ?>
                                             value="SanAndres">Archipiélago de San Andrés, Providencia y Santa Catalina
                                         </option>
-                                        <option <?php if ($this->hoja->departamento == 'Atlantico') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Atlantico') echo 'selected'; ?>
                                             value="Atlantico">Atlántico</option>
-                                        <option <?php if ($this->hoja->departamento == 'Bolivar') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Bolivar') echo 'selected'; ?>
                                             value="Bolivar">Bolívar</option>
-                                        <option <?php if ($this->hoja->departamento == 'Boyaca') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Boyaca') echo 'selected'; ?>
                                             value="Boyaca">Boyacá</option>
-                                        <option <?php if ($this->hoja->departamento == 'Caldas') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Caldas') echo 'selected'; ?>
                                             value="Caldas">Caldas</option>
-                                        <option <?php if ($this->hoja->departamento == 'Caqueta') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Caqueta') echo 'selected'; ?>
                                             value="Caqueta">Caquetá</option>
-                                        <option <?php if ($this->hoja->departamento == 'Casanare') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Casanare') echo 'selected'; ?>
                                             value="Casanare">Casanare</option>
-                                        <option <?php if ($this->hoja->departamento == 'Cauca') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Cauca') echo 'selected'; ?>
                                             value="Cauca">Cauca</option>
-                                        <option <?php if ($this->hoja->departamento == 'Cesar') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Cesar') echo 'selected'; ?>
                                             value="Cesar">Cesar</option>
-                                        <option <?php if ($this->hoja->departamento == 'Choco') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Choco') echo 'selected'; ?>
                                             value="Choco">Chocó</option>
-                                        <option <?php if ($this->hoja->departamento == 'Cordoba') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Cordoba') echo 'selected'; ?>
                                             value="Cordoba">Córdoba</option>
                                         <option
-                                            <?php if ($this->hoja->departamento == 'Cundinamarca') echo 'selected'; ?>
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Cundinamarca') echo 'selected'; ?>
                                             value="Cundinamarca">Cundinamarca</option>
-                                        <option <?php if ($this->hoja->departamento == 'Guainia') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Guainia') echo 'selected'; ?>
                                             value="Guainia">Guainía</option>
-                                        <option <?php if ($this->hoja->departamento == 'Guaviare') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Guaviare') echo 'selected'; ?>
                                             value="Guaviare">Guaviare</option>
-                                        <option <?php if ($this->hoja->departamento == 'Huila') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Huila') echo 'selected'; ?>
                                             value="Huila">Huila</option>
-                                        <option <?php if ($this->hoja->departamento == 'LaGuajira') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'LaGuajira') echo 'selected'; ?>
                                             value="LaGuajira">La Guajira</option>
-                                        <option <?php if ($this->hoja->departamento == 'Magdalena') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Magdalena') echo 'selected'; ?>
                                             value="Magdalena">Magdalena</option>
-                                        <option <?php if ($this->hoja->departamento == 'Meta') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Meta') echo 'selected'; ?>
                                             value="Meta">Meta</option>
-                                        <option <?php if ($this->hoja->departamento == 'Narino') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Narino') echo 'selected'; ?>
                                             value="Narino">Nariño</option>
                                         <option
-                                            <?php if ($this->hoja->departamento == 'NorteSantander') echo 'selected'; ?>
+                                            <?php if ($this->hoja->departamentoNacimiento == 'NorteSantander') echo 'selected'; ?>
                                             value="NorteSantander">Norte de Santander</option>
-                                        <option <?php if ($this->hoja->departamento == 'Putumayo') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Putumayo') echo 'selected'; ?>
                                             value="Putumayo">Putumayo</option>
-                                        <option <?php if ($this->hoja->departamento == 'Quindio') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Quindio') echo 'selected'; ?>
                                             value="Quindio">Quindio</option>
-                                        <option <?php if ($this->hoja->departamento == 'Risaralda') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Risaralda') echo 'selected'; ?>
                                             value="Risaralda">Risaralda</option>
                                         <option <?php if ($this->hoja->departamento == 'Santander') echo 'selected'; ?>
                                             value="Santander">Santander</option>
-                                        <option <?php if ($this->hoja->departamento == 'Sucre') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Sucre') echo 'selected'; ?>
                                             value="Sucre">Sucre</option>
-                                        <option <?php if ($this->hoja->departamento == 'Tolima') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Tolima') echo 'selected'; ?>
                                             value="Tolima">Tolima</option>
-                                        <option <?php if ($this->hoja->departamento == 'ValleCauca') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'ValleCauca') echo 'selected'; ?>
                                             value="ValleCauca">Valle del Cauca</option>
-                                        <option <?php if ($this->hoja->departamento == 'Vaupes') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Vaupes') echo 'selected'; ?>
                                             value="Vaupes">Vaupés</option>
-                                        <option <?php if ($this->hoja->departamento == 'Vichada') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Vichada') echo 'selected'; ?>
                                             value="Vichada">Vichada</option>
-                                        <option <?php if ($this->hoja->departamento == 'Extranjero') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->departamentoNacimiento == 'Extranjero') echo 'selected'; ?>
                                             value="Extranjero">Extranjero</option>
                                     </select>
                                 </div>
@@ -216,24 +247,26 @@ function confirmar() {
                                     <select id="ciudadNacimiento" class="form-control" name="ciudadNacimiento"
                                         aria-required="true" aria-invalid="false" required>
                                         <option value="">Seleccione</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Ibague') echo 'selected'; ?>
+                                        <option <?php if ($this->hoja->ciudadNacimiento == 'Ibague') echo 'selected'; ?>
                                             value="Ibague">Ibague</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Bucaramanga') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->ciudadNacimiento == 'Bucaramanga') echo 'selected'; ?>
                                             value="Bucaramanga">Bucaramanga</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Medellin') echo 'selected'; ?>
+                                        <option
+                                            <?php if ($this->hoja->ciudadNacimiento == 'Medellin') echo 'selected'; ?>
                                             value="Medellin">Medellin</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Neiva') echo 'selected'; ?>
+                                        <option <?php if ($this->hoja->ciudadNacimiento == 'Neiva') echo 'selected'; ?>
                                             value="Neiva">Neiva</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Bogota') echo 'selected'; ?>
+                                        <option <?php if ($this->hoja->ciudadNacimiento == 'Bogota') echo 'selected'; ?>
                                             value="Bogota">Bogota
                                         </option>
 
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="inputPaisNacimiento">pías de nacimiento<strong
+                                    <label for="inputPaisNacimiento">país de nacimiento<strong
                                             style="color:red">*</strong></label>
-                                    <input type="text" value="<?php echo $this->hoja->nacionalidad; ?>"
+                                    <input type="text" value="<?php echo $this->hoja->paisNacimiento; ?>"
                                         name="paisNacimiento" class="form-control" id="paisNacimiento"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,20}" required
                                         title="Solo se aceptan letras">
@@ -742,6 +775,12 @@ function confirmar() {
                             <form action="<?php echo constant('URL'); ?>hojaVidaUsuario/agregarFormacion" method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
+                                        <label>Profesión <strong style="color:red">*</strong></label>
+                                        <input type="text" name="profesion" class="form-control"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
+                                            title="Solo se aceptan letras">
+                                    </div>
+                                    <div class="form-group col-md-12">
                                         <label for="inputNivelEstudios">Nivel de estudios<strong
                                                 style="color:red">*</strong></label>
                                         <select id="inputNivelEstudios" class="form-control" name="nivel"
@@ -769,6 +808,12 @@ function confirmar() {
                                     <div class="form-group col-md-12">
                                         <label>Centro educativo <strong style="color:red">*</strong></label>
                                         <input type="text" name="centro" class="form-control"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
+                                            title="Solo se aceptan letras">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label>País <strong style="color:red">*</strong></label>
+                                        <input type="text" name="formacionPais" class="form-control"
                                             pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,100}" required
                                             title="Solo se aceptan letras">
                                     </div>

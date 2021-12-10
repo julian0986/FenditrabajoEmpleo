@@ -6,6 +6,8 @@
         public $centro = "";
         public $nivel = "";
         public $estado = "";
+        public $profesion = "";
+        public $formacionPais = "";
         public $fechaInicio = "";
         public $fechaFin = "";
         public $usuario = "";        

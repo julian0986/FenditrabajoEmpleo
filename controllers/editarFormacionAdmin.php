@@ -34,6 +34,8 @@ class EditarFormacionAdmin extends Controller
         $centro = $_POST['centro'];
         $nivel = $_POST['nivel'];
         $estado = $_POST['estado'];
+        $profesion = $_POST['profesion'];
+        $formacionPais = $_POST['formacionPais'];
         $fechaInicio = $_POST['fechaInicio'];
         $fechaFin = $_POST['fechaFin'];
         if ($this->model->editar([
@@ -42,6 +44,8 @@ class EditarFormacionAdmin extends Controller
             'centro' => $centro,
             'nivel' => $nivel,
             'estado' => $estado,
+            'profesion' => $profesion,
+            'formacionPais' => $formacionPais,
             'fechaInicio' => $fechaInicio,
             'fechaFin' => $fechaFin,
         ])) {
