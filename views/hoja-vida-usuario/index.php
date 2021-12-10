@@ -592,12 +592,24 @@ function confirmar() {
                                 method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
-                                        <label>Empresa <strong style="color:red">*</strong></label>
+                                        <label>Nombre de la Empresa <strong style="color:red">*</strong></label>
                                         <input type="text" name="empresa" class="form-control"
                                             pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,50}" required
                                             title="Solo se aceptan letras">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-12">
+                                        <label>Perfil <strong style="color:red">*</strong></label>
+                                        <input type="text" name="experfil" class="form-control"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,50}" required
+                                            title="Solo se aceptan letras">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label>Ocupacíon <strong style="color:red">*</strong></label>
+                                        <input type="text" name="exocupacion" class="form-control"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,50}" required
+                                            title="Solo se aceptan letras">
+                                    </div>
+                                    <div class="form-group col-md-4">
                                         <label for="inputDepartamento">Departamento<strong
                                                 style="color:red">*</strong></label>
                                         <select id="inputDepartamento" class="form-control" name="departamento"
@@ -639,6 +651,24 @@ function confirmar() {
                                             <option value="Vichada">Vichada</option>
                                             <option value="Extranjero">Extranjero</option>
                                         </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputExmunicipio">Municipio<strong
+                                                style="color:red">*</strong></label>
+                                        <select id="inputExmunicipio" class="form-control" name="exmunicipio"
+                                            aria-required="true" aria-invalid="false" required>
+                                            <option value="">Seleccione</option>
+                                            <option value="Ibague ">Ibagué </option>
+                                            <option value="Bogota ">Bogotá </option>
+                                            <option value="Medellin ">Medellín </option>
+                                            <option value="Cartagena ">Cartagena </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>País <strong style="color:red">*</strong></label>
+                                        <input type="text" name="exPais" class="form-control"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,50}" required
+                                            title="Solo se aceptan letras">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputSectorEmpresa">Sector de la Empresa<strong
@@ -706,6 +736,10 @@ function confirmar() {
                                             <option value="21">Servicios Generales, Aseo y Seguridad </option>
                                             <option value="22">Ventas</option>
                                         </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Total experiencia <strong style="color:red">*</strong></label>
+                                        <input type="number" name="extotalexpe" class="form-control" required>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPeriodo">Período<strong style="color: red">*</strong></label>

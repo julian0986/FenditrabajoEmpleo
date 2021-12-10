@@ -230,21 +230,31 @@ class HojaVidaUsuario extends Controller
     {
         $this->loadModel('experiencia');
         $empresa = $_POST['empresa'];
+        $exPais = $_POST['exPais'];
         $departamento = $_POST['departamento'];
+        $exmunicipio = $_POST['exmunicipio'];
         $sector = $_POST['sector'];
         $cargo = $_POST['cargo'];
+        $exocupacion = $_POST['exocupacion'];
         $area = $_POST['area'];
         $fechaInicio = $_POST['fechaInicio'];
         $fechaFin = $_POST['fechaFin'];
+        $extotalexpe = $_POST['extotalexpe'];
+        $experfil = $_POST['experfil'];
         $usuario = $_SESSION['idUser'];
         if ($this->model->agregar([
             'empresa' => $empresa,
+            'exPais' => $exPais,
             'departamento' => $departamento,
+            'exmunicipio' => $exmunicipio,
             'sector' => $sector,
             'cargo' => $cargo,
+            'exocupacion' => $exocupacion,
             'area' => $area,
             'fechaInicio' => $fechaInicio,
             'fechaFin' => $fechaFin,
+            'extotalexpe' => $extotalexpe,
+            'experfil' => $experfil,
             'usuario' => $usuario
         ])) {
             echo "<script type='text/javascript'>alert('Se agrego con éxito.');location.href = '" . constant('URL') . "hojaVidaUsuario';</script>";
