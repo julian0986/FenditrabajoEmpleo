@@ -34,11 +34,6 @@ class RegistroPersona extends Controller
             'navegador' => $navegador,
             'fecha' => $fecha
         ])) {
-            $to = $_POST['email'];
-            $from = 'From: soporte@fendipetroleo.com';
-            $subject = 'Recuperar contraseña';
-            $message = 'Bienvenido a Fenditrabajo: ';
-            mail($to, $subject, $message, $from);
             echo "<script type='text/javascript'>alert('Se registro exitosamente');</script>;";
         } else {
             echo "<script type='text/javascript'>alert('El correo ya existe');</script>;";
