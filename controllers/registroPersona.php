@@ -36,8 +36,8 @@ class RegistroPersona extends Controller
         ])) {
             $to = $_POST['email'];
             $from = 'From: soporte@fendipetroleo.com';
-            $subject = 'Recuperar contraseña';
-            $message = 'Bienvenido a Fenditrabajo: ';
+            $subject = 'Registrado de forma exitosa';
+            $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/loginPersona ';
             mail($to, $subject, $message, $from);
             echo "<script type='text/javascript'>alert('Se registro exitosamente');</script>;";
         } else {
