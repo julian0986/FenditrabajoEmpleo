@@ -89,7 +89,12 @@ class LoginEmpresa extends Controller
             'correoE' => $correoE,
             'telefonoE' => $telefonoE
         ])) {
-            echo "<script type='text/javascript'>window.alert('Se registro exitosamente');</script>";
+            $to = $_POST['email'];
+            $from = 'From: soporte@fendipetroleo.com';
+            $subject = 'registro exitoso';
+            $message = 'Accede al siguiente link para iniciar sesión http://localhost/FenditrabajoEmpleo/loginEmpresa ';
+            mail($to, $subject, $message, $from);
+            echo "<script type='text/javascript'>window.alert('Se registro exitosamente, verifica tu correo');</script>";
         } else {
             echo "<script type='text/javascript'>window.alert('El correo ya existe');</script>";
         }
