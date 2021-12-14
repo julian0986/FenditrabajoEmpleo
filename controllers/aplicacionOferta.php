@@ -44,6 +44,7 @@ class AplicacionOferta extends Controller
         $fecha = date("Y-m-d");
 
         if ($this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha])) {
+            //Aqui se va a colocar el codigo para la notificacion via correo 
             echo "<script type='text/javascript'>location.href = '" . constant('URL') . "aplicacionOferta';</script>";
         } else {
             echo "no se pudo aplicar con exito";
