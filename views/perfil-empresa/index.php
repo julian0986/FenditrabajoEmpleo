@@ -57,8 +57,8 @@
                 <h1 class="text-center">Perfil Empresa</h1>
                 <form action="<?php echo constant('URL'); ?>perfilEmpresa/editarPerfil" method="POST"
                     enctype="multipart/form-data">
-                    <div class="card" style="width: 100%;border-radius: 0%;">
-                        <div class="card-header">
+                    <div class="card bordercar">
+                        <div class="card-header bg-blue">
                             <h4 class="card-title text-center">Datos Generales</h4>
                         </div>
                         <div class="card-body">
@@ -359,8 +359,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card" style="border-radius: 0%;">
-                        <div class="card-header">
+                    <div class="card bordercar">
+                        <div class="card-header bg-blue">
                             <h4 class="card-title text-center">Datos del contacto</h4>
                         </div>
                         <div class="card-body">

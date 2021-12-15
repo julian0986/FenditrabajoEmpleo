@@ -42,16 +42,16 @@
 <body>
     <?php require "views/header/header-empresa.php"; ?>
     <div>
-        <div class="container pd">
-            <div class="row">
-                <div class="col-md-8">
+        <div class="container pd ">
+            <div class="row ">
+                <div class="col-md-8 ">
                     <div class="col-md-12">
-                        <div class="card">
+                        <div class="card bordercarperemp">
                             <div class="card-body row">
                                 <div class="col-md-3 align-self-center">
                                     <img src="<?php echo constant('URL') . $this->empresa->isotipo; ?>" alt="" width="100%">
                                 </div>
-                                <div class="col-md-9 align-self-center">
+                                <div class="col-md-9 align-self-center ">
                                     <h3><?php echo $this->empresa->nombre; ?></h3>
                                     <h5><?php echo $this->empresa->departamento; ?></h5>
                                     <!---<h5>Mis ofertas: 0</h5>-->
@@ -66,9 +66,9 @@
                         </div>
                     </div>
                     <div class="col-md-12" style="margin-top:2%">
-                        <div class="card">
+                        <div class="card bordercarperemp">
                             <div class="card-body">
-                                <h1>INFORMACION DE LA EMPRESA</h1>
+                                <h3>INFORMACION DE LA EMPRESA</h3>
                                 <p class="text-justify"><?php echo $this->empresa->descripcion; ?></p>
                             </div>
                         </div>
