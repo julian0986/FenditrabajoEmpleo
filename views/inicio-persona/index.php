@@ -52,7 +52,7 @@
     <div class="container pd">
         <div class="row">
             <div class="col-md-4">
-                <div class="card" style="border-width: 3px; border-color: #224b8b;">
+                <div class="card bordercarperemp">
                     <div class="card-body row">
                         <div class="col-md-7">
                             <h5><?php echo $this->persona['nombre'] . ' ' . $this->persona['apellido']; ?></h5>
