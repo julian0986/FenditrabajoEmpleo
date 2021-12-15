@@ -43,6 +43,16 @@ class EditarEmpresa extends Controller
         $cargoE = $_POST['cargoE'];
         $correoE = $_POST['correoE'];
         $telefonoE = $_POST['telefonoE'];
+        $nombreEds = $_POST['nombreEds'];
+        $sicomEds = $_POST['sicomEds'];
+        $telEds = $_POST['telEds'];
+        $afiliadoEds = $_POST['afiliadoEds'];
+        $dependenciaEds = $_POST['dependenciaEds'];
+        $arlEds = $_POST['arlEds'];
+        $nivelRiesgoEds = $_POST['nivelRiesgoEds'];
+        $numEmpleadosEds = $_POST['numEmpleadosEds'];
+        $tipoDocuContacto = $_POST['tipoDocuContacto'];
+        $numDocuContacto = $_POST['numDocuContacto'];
 
         if ($this->model->editarEmpresa([
             'id' => $_SESSION['idEmp'],
@@ -58,7 +68,17 @@ class EditarEmpresa extends Controller
             'apellidoE' => $apellidoE,
             'correoE' => $correoE,
             'cargoE' => $cargoE,
-            'telefonoE' => $telefonoE
+            'telefonoE' => $telefonoE,
+            'nombreEds' => $nombreEds,
+            'sicomEds' => $sicomEds,
+            'telEds' => $telEds,
+            'afiliadoEds' => $afiliadoEds,
+            'dependenciaEds' => $dependenciaEds,
+            'arlEds' => $arlEds,
+            'nivelRiesgoEds' => $nivelRiesgoEds,
+            'numEmpleadosEds' => $numEmpleadosEds,
+            'tipoDocuContacto' => $tipoDocuContacto,
+            'numDocuContacto' => $numDocuContacto
         ])) {
             echo "<script type='text/javascript'>alert('Se actualizo correctamente');location.href = '" . constant('URL') . "crudEmpresas';</script>";
         } else {

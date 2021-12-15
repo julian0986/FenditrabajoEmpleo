@@ -104,16 +104,95 @@
                             <h5 class="card-title text-center">Información EDS</h5>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="inputNombreEmpresa">Nombre comercial de la Empresa <strong
+                                    <label for="inputNombreEmpresa">Nombre o Razón social<strong
                                             style="color:red">*</strong></label>
                                     <input type="text" name="nombre" class="form-control" id="inputNombreEmpresa"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,100}" required
                                         title="Solo se aceptan letras">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputNit">NIT de la Empresa <strong style="color:red">*</strong></label>
+                                    <label for="inputNit">NIT o Numero de documento<strong
+                                            style="color:red">*</strong></label>
                                     <input type="text" name="nit" class="form-control" id="inputNit"
                                         pattern="[0-9.- ]{8,50}" title="Solo se aceptan numeros">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputNombreEds">Nombre de la EDS<strong
+                                            style="color:red">*</strong></label>
+                                    <input type="text" name="nombreEds" class="form-control" id="inputNombreEds"
+                                        pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,50}" required
+                                        title="Solo se aceptan letras">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputSicomEds">Numero sicom<strong style="color:red">*</strong></label>
+                                    <input type="text" class="form-control" name="sicomEds" class="form-control"
+                                        id="inputSicomEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" maxlength="6"
+                                        required title="Solo se aceptan numeros">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputTelEds">Teléfono EDS <strong style="color:red">*</strong></label>
+                                    <input type="text" class="form-control" name="telEds" class="form-control"
+                                        id="inputTelEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
+                                        title="Solo se aceptan numeros">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="selectAfiliadoEds">Afiliado a Fendipetroleo? <strong
+                                            style="color:red">*</strong></label>
+                                    <select class="form-control" name="afiliadoEds" id="selectAfiliadoEds">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="selectDependenciaEds">Dependencia <strong
+                                            style="color:red">*</strong></label>
+                                    <select class="form-control" name="dependenciaEds" id="selectDependenciaEds">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="Adiconar">Adiconar</option>
+                                        <option value="Imzacom">Imzacom</option>
+                                        <option value="Dispeguajira">Dispeguajira</option>
+                                        <option value="Seccional Caribe">Seccional Caribe</option>
+                                        <option value="Seccional Caldas">Seccional Caldas</option>
+                                        <option value="Seccional Cesar">Seccional Cesar</option>
+                                        <option value="Seccional Cordoba">Seccional Córdoba</option>
+                                        <option value="Seccional Huila Y Caqueta">Seccional Huila Y Caquetá</option>
+                                        <option value="Seccional Magdalena Medio">Seccional Magdalena Medio</option>
+                                        <option value="Seccional Quindio">Seccional Quindio</option>
+                                        <option value="Seccional Orinoquia">Seccional Orinoquia</option>
+                                        <option value="Seccional Sucre">Seccional Sucre</option>
+                                        <option value="Seccional Tolima Y Girardot">Seccional Tolima Y Girardot</option>
+                                        <option value="Seccional Santander">Seccional Santander</option>
+                                        <option value="Seccional Dispeguajira">Seccional Dispeguajira</option>
+                                        <option value="Seccional Narino">Seccional Nariño</option>
+                                        <option value="Dependencia Antioquia Y Choco">Dependencia Antioquia Y Chocó
+                                        </option>
+                                        <option value="Dependencia Bogota Y Cundinamarca">Dependencia Bogotá Y
+                                            Cundinamarca</option>
+                                        <option value="Seccional Bolivar, San Andres Y Providencia">Seccional Bolívar,
+                                            San Andrés Y Providencia</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputArlEds">Arl de la EDS<strong style="color:red">*</strong></label>
+                                    <input type="text" class="form-control" id="inputArlEds"
+                                        pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,50}" required
+                                        title="Solo se aceptan letras">
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputNivelRiesgoEds">Nivel de riesgo<strong
+                                            style="color:red">*</strong></label>
+                                    <input type="text" class="form-control" name="nivelRiesgoEds" class="form-control"
+                                        id="inputNivelRiesgoEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
+                                        title="Solo se aceptan numeros">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputNumEmpleadosEds"># de empleados<strong
+                                            style="color:red">*</strong></label>
+                                    <input type="text" class="form-control" name="numEmpleadosEds" class="form-control"
+                                        id="inputNumEmpleadosEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
+                                        title="Solo se aceptan numeros">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputCorreoCon">Correo de la Empresa<strong
@@ -214,6 +293,23 @@
                                     <input type="text" name="apellidoE" class="form-control" id="inputApellidos"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,50}" required
                                         title="Solo se aceptan letras">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPipoDocuContacto">Tipo de documento<strong
+                                            style="color:red">*</strong></label>
+                                    <select id="inputPipoDocuContacto" class="form-control" name="tipoDocuContacto"
+                                        required>
+                                        <option value="">Seleccione</option>
+                                        <option value="cc">Cédula de ciudadanía</option>
+                                        <option value="ce">Cédula de extranjería</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputNumDocuContacto">Numero de documento <strong
+                                            style="color:red">*</strong></label>
+                                    <input type="text" name="numDocuContacto" class="form-control"
+                                        id="inputNumDocuContacto" pattern="[0-9.- ]{8,50}"
+                                        title="Solo se aceptan numeros">
                                 </div>
                             </div>
                             <div class="form-group">

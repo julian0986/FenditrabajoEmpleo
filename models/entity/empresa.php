@@ -16,6 +16,16 @@ class Empresa
     public $cargoE;
     public $correoE;
     public $telefonoE;
+    public $nombreEds;
+    public $sicomEds;
+    public $telEds;
+    public $afiliadoEds;
+    public $dependenciaEds;
+    public $arlEds;
+    public $nivelRiesgoEds;
+    public $numEmpleadosEds;
+    public $tipoDocuContacto;
+    public $numDocuContacto;
     public $correo;
     public $contrasena;
 

@@ -65,7 +65,7 @@
                             <div class="form-row">
                                 <div class="form-row col-md-8">
                                     <div class="form-group col-md-12">
-                                        <label for="inputNombreEmpresa">Nombre de la empresa <strong
+                                        <label for="inputNombreEmpresa">Nombre o Razón social<strong
                                                 style="color:red">*</strong></label>
                                         <input type="text" value="<?php echo $this->empresa->nombre; ?>" name="nombre"
                                             class="form-control" id="inputNombreEmpresa"
@@ -73,10 +73,138 @@
                                             title="Solo se aceptan letras">
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <label for="inputNIT">NIT <strong style="color:red">*</strong></label>
+                                        <label for="inputNIT">NIT o Numero de documento <strong
+                                                style="color:red">*</strong></label>
                                         <input type="text" value="<?php echo $this->empresa->nit; ?>" name="nit"
                                             class="form-control" id="inputNIT" pattern="[0-9.- ]{8,50}"
                                             title="Solo se aceptan numeros">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="inputNombreEds">Nombre de la EDS<strong
+                                                style="color:red">*</strong></label>
+                                        <input type="text" value="<?php echo $this->empresa->nombreEds; ?>"
+                                            name="nombreEds" class="form-control" id="inputNombreEds"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,50}" required
+                                            title="Solo se aceptan letras">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputSicomEds">Numero sicom<strong
+                                                style="color:red">*</strong></label>
+                                        <input type="text" value="<?php echo $this->empresa->sicomEds; ?>"
+                                            class="form-control" name="sicomEds" class="form-control" id="inputSicomEds"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" maxlength="6" required
+                                            title="Solo se aceptan numeros">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputTelEds">Teléfono EDS <strong
+                                                style="color:red">*</strong></label>
+                                        <input type="text" value="<?php echo $this->empresa->telEds; ?>"
+                                            class="form-control" name="telEds" class="form-control" id="inputTelEds"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
+                                            title="Solo se aceptan numeros">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="selectAfiliadoEds">Afiliado a Fendipetroleo? <strong
+                                                style="color:red">*</strong></label>
+                                        <select class="form-control" name="afiliadoEds" id="selectAfiliadoEds">
+                                            <option value="">Seleccione una opción</option>
+                                            <option <?php if ($this->empresa->afiliadoEds == 'Si') echo 'selected'; ?>
+                                                value="Si">Si</option>
+                                            <option <?php if ($this->empresa->afiliadoEds == 'No') echo 'selected'; ?>
+                                                value="No">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="selectDependenciaEds">Dependencia <strong
+                                                style="color:red">*</strong></label>
+                                        <select class="form-control" name="dependenciaEds" id="selectDependenciaEds">
+                                            <option value="">Seleccione una opción</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Adiconar') echo 'selected'; ?>
+                                                value="Adiconar">Adiconar</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Imzacom') echo 'selected'; ?>
+                                                value="Imzacom">Imzacom</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Dispeguajira') echo 'selected'; ?>
+                                                value="Dispeguajira">Dispeguajira</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Caribe') echo 'selected'; ?>
+                                                value="Seccional Caribe">Seccional Caribe</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Caldas') echo 'selected'; ?>
+                                                value="Seccional Caldas">Seccional Caldas</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Cesar') echo 'selected'; ?>
+                                                value="Seccional Cesar">Seccional Cesar</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Cordoba') echo 'selected'; ?>
+                                                value="Seccional Cordoba">Seccional Córdoba</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Huila Y Caqueta') echo 'selected'; ?>
+                                                value="Seccional Huila Y Caqueta">Seccional Huila Y Caquetá</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Magdalena Medio') echo 'selected'; ?>
+                                                value="Seccional Magdalena Medio">Seccional Magdalena Medio</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Quindio') echo 'selected'; ?>
+                                                value="Seccional Quindio">Seccional Quindio</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Orinoquia') echo 'selected'; ?>
+                                                value="Seccional Orinoquia">Seccional Orinoquia</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Sucre') echo 'selected'; ?>
+                                                value="Seccional Sucre">Seccional Sucre</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Tolima Y Girardot') echo 'selected'; ?>
+                                                value="Seccional Tolima Y Girardot">Seccional Tolima Y Girardot</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Santander') echo 'selected'; ?>
+                                                value="Seccional Santander">Seccional Santander</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Dispeguajira') echo 'selected'; ?>
+                                                value="Seccional Dispeguajira">Seccional Dispeguajira</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Narino') echo 'selected'; ?>
+                                                value="Seccional Narino">Seccional Nariño</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Dependencia Antioquia Y Choco') echo 'selected'; ?>
+                                                value="Dependencia Antioquia Y Choco">Dependencia Antioquia Y Chocó
+                                            </option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Dependencia Bogota Y Cundinamarca') echo 'selected'; ?>
+                                                value="Dependencia Bogota Y Cundinamarca">Dependencia Bogotá Y
+                                                Cundinamarca</option>
+                                            <option
+                                                <?php if ($this->empresa->dependenciaEds == 'Seccional Bolivar, San Andres Y Providencia') echo 'selected'; ?>
+                                                value="Seccional Bolivar, San Andres Y Providencia">Seccional Bolívar,
+                                                San Andrés Y Providencia</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputArlEds">Arl de la EDS<strong
+                                                style="color:red">*</strong></label>
+                                        <input type="text" value="<?php echo $this->empresa->arlEds; ?>" name="arlEds"
+                                            class="form-control" id="inputArlEds"
+                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,50}" required
+                                            title="Solo se aceptan letras">
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="inputNivelRiesgoEds">Nivel de riesgo<strong
+                                                style="color:red">*</strong></label>
+                                        <input type="text" value="<?php echo $this->empresa->nivelRiesgoEds; ?>"
+                                            class="form-control" name="nivelRiesgoEds" class="form-control"
+                                            id="inputNivelRiesgoEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
+                                            title="Solo se aceptan numeros">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputNumEmpleadosEds"># de empleados<strong
+                                                style="color:red">*</strong></label>
+                                        <input type="text" value="<?php echo $this->empresa->telEds; ?>"
+                                            class="form-control" name="numEmpleadosEds" class="form-control"
+                                            id="inputNumEmpleadosEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}"
+                                            required title="Solo se aceptan numeros">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputCorreoCon">Correo de la empresa <strong
@@ -237,14 +365,14 @@
                         </div>
                         <div class="card-body">
                             <div class="form-row">
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-6">
                                     <label for="inputNombre">Nombres persona contacto <strong
                                             style="color:red">*</strong></label>
                                     <input type="text" value="<?php echo $this->empresa->nombreE; ?>" name="nombreE"
                                         class="form-control" id="inputNombre" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,50}"
                                         required title="Solo se aceptan letras">
                                 </div>
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-6">
                                     <label for="inputApellido">Apellidos persona contacto <strong
                                             style="color:red">*</strong></label>
                                     <input type="text" value="<?php echo $this->empresa->apellidoE; ?>" name="apellidoE"
@@ -252,11 +380,24 @@
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,50}" required
                                         title="Solo se aceptan letras">
                                 </div>
-                                <div class="form-group col-md-12">
-                                    <label for="inputCorreoE">Correo persona contacto <strong
+                                <div class="form-group col-md-6">
+                                    <label for="inputPipoDocuContacto">Tipo de documento<strong
                                             style="color:red">*</strong></label>
-                                    <input type="email" value="<?php echo $this->empresa->correoE; ?>" name="correoE"
-                                        class="form-control" id="inputCorreoE">
+                                    <select id="inputPipoDocuContacto" class="form-control" name="tipoDocuContacto"
+                                        required>
+                                        <option value="">Seleccione</option>
+                                        <option <?php if ($this->empresa->tipoDocuContacto == 'cc') echo 'selected'; ?>
+                                            value="cc">Cédula de ciudadanía</option>
+                                        <option <?php if ($this->empresa->tipoDocuContacto == 'ce') echo 'selected'; ?>
+                                            value="ce">Cédula de extranjería</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputNumDocuContacto">Numero de documento <strong
+                                            style="color:red">*</strong></label>
+                                    <input type="text" value="<?php echo $this->empresa->numDocuContacto; ?>"
+                                        name="numDocuContacto" class="form-control" id="inputNumDocuContacto"
+                                        pattern="[0-9.- ]{8,50}" title="Solo se aceptan numeros">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="selectCargo">Cargo persona contacto <strong
@@ -284,6 +425,12 @@
                                         class="form-control" name="telefonoE" class="form-control" id="inputTelefono"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
                                         title="Solo se aceptan numeros">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputCorreoE">Correo persona contacto <strong
+                                            style="color:red">*</strong></label>
+                                    <input type="email" value="<?php echo $this->empresa->correoE; ?>" name="correoE"
+                                        class="form-control" id="inputCorreoE">
                                 </div>
                             </div>
                         </div>
