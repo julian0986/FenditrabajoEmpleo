@@ -130,9 +130,11 @@ class LoginEmpresa extends Controller
         }
         $archivo = $directorio . basename($_FILES["file"]["name"]);
 
+       
         $tipoArchivo = strtolower(pathinfo($archivo, PATHINFO_EXTENSION));
 
         // valida que es imagen
+        if ($tipoArchivo) {
         $checarSiImagen = getimagesize($_FILES["file"]["tmp_name"]);
 
         //var_dump($size);
@@ -160,7 +162,10 @@ class LoginEmpresa extends Controller
         } else {
             echo "<script type='text/javascript'>alert('El documento no es una imagen')</script>";
         }
+    } else {
+        return false;
     }
+ }
 
     function cerrarSesion()
     {

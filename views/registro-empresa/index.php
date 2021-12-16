@@ -175,7 +175,7 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputArlEds">Arl de la EDS<strong style="color:red">*</strong></label>
-                                    <input type="text" class="form-control" id="inputArlEds"
+                                    <input type="text" class="form-control" name="arlEds" id="inputArlEds"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,50}" required
                                         title="Solo se aceptan letras">
                                 </div>
@@ -183,14 +183,14 @@
                                 <div class="form-group col-md-4">
                                     <label for="inputNivelRiesgoEds">Nivel de riesgo<strong
                                             style="color:red">*</strong></label>
-                                    <input type="text" class="form-control" name="nivelRiesgoEds" class="form-control"
+                                    <input type="text" class="form-control" name="nivelRiesgoEds"
                                         id="inputNivelRiesgoEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
                                         title="Solo se aceptan numeros">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputNumEmpleadosEds"># de empleados<strong
                                             style="color:red">*</strong></label>
-                                    <input type="text" class="form-control" name="numEmpleadosEds" class="form-control"
+                                    <input type="text" class="form-control" name="numEmpleadosEds"
                                         id="inputNumEmpleadosEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" required
                                         title="Solo se aceptan numeros">
                                 </div>
