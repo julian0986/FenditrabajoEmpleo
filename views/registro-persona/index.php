@@ -59,9 +59,6 @@
     -o-background-size: cover !important;
 }
 
-.iconoregistro {
-    color: #1b4573;
-}
 
 .btnregistro {
     background-color: #1b4573;
@@ -77,7 +74,7 @@
                 </div>
                 <div class="col-md-8 shadow p-3 mb-5 bg-white rounded ">
                     <div class="card">
-                        <div class="card-header iconoregistro">
+                        <div class="card-header bg-blue">
                             <h4 class="card-title text-center">
                                 <ion-icon name="person-sharp"></ion-icon> REGISTRATE
                             </h4>

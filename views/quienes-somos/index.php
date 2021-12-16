@@ -134,7 +134,7 @@ h2 {
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1>Nuestra plataforma</h1>
+                    <!-- <h1>Nuestra plataforma</h1> -->
                     <br>
                     <h2>¿ Quienes Somos ?</h2>
                     <p class="text-justify">La Federación Nacional de Distribuidores de Combustibles y Energéticos –

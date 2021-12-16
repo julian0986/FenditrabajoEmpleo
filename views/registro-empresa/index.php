@@ -67,12 +67,11 @@
     padding-top: 2%
 }
 
-.iconoregistro {
-    color: #1b4573;
-}
+
 
 .btnregistro {
     background-color: #1b4573;
+    margin-top: 15px;
 }
 </style>
 
@@ -82,8 +81,8 @@
         <div class="container pd ">
             <div class="shadow-lg p-3 mb-5 bg-white rounded">
                 <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title text-center iconoregistro">
+                    <div class="card-header bg-blue">
+                        <h4 class="card-title text-center ">
                             <ion-icon name="briefcase"></ion-icon> Registra tu EDS
                         </h4>
                     </div>

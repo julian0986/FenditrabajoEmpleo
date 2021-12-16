@@ -44,9 +44,9 @@
     <?php require "views/header/header-empresa.php"; ?>
 
     <div class="container pd">
-        <h1 class="text-center pd">Pública tu oferta llenando el siguiente formato</h1>
+        <h2 class="text-center pd">Pública tu oferta llenando el siguiente formato</h2>
         <div class="card" style="width: 100%;">
-            <div class="card-header">
+            <div class="card-header bg-blue">
                 <h4 class="card-title text-center">Datos de registro de oferta</h4>
             </div>
             <div class="card-body">
