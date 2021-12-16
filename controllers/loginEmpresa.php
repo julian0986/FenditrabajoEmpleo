@@ -71,6 +71,16 @@ class LoginEmpresa extends Controller
         $cargoE = $_POST['cargoE'];
         $correoE = $_POST['correoE'];
         $telefonoE = $_POST['telefonoE'];
+        $nombreEds = $_POST['nombreEds'];
+        $sicomEds = $_POST['sicomEds'];
+        $telEds = $_POST['telEds'];
+        $afiliadoEds = $_POST['afiliadoEds'];
+        $dependenciaEds = $_POST['dependenciaEds'];
+        $arlEds = $_POST['arlEds'];
+        $nivelRiesgoEds = $_POST['nivelRiesgoEds'];
+        $numEmpleadosEds = $_POST['numEmpleadosEds'];
+        $tipoDocuContacto = $_POST['tipoDocuContacto'];
+        $numDocuContacto = $_POST['numDocuContacto'];
 
         if ($this->model->nuevaEmpresa([
             'email' => $email,
@@ -87,7 +97,17 @@ class LoginEmpresa extends Controller
             'apellidoE' => $apellidoE,
             'cargoE' => $cargoE,
             'correoE' => $correoE,
-            'telefonoE' => $telefonoE
+            'telefonoE' => $telefonoE,
+            'nombreEds' => $nombreEds,
+            'sicomEds' => $sicomEds,
+            'telEds' => $telEds,
+            'afiliadoEds' => $afiliadoEds,
+            'dependenciaEds' => $dependenciaEds,
+            'arlEds' => $arlEds,
+            'nivelRiesgoEds' => $nivelRiesgoEds,
+            'numEmpleadosEds' => $numEmpleadosEds,
+            'tipoDocuContacto' => $tipoDocuContacto,
+            'numDocuContacto' => $numDocuContacto
         ])) {
             $to = $_POST['email'];
             $from = 'From: soporte@fendipetroleo.com';
