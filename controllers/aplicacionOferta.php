@@ -41,15 +41,14 @@ class AplicacionOferta extends Controller
     {
         $idOferta = $param[0];
         $usuario = $_SESSION['idUser'];
+        $correo = $param[0];
         $fecha = date("Y-m-d");
-
-        if ($this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha])) {
+        if ($this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'correo' => $correo, 'fecha' => $fecha])) {
             //Aqui se va a colocar el codigo para la notificacion via correo 
-            
-            $to = 'correoE';
+            $to = $correo;
             $from = 'From: soporte@fendipetroleo.com';
             $subject = 'Aplicación Exitosa';
-            $message = 'han aplicado a una oferta publicada ';
+            $message = 'han aplicado a una oferta publicada';
             mail($to, $subject, $message, $from);
 
             echo "<script type='text/javascript'>location.href = '" . constant('URL') . "aplicacionOferta';</script>";

@@ -17,11 +17,11 @@
         {
             try {
 
-                $query = $this->db->connect()->prepare('SELECT * FROM tb_aspiracion INNER JOIN tb_oferta ON tb_oferta.of_id = tb_aspiracion.fk_as_oferta INNER JOIN tb_empresa ON tb_empresa.em_id = tb_oferta.fk_of_empresa WHERE fk_as_usuario = :usuario AND fk_as_oferta = :oferta AND em_correo_e = :correoE');
+                $query = $this->db->connect()->prepare('SELECT * FROM tb_aspiracion INNER JOIN tb_oferta ON tb_oferta.of_id = tb_aspiracion.fk_as_oferta INNER JOIN tb_empresa ON tb_empresa.em_id = tb_oferta.fk_of_empresa WHERE fk_as_usuario = :usuario AND fk_as_oferta = :oferta AND em_correo = :correo');
                 $query->execute([
                     'usuario' => $datos['usuario'],
                     'oferta' => $datos['oferta'],
-                    'correoE' => $datos ['correoE']
+                    'correo' => $datos ['correo']
                 ]);
 
                 if (!$query->rowCount()) {
