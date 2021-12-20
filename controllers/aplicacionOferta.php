@@ -41,7 +41,7 @@ class AplicacionOferta extends Controller
     {
         $idOferta = $param[0];
         $usuario = $_SESSION['idUser'];
-        $correoE = ['correoE'];
+        $correoE = $_POST['correoE'];
         $fecha = date("Y-m-d");
 
         if ($this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'correoE' => $correoE, 'fecha' => $fecha])) {
