@@ -41,9 +41,10 @@ class AplicacionOferta extends Controller
     {
         $idOferta = $param[0];
         $usuario = $_SESSION['idUser'];
+        $correoE = ['correoE'];
         $fecha = date("Y-m-d");
 
-        if ($this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario,'fecha' => $fecha])) {
+        if ($this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'correoE' => $correoE, 'fecha' => $fecha])) {
             //Aqui se va a colocar el codigo para la notificacion via correo 
             
             $to = $_POST['correoE'];
