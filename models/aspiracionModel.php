@@ -1,6 +1,7 @@
  <?php
 
     require 'models/entity/oferta.php';
+    require 'models/entity/empresa.php';
     require 'models/entity/persona.php';
     require 'models/entity/personaAsp.php';
 
