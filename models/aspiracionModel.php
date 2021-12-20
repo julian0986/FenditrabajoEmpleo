@@ -21,7 +21,7 @@
                 $query->execute([
                     'usuario' => $datos['usuario'],
                     'oferta' => $datos['oferta'],
-                    'correoE' => $datos ['correoE']
+                    'correoE' => ['correoE']
                 ]);
 
                 if (!$query->rowCount()) {
