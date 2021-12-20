@@ -30,7 +30,6 @@
                     $query->execute([
                         'usuario' => $datos['usuario'],
                         'oferta' => $datos['oferta'],
-                        'correoE' => $datos ['correoE'],
                         'fecha' => $datos['fecha']
                     ]);
                 }
