@@ -136,7 +136,7 @@ h2 {
                 <div class="col-md-7">
                     <!-- <h1>Nuestra plataforma</h1> -->
                     <br>
-                    <h2>¿ Quienes Somos ?</h2>
+                    <h2>¿ Quiénes Somos ?</h2>
                     <p class="text-justify">La Federación Nacional de Distribuidores de Combustibles y Energéticos –
                         Fendipetróleo, es una organización gremial, sin ánimo de lucro, creada en 1971 para representar
                         los intereses de los distribuidores minoristas de combustibles líquidos y gas natural vehicular,
@@ -159,8 +159,9 @@ h2 {
         <div class="what_we_do">
             <div class="container">
                 <div class="main-heading">Nuestro proceso es simple</div><br>
-                <div class="whatText">Con estos simples pasos puedes acceder a una Oferta de los <br> Distribuidores
-                    Minoristas que se estan en nuestra de Base de Datos.</div>
+                <div class="whatText">sigue los siguientes pasos para aplicar a las ofertas publicadas por los
+                    distribuidores
+                    minoristas.</div>
                 <ul class="row whatList">
                     <li class="col-md-4 col-sm-6">
                         <div class="iconWrap">
@@ -197,13 +198,13 @@ h2 {
                     </div>
                     <div class="col-md-7">
                         <h2>Objetivo</h2>
-                        <p class="text-justify">Fendipetroleo Nacional busca brindar mayores beneficios para los
-                            distribuidores de combustible y gas
-                            natural vehicular a nivel nacional aportando a la generación de empleo formal y decente en
-                            el sector, por medio de la creación de
-                            una plataforma que permita el acercamiento entre distribuidores minoristas de combustibles
-                            líquidos derivados del petróleo y
-                            oferentes con el fin de facilitar la vinculación laboral de personas para el sector. <br>
+                        <p class="text-justify">En busca de brindar mayores beneficios para los distribuidores de
+                            combustible y gas natural vehicular a nivel nacional y aportar a la
+                            generación de empleo formal. Fendipetroleo Nacional crea
+                            FENDITRABAJO, una agencia privada no lucrativa que busca el
+                            acercamiento entre distribuidores minoristas de combustibles líquidos
+                            derivados del petróleo y oferentes, facilitando la vinculación laboral de
+                            personas para el sector. <br>
                             <br>
 
 

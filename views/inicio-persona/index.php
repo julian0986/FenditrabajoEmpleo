@@ -198,7 +198,7 @@
                 </div>
                 <div class="card  shadow-lg  mb-5 bg-white rounded" style="border-color: #224b8b;">
                     <div class="card-header bg-blue">
-                        <h4>Telleres de formación</h4>
+                        <h4>Talleres de formación</h4>
                     </div>
                     <div class="card-body">
                         <?php

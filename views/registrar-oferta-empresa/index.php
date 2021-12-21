@@ -44,7 +44,7 @@
     <?php require "views/header/header-empresa.php"; ?>
 
     <div class="container pd">
-        <h2 class="text-center pd">Pública tu oferta llenando el siguiente formato</h2>
+        <h2 class="text-center pd">Diligencia el siguiente formulario, o información de la oferta.</h2>
         <div class="card" style="width: 100%;">
             <div class="card-header bg-blue">
                 <h4 class="card-title text-center">Datos de registro de oferta</h4>
