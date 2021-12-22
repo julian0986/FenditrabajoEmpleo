@@ -123,7 +123,7 @@
                                     <img style="border-radius: 10px;"
                                         src="<?php echo constant('URL') . $curso->isotipo; ?>" class="card-img-top"
                                         width="300px" height="200px">
-                                    <div class="card-footer" style="border-color: transparent; background: transparent">
+                                    <div class="card-footer btninicioper" style="border-color: transparent; background: transparent">
                                         <h5 class="card-title"><?php echo $curso->nombre; ?></h5>
                                         <a href="<?php echo $curso->link; ?>" class="btn btn-primary">Ir al Curso</a>
                                     </div>

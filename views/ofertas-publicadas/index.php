@@ -63,7 +63,7 @@
                         $oferta = new Oferta();
                         $oferta = $row;
                     ?>
-                        <div class="card mb">
+                        <div class="card mb bordercarperemp">
                             <div class="card-header" id="ofertaUno">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -113,7 +113,7 @@
                     </nav>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center mt-m bordercarperemp">
                         <?php
                         include_once 'models/entity/publicidad.php';
                         foreach ($this->publicidadB as $row) {

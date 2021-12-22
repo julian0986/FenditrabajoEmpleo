@@ -45,7 +45,7 @@
 
     <div class="container pd">
         <h2 class="text-center pd">Diligencia el siguiente formulario, o información de la oferta.</h2>
-        <div class="card" style="width: 100%;">
+        <div class="card bordercar" style="width: 100%;">
             <div class="card-header bg-blue">
                 <h4 class="card-title text-center">Datos de registro de oferta</h4>
             </div>
@@ -132,7 +132,7 @@
                             <textarea class="form-control" name="descripcion" id="inputDescripcion" rows="8" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{10,500}" required title="Solo se aceptan letras y numeros"></textarea>
                         </div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center btninicioper">
                         <button type="submit" class="btn btn-primary">Registrar oferta</button>
                     </div>
                 </form>
@@ -158,7 +158,7 @@
                                 ?>
                                     <div class="card" style="border-color: transparent">
                                         <img style="border-radius: 10px;" src="<?php echo constant('URL') . $curso->isotipo; ?>" class="card-img-top" width="300px" height="200px">
-                                        <div class="card-footer" style="border-color: transparent; background: transparent">
+                                        <div class="card-footer btninicioper" style="border-color: transparent; background: transparent">
                                             <h5 class="card-title"><?php echo $curso->nombre; ?></h5>
                                             <a href="<?php echo $curso->link; ?>" class="btn btn-primary">Ir al Curso</a>
                                         </div>
