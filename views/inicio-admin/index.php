@@ -51,10 +51,10 @@
 <body>
     <?php require "views/header/header-admin.php"; ?>
     <div class="container pd">
-        <table class="table table-bordered" style="border-color: black;">
-            <tbody>
-                <tr class="text-center bg-blue">
-                    <th colspan="5">
+        <table class="table table-bordered">
+            <tbody class="shadow-lg p-3 mb-5 bg-white rounded">
+                <tr class="text-center bg-blue rounded-top">
+                    <th class="rounded-top" colspan="5">
                         <h2>Panel de Administración</h2>
                     </th>
                 </tr>
