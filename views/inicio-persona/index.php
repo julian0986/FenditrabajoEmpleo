@@ -152,7 +152,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card text-center mb">
+                <div class="card text-center mb mt bordercarperemp">
                     <?php
                     include_once 'models/entity/publicidad.php';
                     foreach ($this->publicidadB as $row) {
