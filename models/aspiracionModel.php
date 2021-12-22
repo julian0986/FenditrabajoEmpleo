@@ -1,7 +1,6 @@
  <?php
 
     require 'models/entity/oferta.php';
-    require 'models/entity/empresa.php';
     require 'models/entity/persona.php';
     require 'models/entity/personaAsp.php';
 
@@ -17,11 +16,11 @@
         {
             try {
 
-                $query = $this->db->connect()->prepare('SELECT * FROM tb_aspiracion INNER JOIN tb_oferta ON tb_oferta.of_id = tb_aspiracion.fk_as_oferta INNER JOIN tb_empresa ON tb_empresa.em_id = tb_oferta.fk_of_empresa WHERE fk_as_usuario = :usuario AND fk_as_oferta = :oferta AND em_correo = :correo');
+                $query = $this->db->connect()->prepare('SELECT * FROM tb_aspiracion INNER JOIN tb_oferta ON tb_oferta.of_id = tb_aspiracion.fk_as_oferta INNER JOIN tb_empresa ON tb_empresa.em_id = tb_oferta.fk_of_empresa WHERE fk_as_usuario = :usuario AND fk_as_oferta = :oferta AND em_correo_e = :correoE');
                 $query->execute([
                     'usuario' => $datos['usuario'],
                     'oferta' => $datos['oferta'],
-                    'correo' => $datos ['correo']
+                    'correoE' => $datos ['correoE']
                 ]);
 
                 if (!$query->rowCount()) {
