@@ -133,12 +133,10 @@ function confirmar() {
                                 <div class="form-group col-md-4">
                                     <label for="inputDepartamentoNacimiento">Departamento de nacimiento<strong
                                             style="color:red">*</strong></label>
-                                    <select id="departamentos" class="form-control" name="departamentoNacimiento"
+                                    <select id="departamentos" class=" dptos form-control" name="departamentoNacimiento"
                                         aria-required="true" aria-invalid="false" onchange="cambia_departamento()"
                                         required>
                                         <option value=""><?php echo $this->hoja->departamentoNacimiento; ?></option>
-                                        <option value=" ">Seleccione Departamento</option>
-                                        <option value="INTERNACIONAL">INTERNACIONAL</option>
                                         <option value="AMAZONAS">AMAZONAS</option>
                                         <option value="ANTIOQUIA">ANTIOQUIA</option>
                                         <option value="ARAUCA">ARAUCA</option>
@@ -177,16 +175,16 @@ function confirmar() {
                                 <div class="form-group col-md-4">
                                     <label for="inputCiudadNacimiento">Ciudad de nacimiento<strong
                                             style="color:red">*</strong></label>
-                                    <select id="minucipios" class="form-control" name="ciudadNacimiento"
+                                    <select id="minucipios" class=" muni form-control" name="ciudadNacimiento"
                                         aria-required="true" aria-invalid="false" required>
-                                        <option value=" "><?php echo $this->hoja->ciudadNacimiento; ?></option>
+                                        <option value=""><?php echo $this->hoja->ciudadNacimiento; ?></option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputPaisNacimiento">país de nacimiento<strong
                                             style="color:red">*</strong></label>
                                     <select class="form-control" name="paisNacimiento" id="paises" required>
-                                        <option value=" "><?php echo $this->hoja->paisNacimiento; ?></option>
+                                        <option value=""><?php echo $this->hoja->paisNacimiento; ?></option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
@@ -242,100 +240,53 @@ function confirmar() {
                                     </div>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="inputDepartamento">Departamento<strong
+                                    <label for="inputDepartamento">Departamento Residencia<strong
                                             style="color:red">*</strong></label>
-                                    <select id="inputDepartamento" class="form-control" name="departamento"
-                                        aria-required="true" aria-invalid="false" required>
-                                        <option value="">Seleccione</option>
-                                        <option <?php if ($this->hoja->departamento == 'Bogota') echo 'selected'; ?>
-                                            value="Bogota">Bogotá, D.C.</option>
-                                        <option <?php if ($this->hoja->departamento == 'Antioquia') echo 'selected'; ?>
-                                            value="Antioquia">Antioquia</option>
-                                        <option <?php if ($this->hoja->departamento == 'Amazonas') echo 'selected'; ?>
-                                            value="Amazonas">Amazonas</option>
-                                        <option <?php if ($this->hoja->departamento == 'Arauca') echo 'selected'; ?>
-                                            value="Arauca">Arauca</option>
-                                        <option <?php if ($this->hoja->departamento == 'SanAndres') echo 'selected'; ?>
-                                            value="SanAndres">Archipiélago de San Andrés, Providencia y Santa Catalina
-                                        </option>
-                                        <option <?php if ($this->hoja->departamento == 'Atlantico') echo 'selected'; ?>
-                                            value="Atlantico">Atlántico</option>
-                                        <option <?php if ($this->hoja->departamento == 'Bolivar') echo 'selected'; ?>
-                                            value="Bolivar">Bolívar</option>
-                                        <option <?php if ($this->hoja->departamento == 'Boyaca') echo 'selected'; ?>
-                                            value="Boyaca">Boyacá</option>
-                                        <option <?php if ($this->hoja->departamento == 'Caldas') echo 'selected'; ?>
-                                            value="Caldas">Caldas</option>
-                                        <option <?php if ($this->hoja->departamento == 'Caqueta') echo 'selected'; ?>
-                                            value="Caqueta">Caquetá</option>
-                                        <option <?php if ($this->hoja->departamento == 'Casanare') echo 'selected'; ?>
-                                            value="Casanare">Casanare</option>
-                                        <option <?php if ($this->hoja->departamento == 'Cauca') echo 'selected'; ?>
-                                            value="Cauca">Cauca</option>
-                                        <option <?php if ($this->hoja->departamento == 'Cesar') echo 'selected'; ?>
-                                            value="Cesar">Cesar</option>
-                                        <option <?php if ($this->hoja->departamento == 'Choco') echo 'selected'; ?>
-                                            value="Choco">Chocó</option>
-                                        <option <?php if ($this->hoja->departamento == 'Cordoba') echo 'selected'; ?>
-                                            value="Cordoba">Córdoba</option>
-                                        <option
-                                            <?php if ($this->hoja->departamento == 'Cundinamarca') echo 'selected'; ?>
-                                            value="Cundinamarca">Cundinamarca</option>
-                                        <option <?php if ($this->hoja->departamento == 'Guainia') echo 'selected'; ?>
-                                            value="Guainia">Guainía</option>
-                                        <option <?php if ($this->hoja->departamento == 'Guaviare') echo 'selected'; ?>
-                                            value="Guaviare">Guaviare</option>
-                                        <option <?php if ($this->hoja->departamento == 'Huila') echo 'selected'; ?>
-                                            value="Huila">Huila</option>
-                                        <option <?php if ($this->hoja->departamento == 'LaGuajira') echo 'selected'; ?>
-                                            value="LaGuajira">La Guajira</option>
-                                        <option <?php if ($this->hoja->departamento == 'Magdalena') echo 'selected'; ?>
-                                            value="Magdalena">Magdalena</option>
-                                        <option <?php if ($this->hoja->departamento == 'Meta') echo 'selected'; ?>
-                                            value="Meta">Meta</option>
-                                        <option <?php if ($this->hoja->departamento == 'Narino') echo 'selected'; ?>
-                                            value="Narino">Nariño</option>
-                                        <option
-                                            <?php if ($this->hoja->departamento == 'NorteSantander') echo 'selected'; ?>
-                                            value="NorteSantander">Norte de Santander</option>
-                                        <option <?php if ($this->hoja->departamento == 'Putumayo') echo 'selected'; ?>
-                                            value="Putumayo">Putumayo</option>
-                                        <option <?php if ($this->hoja->departamento == 'Quindio') echo 'selected'; ?>
-                                            value="Quindio">Quindio</option>
-                                        <option <?php if ($this->hoja->departamento == 'Risaralda') echo 'selected'; ?>
-                                            value="Risaralda">Risaralda</option>
-                                        <option <?php if ($this->hoja->departamento == 'Santander') echo 'selected'; ?>
-                                            value="Santander">Santander</option>
-                                        <option <?php if ($this->hoja->departamento == 'Sucre') echo 'selected'; ?>
-                                            value="Sucre">Sucre</option>
-                                        <option <?php if ($this->hoja->departamento == 'Tolima') echo 'selected'; ?>
-                                            value="Tolima">Tolima</option>
-                                        <option <?php if ($this->hoja->departamento == 'ValleCauca') echo 'selected'; ?>
-                                            value="ValleCauca">Valle del Cauca</option>
-                                        <option <?php if ($this->hoja->departamento == 'Vaupes') echo 'selected'; ?>
-                                            value="Vaupes">Vaupés</option>
-                                        <option <?php if ($this->hoja->departamento == 'Vichada') echo 'selected'; ?>
-                                            value="Vichada">Vichada</option>
-                                        <option <?php if ($this->hoja->departamento == 'Extranjero') echo 'selected'; ?>
-                                            value="Extranjero">Extranjero</option>
+                                    <select id="inputDepartamento" class=" dptores form-control" name="departamento"
+                                        aria-required="true" aria-invalid="false" onchange="cambia_departamentores()"
+                                        required>
+                                        <option value=""><?php echo $this->hoja->departamento; ?></option>
+                                        <option value="AMAZONAS">AMAZONAS</option>
+                                        <option value="ANTIOQUIA">ANTIOQUIA</option>
+                                        <option value="ARAUCA">ARAUCA</option>
+                                        <option value="ATLÁNTICO">ATLÁNTICO</option>
+                                        <option value="BOLÍVAR">BOLÍVAR</option>
+                                        <option value="BOYACA">BOYACÁ</option>
+                                        <option value="CALDAS">CALDAS</option>
+                                        <option value="CAQUETÁ">CAQUETÁ</option>
+                                        <option value="CASANARE">CASANARE</option>
+                                        <option value="CAUCA">CAUCA</option>
+                                        <option value="CESAR">CESAR</option>
+                                        <option value="CHOCÓ">CHOCÓ</option>
+                                        <option value="CÓRDOBA">CÓRDOBA</option>
+                                        <option value="CUNDINAMARCA">CUNDINAMARCA</option>
+                                        <option value="GUAINÍA">GUAINÍA</option>
+                                        <option value="GUAVIARE">GUAVIARE</option>
+                                        <option value="HUILA">HUILA</option>
+                                        <option value="LA GUAJIRA">LA GUAJIRA</option>
+                                        <option value="MAGDALENA">MAGDALENA</option>
+                                        <option value="META">META</option>
+                                        <option value="NARIÑO">NARIÑO</option>
+                                        <option value="NORTE DE SANTANDER">NORTE DE SANTANDER</option>
+                                        <option value="PUTUMAYO">PUTUMAYO</option>
+                                        <option value="QUINDÍO">QUINDÍO</option>
+                                        <option value="RISARALDA">RISARALDA</option>
+                                        <option value="SAN ANDRÉS Y PROVIDENCIA">SAN ANDRÉS Y PROVIDENCIA</option>
+                                        <option value="SANTANDER">SANTANDER</option>
+                                        <option value="SUCRE">SUCRE</option>
+                                        <option value="TOLIMA">TOLIMA</option>
+                                        <option value="VALLE DEL CAUCA">VALLE DEL CAUCA</option>
+                                        <option value="VAUPÉS">VAUPÉS</option>
+                                        <option value="VICHADA">VICHADA</option>
+                                        <option value="DISTRITO ESPECIAL">DISTRITO ESPECIAL</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="inputCiudad">Ciudad<strong style="color:red">*</strong></label>
+                                    <label for="inputCiudad">Ciudad Residencia<strong
+                                            style="color:red">*</strong></label>
                                     <select id="inputCiudad" class="form-control" name="ciudad" aria-required="true"
                                         aria-invalid="false" required>
-                                        <option value="">Seleccione</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Ibague') echo 'selected'; ?>
-                                            value="Ibague">Ibague</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Bucaramanga') echo 'selected'; ?>
-                                            value="Bucaramanga">Bucaramanga</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Medellin') echo 'selected'; ?>
-                                            value="Medellin">Medellin</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Neiva') echo 'selected'; ?>
-                                            value="Neiva">Neiva</option>
-                                        <option <?php if ($this->hoja->ciudad == 'Bogota') echo 'selected'; ?>
-                                            value="Bogota">Bogota
-                                        </option>
+                                        <option value=" "><?php echo $this->hoja->ciudad; ?></option>
 
                                     </select>
                                 </div>
@@ -348,10 +299,9 @@ function confirmar() {
                                 <div class="form-group col-md-4">
                                     <label for="inputNacionalidad">Nacionalidad<strong
                                             style="color:red">*</strong></label>
-                                    <input type="text" value="<?php echo $this->hoja->nacionalidad; ?>"
-                                        name="nacionalidad" class="form-control" id="inputNacionalidad"
-                                        pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,20}" required
-                                        title="Solo se aceptan letras">
+                                    <select class="form-control" name="nacionalidad" id="nacionalidad" required>
+                                        <option value=""><?php echo $this->hoja->nacionalidad; ?></option>
+                                    </select>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputOcupacion">Ocupación<strong style="color:red">*</strong></label>
@@ -506,8 +456,8 @@ function confirmar() {
 
                         </div>
                         <div id="contenido">
-                            <form action="<?php echo constant('URL'); ?>hojaVidaUsuario/agregarExperiencia"
-                                method="POST">
+                            <form action="<?php echo constant('URL'); ?>hojaVidaUsuario/agregarExperiencia" d="f2"
+                                name="f2" method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label>Nombre de la Empresa <strong style="color:red">*</strong></label>
@@ -530,44 +480,43 @@ function confirmar() {
                                     <div class="form-group col-md-4">
                                         <label for="inputDepartamento">Departamento<strong
                                                 style="color:red">*</strong></label>
-                                        <select id="inputDepartamento" class="form-control" name="departamento"
-                                            aria-required="true" aria-invalid="false" required>
+                                        <select id="inputDepartamento" class="dptoexp form-control" name="departamento"
+                                            aria-required="true" aria-invalid="false"
+                                            onchange="cambia_departamentoExp()" required>
                                             <option value="">Seleccione</option>
-                                            <option value="Amazonas">Amazonas</option>
-                                            <option value="Antioquia">Antioquia</option>
-                                            <option value="Arauca">Arauca</option>
-                                            <option value="SanAndres">Archipiélago de San Andrés, Providencia y Santa
-                                                Catalina</option>
-                                            <option value="Atlantico">Atlántico</option>
-                                            <option value="Bogota">Bogotá, D.C.</option>
-                                            <option value="Bolivar">Bolívar</option>
-                                            <option value="Boyaca">Boyacá</option>
-                                            <option value="Caldas">Caldas</option>
-                                            <option value="Caqueta">Caquetá</option>
-                                            <option value="Casanare">Casanare</option>
-                                            <option value="Cauca">Cauca</option>
-                                            <option value="Cesar">Cesar</option>
-                                            <option value="Choco">Chocó</option>
-                                            <option value="Cordoba">Córdoba</option>
-                                            <option value="Cundinamarca">Cundinamarca</option>
-                                            <option value="Guainia">Guainía</option>
-                                            <option value="Guaviare">Guaviare</option>
-                                            <option value="Huila">Huila</option>
-                                            <option value="LaGuajira">La Guajira</option>
-                                            <option value="Magdalena">Magdalena</option>
-                                            <option value="Meta">Meta</option>
-                                            <option value="Narino">Nariño</option>
-                                            <option value="NorteSantander">Norte de Santander</option>
-                                            <option value="Putumayo">Putumayo</option>
-                                            <option value="Quindio">Quindio</option>
-                                            <option value="Risaralda">Risaralda</option>
-                                            <option value="Santander">Santander</option>
-                                            <option value="Sucre">Sucre</option>
-                                            <option value="Tolima">Tolima</option>
-                                            <option value="ValleCauca">Valle del Cauca</option>
-                                            <option value="Vaupes">Vaupés</option>
-                                            <option value="Vichada">Vichada</option>
-                                            <option value="Extranjero">Extranjero</option>
+                                            <option value="AMAZONAS">AMAZONAS</option>
+                                            <option value="ANTIOQUIA">ANTIOQUIA</option>
+                                            <option value="ARAUCA">ARAUCA</option>
+                                            <option value="ATLÁNTICO">ATLÁNTICO</option>
+                                            <option value="BOLÍVAR">BOLÍVAR</option>
+                                            <option value="BOYACA">BOYACÁ</option>
+                                            <option value="CALDAS">CALDAS</option>
+                                            <option value="CAQUETÁ">CAQUETÁ</option>
+                                            <option value="CASANARE">CASANARE</option>
+                                            <option value="CAUCA">CAUCA</option>
+                                            <option value="CESAR">CESAR</option>
+                                            <option value="CHOCÓ">CHOCÓ</option>
+                                            <option value="CÓRDOBA">CÓRDOBA</option>
+                                            <option value="CUNDINAMARCA">CUNDINAMARCA</option>
+                                            <option value="GUAINÍA">GUAINÍA</option>
+                                            <option value="GUAVIARE">GUAVIARE</option>
+                                            <option value="HUILA">HUILA</option>
+                                            <option value="LA GUAJIRA">LA GUAJIRA</option>
+                                            <option value="MAGDALENA">MAGDALENA</option>
+                                            <option value="META">META</option>
+                                            <option value="NARIÑO">NARIÑO</option>
+                                            <option value="NORTE DE SANTANDER">NORTE DE SANTANDER</option>
+                                            <option value="PUTUMAYO">PUTUMAYO</option>
+                                            <option value="QUINDÍO">QUINDÍO</option>
+                                            <option value="RISARALDA">RISARALDA</option>
+                                            <option value="SAN ANDRÉS Y PROVIDENCIA">SAN ANDRÉS Y PROVIDENCIA</option>
+                                            <option value="SANTANDER">SANTANDER</option>
+                                            <option value="SUCRE">SUCRE</option>
+                                            <option value="TOLIMA">TOLIMA</option>
+                                            <option value="VALLE DEL CAUCA">VALLE DEL CAUCA</option>
+                                            <option value="VAUPÉS">VAUPÉS</option>
+                                            <option value="VICHADA">VICHADA</option>
+                                            <option value="DISTRITO ESPECIAL">DISTRITO ESPECIAL</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-4">
@@ -576,17 +525,13 @@ function confirmar() {
                                         <select id="inputExmunicipio" class="form-control" name="exmunicipio"
                                             aria-required="true" aria-invalid="false" required>
                                             <option value="">Seleccione</option>
-                                            <option value="Ibague ">Ibagué </option>
-                                            <option value="Bogota ">Bogotá </option>
-                                            <option value="Medellin ">Medellín </option>
-                                            <option value="Cartagena ">Cartagena </option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label>País <strong style="color:red">*</strong></label>
-                                        <input type="text" name="exPais" class="form-control"
-                                            pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{5,50}" required
-                                            title="Solo se aceptan letras">
+                                        <select class="form-control" name="exPais" id="exPais" required>
+                                            <option value="">Seleccione</option>
+                                        </select>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputSectorEmpresa">Sector de la Empresa<strong

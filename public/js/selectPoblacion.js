@@ -106,10 +106,11 @@ var pais_VALLE_DEL_CAUCA=["COLOMBIA"];
 var pais_VAUPES=["COLOMBIA"];
 var pais_VICHADA=["COLOMBIA"];
 
+// FIN DE FUNCIONcambia_departamento en datos personales tabla hoja
 function cambia_departamento(){
  //tomamos el valor del select departamento elegido
  var dpt
- dpt = document.getElementById('departamentos').value
+ dpt = document.querySelector('.dptos').value
      mis_dptos = acentos(dpt)
      // verificamos si el Departamento está definido
 
@@ -130,7 +131,7 @@ if (mis_dptos!=0) {
       	 //si no había municipio seleccionado, elimino los municipios del select
       	 document.f1.minucipios.length = 1
       	 //coloco un guión en la única opción que he dejado
-      	 document.f1.minucipios.options[0].value = " "
+      	 document.f1.minucipios.options[0].value = ""
       	 document.f1.minucipios.options[0].text = "SIN ASIGNAR" 
    	   }
 
@@ -151,11 +152,112 @@ if (mis_dptos!=0) {
              	 //si no había municipio seleccionado, elimino los municipios del select
              	 document.f1.paises.length = 1
              	 //coloco un guión en la única opción que he dejado
-             	 document.f1.paises.options[0].value = " "
+             	 document.f1.paises.options[0].value = ""
              	 document.f1.paises.options[0].text = "SIN ASIGNAR"
           	   }
    	}// FIN DE FUNCIONcambia_departamento
 
+       function cambia_departamentores(){
+        //tomamos el valor del select departamento elegido
+        var dpt
+        dpt = document.querySelector('.dptores').value
+            mis_dptos = acentos(dpt)
+            // verificamos si el Departamento está definido
+       
+       if (mis_dptos!=0) {
+                  //si estaba definido, entonces coloco las opciones del Departamento correspondiente.
+                  //selecciono el array del departamento adecuado
+                  mis_municipiores=eval("departamentos_"+mis_dptos)
+                   //calculo el numero de municipios
+                  num_municipiores = mis_municipiores.length
+                  //marco el número de municipios en el select
+                  document.f1.inputCiudad.length = num_municipiores
+                  //para cada municipio del array, lo introduzco en el select
+                  for(i=0;i<num_municipiores;i++){
+                     document.f1.inputCiudad.options[i].value=mis_municipiores[i]
+                     document.f1.inputCiudad.options[i].text=mis_municipiores[i]
+                  }
+                  } else{
+                  //si no había municipio seleccionado, elimino los municipios del select
+                  document.f1.inputCiudad.length = 1
+                  //coloco un guión en la única opción que he dejado
+                  document.f1.inputCiudad.options[0].value = ""
+                  document.f1.inputCiudad.options[0].text = "SIN ASIGNAR" 
+                 }
+       
+              if (mis_dptos!=0) {
+                         //si estaba definido, entonces coloco las opciones del Departamento correspondiente.
+                         //selecciono el array del departamento adecuado
+                         mis_paisesres=eval("pais_"+mis_dptos )
+                          //calculo el numero de municipios
+                         num_paisesres = mis_paisesres.length
+                         //marco el número de municipios en el select
+                         document.f1.nacionalidad.length = num_paisesres
+                         //para cada municipio del array, lo introduzco en el select
+                         for(i=0;i<num_paisesres;i++){
+                            document.f1.nacionalidad.options[i].value=mis_paisesres[i]
+                            document.f1.nacionalidad.options[i].text=mis_paisesres[i]
+                         }
+                         }else{
+                         //si no había municipio seleccionado, elimino los municipios del select
+                         document.f1.nacionalidad.length = 1
+                         //coloco un guión en la única opción que he dejado
+                         document.f1.nacionalidad.options[0].value = ""
+                         document.f1.nacionalidad.options[0].text = "SIN ASIGNAR"
+                        }
+              }// FIN DE FUNCIONcambia_departamento
+         
+              function cambia_departamentoExp(){
+                //tomamos el valor del select departamento elegido
+                var dpt
+                dpt = document.querySelector('.dptoexp').value
+                    mis_dptos = acentos(dpt)
+                    // verificamos si el Departamento está definido
+               
+               if (mis_dptos!=0) {
+                          //si estaba definido, entonces coloco las opciones del Departamento correspondiente.
+                          //selecciono el array del departamento adecuado
+                          mis_municipioexp=eval("departamentos_"+mis_dptos)
+                           //calculo el numero de municipios
+                          num_municipioexp = mis_municipioexp.length
+                          //marco el número de municipios en el select
+                          document.f2.inputExmunicipio.length = num_municipioexp
+                          //para cada municipio del array, lo introduzco en el select
+                          for(i=0;i<num_municipioexp;i++){
+                             document.f2.inputExmunicipio.options[i].value=mis_municipioexp[i]
+                             document.f2.inputExmunicipio.options[i].text=mis_municipioexp[i]
+                          }
+                          } else{
+                          //si no había municipio seleccionado, elimino los municipios del select
+                          document.f2.inputExmunicipio.length = 1
+                          //coloco un guión en la única opción que he dejado
+                          document.f2.inputExmunicipio.options[0].value = ""
+                          document.f2.inputExmunicipio.options[0].text = "SIN ASIGNAR" 
+                         }
+               
+                      if (mis_dptos!=0) {
+                                 //si estaba definido, entonces coloco las opciones del Departamento correspondiente.
+                                 //selecciono el array del departamento adecuado
+                                 mis_paiexp=eval("pais_"+mis_dptos )
+                                  //calculo el numero de municipios
+                                 num_paiexp = mis_paiexp.length
+                                 //marco el número de municipios en el select
+                                 document.f2.exPais.length = num_paiexp
+                                 //para cada municipio del array, lo introduzco en el select
+                                 for(i=0;i<num_paiexp;i++){
+                                    document.f2.exPais.options[i].value=mis_paiexp[i]
+                                    document.f2.exPais.options[i].text=mis_paiexp[i]
+                                 }
+                                 }else{
+                                 //si no había municipio seleccionado, elimino los municipios del select
+                                 document.f2.exPais.length = 1
+                                 //coloco un guión en la única opción que he dejado
+                                 document.f2.exPais.options[0].value = ""
+                                 document.f2.exPais.options[0].text = "SIN ASIGNAR"
+                                }
+                      }// FIN DE FUNCIONcambia_departamento
+
+                      
    function acentos(dpt){
    var acentuada
    if(dpt=="ATLÁNTICO"){ acentuada="ATLANTICO";}
