@@ -58,7 +58,8 @@
                         <h4 class="card-title text-center">Editar experiencia</h4>
                     </div>
                     <div class="card-body">
-                        <form action="<?php echo constant('URL'); ?>editarExperienciaAdmin/editar" method="POST">
+                        <form action="<?php echo constant('URL'); ?>editarExperienciaAdmin/editar" d="f2" name="f2"
+                            method="POST">
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label>Empresa <strong style="color:red">*</strong></label>
@@ -83,132 +84,51 @@
                                 <div class="form-group col-md-6">
                                     <label for="inputDepartamento">Departamento<strong
                                             style="color:red">*</strong></label>
-                                    <select id="inputDepartamento" class="form-control" name="departamento"
-                                        aria-required="true" aria-invalid="false" required>
-                                        <option value="">Seleccione</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Amazonas') echo 'selected'; ?>
-                                            value="Amazonas">Amazonas</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Antioquia') echo 'selected'; ?>
-                                            value="Antioquia">Antioquia</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Arauca') echo 'selected'; ?>
-                                            value="Arauca">Arauca</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'SanAndres') echo 'selected'; ?>
-                                            value="SanAndres">Archipiélago de San Andrés, Providencia y Santa Catalina
-                                        </option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Atlantico') echo 'selected'; ?>
-                                            value="Atlantico">Atlántico</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Bogota') echo 'selected'; ?>
-                                            value="Bogota">Bogotá, D.C.</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Bolivar') echo 'selected'; ?>
-                                            value="Bolivar">Bolívar</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Boyaca') echo 'selected'; ?>
-                                            value="Boyaca">Boyacá</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Caldas') echo 'selected'; ?>
-                                            value="Caldas">Caldas</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Caqueta') echo 'selected'; ?>
-                                            value="Caqueta">Caquetá</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Casanare') echo 'selected'; ?>
-                                            value="Casanare">Casanare</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Cauca') echo 'selected'; ?>
-                                            value="Cauca">Cauca</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Cesar') echo 'selected'; ?>
-                                            value="Cesar">Cesar</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Choco') echo 'selected'; ?>
-                                            value="Choco">Chocó</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Cordoba') echo 'selected'; ?>
-                                            value="Cordoba">Córdoba</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Cundinamarca') echo 'selected'; ?>
-                                            value="Cundinamarca">Cundinamarca</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Guainia') echo 'selected'; ?>
-                                            value="Guainia">Guainía</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Guaviare') echo 'selected'; ?>
-                                            value="Guaviare">Guaviare</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Huila') echo 'selected'; ?>
-                                            value="Huila">Huila</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'LaGuajira') echo 'selected'; ?>
-                                            value="LaGuajira">La Guajira</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Magdalena') echo 'selected'; ?>
-                                            value="Magdalena">Magdalena</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Meta') echo 'selected'; ?>
-                                            value="Meta">Meta</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Narino') echo 'selected'; ?>
-                                            value="Narino">Nariño</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'NorteSantander') echo 'selected'; ?>
-                                            value="NorteSantander">Norte de Santander</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Putumayo') echo 'selected'; ?>
-                                            value="Putumayo">Putumayo</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Quindio') echo 'selected'; ?>
-                                            value="Quindio">Quindio</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Risaralda') echo 'selected'; ?>
-                                            value="Risaralda">Risaralda</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Santander') echo 'selected'; ?>
-                                            value="Santander">Santander</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Sucre') echo 'selected'; ?>
-                                            value="Sucre">Sucre</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Tolima') echo 'selected'; ?>
-                                            value="Tolima">Tolima</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'ValleCauca') echo 'selected'; ?>
-                                            value="ValleCauca">Valle del Cauca</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Vaupes') echo 'selected'; ?>
-                                            value="Vaupes">Vaupés</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Vichada') echo 'selected'; ?>
-                                            value="Vichada">Vichada</option>
-                                        <option
-                                            <?php if ($this->experiencia->departamento == 'Extranjero') echo 'selected'; ?>
-                                            value="Extranjero">Extranjero</option>
+                                    <select id="inputDepartamento" class=" dptoexp form-control" name="departamento"
+                                        aria-required="true" aria-invalid="false" onchange="cambia_departamentoExp()"
+                                        required>
+                                        <option value=""><?php echo $this->experiencia->departamento; ?></option>
+                                        <option value="AMAZONAS">AMAZONAS</option>
+                                        <option value="ANTIOQUIA">ANTIOQUIA</option>
+                                        <option value="ARAUCA">ARAUCA</option>
+                                        <option value="ATLÁNTICO">ATLÁNTICO</option>
+                                        <option value="BOLÍVAR">BOLÍVAR</option>
+                                        <option value="BOYACA">BOYACÁ</option>
+                                        <option value="CALDAS">CALDAS</option>
+                                        <option value="CAQUETÁ">CAQUETÁ</option>
+                                        <option value="CASANARE">CASANARE</option>
+                                        <option value="CAUCA">CAUCA</option>
+                                        <option value="CESAR">CESAR</option>
+                                        <option value="CHOCÓ">CHOCÓ</option>
+                                        <option value="CÓRDOBA">CÓRDOBA</option>
+                                        <option value="CUNDINAMARCA">CUNDINAMARCA</option>
+                                        <option value="GUAINÍA">GUAINÍA</option>
+                                        <option value="GUAVIARE">GUAVIARE</option>
+                                        <option value="HUILA">HUILA</option>
+                                        <option value="LA GUAJIRA">LA GUAJIRA</option>
+                                        <option value="MAGDALENA">MAGDALENA</option>
+                                        <option value="META">META</option>
+                                        <option value="NARIÑO">NARIÑO</option>
+                                        <option value="NORTE DE SANTANDER">NORTE DE SANTANDER</option>
+                                        <option value="PUTUMAYO">PUTUMAYO</option>
+                                        <option value="QUINDÍO">QUINDÍO</option>
+                                        <option value="RISARALDA">RISARALDA</option>
+                                        <option value="SAN ANDRÉS Y PROVIDENCIA">SAN ANDRÉS Y PROVIDENCIA</option>
+                                        <option value="SANTANDER">SANTANDER</option>
+                                        <option value="SUCRE">SUCRE</option>
+                                        <option value="TOLIMA">TOLIMA</option>
+                                        <option value="VALLE DEL CAUCA">VALLE DEL CAUCA</option>
+                                        <option value="VAUPÉS">VAUPÉS</option>
+                                        <option value="VICHADA">VICHADA</option>
+                                        <option value="DISTRITO ESPECIAL">DISTRITO ESPECIAL</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputExmunicipio">Municipio<strong style="color:red">*</strong></label>
                                     <select id="inputExmunicipio" class="form-control" name="exmunicipio"
                                         aria-required="true" aria-invalid="false" required>
-                                        <option value="">Seleccione</option>
-                                        <option
-                                            <?php if ($this->experiencia->exmunicipio == 'Ibague') echo 'selected'; ?>
-                                            value="Ibague">Ibagué</option>
-                                        <option
-                                            <?php if ($this->experiencia->exmunicipio == 'Bogota') echo 'selected'; ?>
-                                            value="Bogota">Bogotá</option>
-                                        <option
-                                            <?php if ($this->experiencia->exmunicipio == 'Medellin') echo 'selected'; ?>
-                                            value="Medellin">Medellín</option>
-                                        <option
-                                            <?php if ($this->experiencia->exmunicipio == 'Cartagena') echo 'selected'; ?>
-                                            value="Cartagena">Cartagena
-                                        </option>
+                                        <option value=" "><?php echo $this->experiencia->exmunicipio; ?></option>
+
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
@@ -369,6 +289,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="<?php echo constant('URL'); ?>/public/js/selectPoblacion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
