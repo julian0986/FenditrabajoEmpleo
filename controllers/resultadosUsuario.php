@@ -77,7 +77,7 @@ class ResultadosUsuario extends Controller
         $_SESSION['departamento'] = "";
         $_SESSION['salario'] = "";
         $_SESSION['jornada'] = "";
-        echo "<script type='text/javascript'>location.href = '" . constant('URL') . "resultadosGeneral';</script>";
+        echo "<script type='text/javascript'>location.href = '" . constant('URL') . "resultadosUsuario';</script>";
     }
 
     function nuevaPagina($param = null)

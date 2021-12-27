@@ -104,7 +104,7 @@
         {
             try {
                 $items = [];
-                $query = $this->db->connect()->prepare('SELECT u.*,a.* FROM tb_aspiracion a INNER JOIN tb_usuario u ON u.us_id = a.fk_as_usuario WHERE a.fk_as_oferta = :id LIMIT :limPagina,15');
+                $query = $this->db->connect()->prepare('SELECT u.*,a.*,e.* FROM tb_aspiracion a INNER JOIN tb_usuario u ON u.us_id = a.fk_as_usuario INNER JOIN tb_hoja_vida e ON e.fk_hv_usuario = u.us_id WHERE a.fk_as_oferta = :id LIMIT :limPagina,15');
                 $query->execute([
                     'id' => $datos['idOfe'],
                     'limPagina' => $datos['limPagina']
@@ -115,6 +115,8 @@
                     $item->nombres = $row['us_nombres'];
                     $item->apellidos = $row['us_apellidos'];
                     $item->idUser = $row['us_id'];
+                    $item->departamento = $row['hv_departamento'];
+                    $item->ciudad = $row['hv_ciudad'];
                     if ($row['as_estado'] == 1) {
                         $item->estado = 'En proceso';
                     } elseif ($row['as_estado'] == 2) {

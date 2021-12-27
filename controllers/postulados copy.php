@@ -44,7 +44,7 @@ class Postulados extends Controller
         echo "<script type='text/javascript'>location.href = '" . constant('URL') . "postulados';</script>";
     }
 
-    function seleccionar($param = null) 
+    function seleccionar($param = null)
     {
         $id = $param[0];
         $this->loadModel('aspiracion');
@@ -58,33 +58,4 @@ class Postulados extends Controller
         $_SESSION['pagina'] = $param[0];
         echo "<script type='text/javascript'>location.href = '" . constant('URL') . "postulados';</script>";
     }
-    
-    function buscar()
-    {
-        $_SESSION['pagina'] = 1;
-        $_SESSION['palabra'] = $_POST['nombre'];
-        $_SESSION['departamento'] = $_POST['departamento'];
-        if (isset($_POST['salario'])) {
-            $_SESSION['salario'] = $_POST['salario'];
-        } else {
-            $_SESSION['salario'] = "";
-        }
-        if (isset($_POST['jornada'])) {
-            $_SESSION['jornada'] = $_POST['jornada'];
-        } else {
-            $_SESSION['jornada'] = "";
-        }
-        echo "<script type='text/javascript'>location.href = '" . constant('URL') . "postulados';</script>";
-    }
-
-    function reiniciar()
-    {
-        $_SESSION['pagina'] = 1;
-        $_SESSION['palabra'] = "";
-        $_SESSION['departamento'] = "";
-        $_SESSION['salario'] = "";
-        $_SESSION['jornada'] = "";
-        echo "<script type='text/javascript'>location.href = '" . constant('URL') . "postulados';</script>";
-    }
-
 }
