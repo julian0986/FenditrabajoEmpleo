@@ -215,7 +215,7 @@ function confirmar() {
                     <hr size="10" />
                 </div>
                 <div class="col-md-8 ">
-                    <h2>postulados</h2>
+                    <h2>Postulados</h2>
                     <table class="table table-bordered">
                         <thead>
                             <tr class="table bg-blue">
