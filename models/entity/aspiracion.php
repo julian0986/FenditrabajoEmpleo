@@ -5,6 +5,7 @@
         public $oferta;
         public $fecha;
         public $estado;
+        public $departamento;
 
     }
 
