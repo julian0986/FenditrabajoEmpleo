@@ -13,7 +13,7 @@ class Postulados extends Controller
     function render()
     {
         if (isset($_SESSION['idEmp'])) {
-            $this->loadModel('aspiracion');
+            $this->loadModel('personaAsp');
             $palabra = $_SESSION['palabra'];
             $departamento = $_SESSION['departamento'];
             $limPagina =  $_SESSION['pagina'] - 1;
