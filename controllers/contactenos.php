@@ -34,11 +34,16 @@ class Contactenos extends Controller
                 $to = 'to:jairocastiblancos@gmail.com';
                 $from = 'From: soporte@fendipetroleo.com';
                 $subject = 'pqr';
-                $message = 'Nombre: '.$pqr_nombre.'
-                            Apellido: '.$pqr_nombre.'
-                            Telefono: '.$pqr_tel.'
-                            Telefono: '.$pqr_mail.'
-                            Telefono: '.$pqr_asunto.'';
+                $message = '
+                ¡Gracias por comunicarte con nosostros!
+                Revisaremos tu inquietud
+                ------------------------------
+                Nombre:  '.$pqr_nombre.'
+                Apellido: '.$pqr_nombre.'
+                Telefono: '.$pqr_tel.'
+                email: '.$pqr_mail.'
+                -------------------------------
+                Novedad: '.$pqr_asunto.'';
                 mail($to, $subject, $message, $from);
                 echo "<script type='text/javascript'>window.alert('Enviado exitosamente');</script>";
             } else {
