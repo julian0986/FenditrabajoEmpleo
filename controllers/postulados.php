@@ -14,13 +14,9 @@ class Postulados extends Controller
     {
         if (isset($_SESSION['idEmp'])) {
             $this->loadModel('aspiracion');
-            $palabra = $_SESSION['palabra'];
-            $departamento = $_SESSION['departamento'];
             $limPagina =  $_SESSION['pagina'] - 1;
             $personas = $this->model->personasOfeta([
                 'idOfe' => $_SESSION['idOfe'],
-                'usuario' => $palabra,
-                'departamento' => $departamento,
                 'limPagina' => $limPagina
             ]);
             $this->view->personas = $personas;

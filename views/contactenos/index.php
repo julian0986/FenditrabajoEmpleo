@@ -242,21 +242,23 @@
 
                             <div class="contact-form">
                                 <div id="message"></div>
-                                <form method="post" action="" name="contact_form" id="contact_form">
+                                <form method="post" action="<?php echo constant('URL'); ?>contactenos/contactos"
+                                    name="contact_form" id="contact_form" required="">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input type="text" name="cnt_nombre" id="cnt_nombre" placeholder="Nombre">
+                                            <input type="text" name="pqr_nombre" id="cnt_nombre" placeholder="Nombren"
+                                                required="">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" name="cnt_apellido" id="cnt_apellido"
-                                                placeholder="Apellido">
+                                            <input type="text" name="pqr_apellido" id="cnt_apellido"
+                                                placeholder="Apellido" required="">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" name="cnt_telefono" id="cnt_telefono"
-                                                placeholder="Número de Teléfono">
+                                            <input type="text" name="pqr_tel" id="cnt_telefono"
+                                                placeholder="Número de Teléfono" required="">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="email" name="cnt_email" id="cnt_email"
+                                            <input type="email" name="pqr_mail" id="cnt_email"
                                                 placeholder="Correco Electrónico">
                                         </div>
                                         <!--  <div class="col-md-6">
@@ -274,11 +276,11 @@
                 </div> -->
 
                                         <div class="col-md-12">
-                                            <textarea rows="4" name="cnt_solicitud" id="cnt_solicitud"
+                                            <textarea rows="4" name="pqr_asunto" id="cnt_solicitud"
                                                 placeholder="Solicitud"></textarea>
                                         </div>
                                         <div class="col-md-12">
-                                            <button class="button" type="submit" name="envio_contacto"
+                                            <button class="button" type="submit" name="envio"
                                                 id="envio_contacto">Enviar</button>
                                         </div>
                                     </div>
