@@ -39,7 +39,7 @@ class Contactenos extends Controller
                 Revisaremos tu inquietud
                 ------------------------------
                 Nombre:  '.$pqr_nombre.'
-                Apellido: '.$pqr_nombre.'
+                Apellido: '.$pqr_apellido.'
                 Telefono: '.$pqr_tel.'
                 email: '.$pqr_mail.'
                 -------------------------------
