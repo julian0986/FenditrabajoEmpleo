@@ -62,7 +62,6 @@ class Postulados extends Controller
     function buscar()
     {
         $_SESSION['pagina'] = 1;
-        $_SESSION['palabra'] = $_POST['nombre'];
         $_SESSION['departamento'] = $_POST['departamento'];
         if (isset($_POST['salario'])) {
             $_SESSION['salario'] = $_POST['salario'];

@@ -69,7 +69,7 @@ function confirmar() {
                     <h2>Preselección</h2>
                     <form action="<?php echo constant('URL'); ?>postulados/buscar" method="POST">
                         <div class="form-row">
-                            <div class="col-md-3 text-center">
+                            <!-- <div class="col-md-3 text-center">
                                 <div class="input-group mb-3">
                                     <input type="text" name="nombre" class="form-control" placeholder="Palabra clave"
                                         value="<?php echo $_SESSION['palabra']; ?>" aria-label="Recipient's username"
@@ -78,7 +78,7 @@ function confirmar() {
                                         <button class="btn btn-primary" type="submit">Buscar</button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-md-3 text-center">
                                 <div class="input-group">
                                     <select id="inputUbicacion" class="custom-select" name="departamento"

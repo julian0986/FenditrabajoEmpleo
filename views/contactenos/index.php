@@ -262,39 +262,40 @@
                                                 placeholder="Correco Electrónico" required="">
                                         </div>
                                         <!--  <div class="col-md-6">
-                  <select class="form-control" name="cnt_tipodocumento" id="cnt_tipodocumento" required="required">
-                     <option value= "" >Tipo de Documento</option>
-                     <option value="CC">Cédula de Ciudania</option>
-                     <option value="CEX">Cédula de Extrajería</option>
-                    <option value="NUIT">Número de Identificación Tributaria</option> 
-                     <option value="NIT">NIT</option>
-                     <option value="SICOM" maxlength="6" >Código Sicom</option>
-                   </select>
-                </div>
-                <div class="col-md-6">
-                  <input  type="text" name="cnt_numerodocumento" id="cnt_numerodocumento" placeholder="Documento de Identidad">
-                </div> -->
+                                        <select class="form-control" name="cnt_tipodocumento" id="cnt_tipodocumento" required="required">
+                                            <option value= "" >Tipo de Documento</option>
+                                            <option value="CC">Cédula de Ciudania</option>
+                                            <option value="CEX">Cédula de Extrajería</option>
+                                            <option value="NUIT">Número de Identificación Tributaria</option> 
+                                            <option value="NIT">NIT</option>
+                                            <option value="SICOM" maxlength="6" >Código Sicom</option>
+                                        </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                        <input  type="text" name="cnt_numerodocumento" id="cnt_numerodocumento" placeholder="Documento de Identidad">
+                                        </div> -->
 
                                         <div class="col-md-12">
                                             <textarea rows="4" name="pqr_asunto" id="cnt_solicitud"
                                                 placeholder="Solicitud" required=""></textarea>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="g-recaptcha"
-                                                data-sitekey="6LdKu3cdAAAAAH90uCiDajqV46gRmU2sqrj4O5VE"></div>
-                                        </div>
                                         <div class="col-md-12">
                                             <button class="button" type="submit" name="envio"
                                                 id="envio_contacto">Enviar</button>
                                         </div>
+
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6LdKu3cdAAAAAH90uCiDajqV46gRmU2sqrj4O5VE">
+                                        </div>
                                     </div>
-                                </form>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
