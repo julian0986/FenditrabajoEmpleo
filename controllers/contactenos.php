@@ -47,7 +47,7 @@ class Contactenos extends Controller
                 mail($to, $subject, $message, $from);
                 echo "<script type='text/javascript'>window.alert('Enviado exitosamente');</script>";
             } else {
-                echo "<script type='text/javascript'>window.alert('El correo ya existe');</script>";
+                echo "<script type='text/javascript'>window.alert('No se logro enviar el mensaje');</script>";
             }
             $this->render();
             }

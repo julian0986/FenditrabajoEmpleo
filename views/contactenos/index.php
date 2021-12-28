@@ -197,7 +197,7 @@
                         <div class="col-md-12 column">
                             <div class="title"> <span>Estamos aquí para ayudarte</span>
                                 <br /><br />
-                                <h2>CONTACTENOS</h2>
+                                <h2>CONTACTO Y PQRS</h2>
                             </div>
                         </div>
 
@@ -259,7 +259,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <input type="email" name="pqr_mail" id="cnt_email"
-                                                placeholder="Correco Electrónico">
+                                                placeholder="Correco Electrónico" required="">
                                         </div>
                                         <!--  <div class="col-md-6">
                   <select class="form-control" name="cnt_tipodocumento" id="cnt_tipodocumento" required="required">
@@ -277,7 +277,11 @@
 
                                         <div class="col-md-12">
                                             <textarea rows="4" name="pqr_asunto" id="cnt_solicitud"
-                                                placeholder="Solicitud"></textarea>
+                                                placeholder="Solicitud" required=""></textarea>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LdKu3cdAAAAAH90uCiDajqV46gRmU2sqrj4O5VE"></div>
                                         </div>
                                         <div class="col-md-12">
                                             <button class="button" type="submit" name="envio"
