@@ -67,7 +67,7 @@ function confirmar() {
 
                 <div class="col-md-12 ">
                     <h2>Preselección</h2>
-                    <form action="<?php echo constant('URL'); ?>postulados/buscar" method="POST">
+                    <form action="<?php echo constant('URL'); ?>postulados/personasOfeta" method="POST">
                         <div class="form-row">
                             <!-- <div class="col-md-3 text-center">
                                 <div class="input-group mb-3">

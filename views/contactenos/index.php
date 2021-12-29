@@ -279,15 +279,17 @@
                                             <textarea rows="4" name="pqr_asunto" id="cnt_solicitud"
                                                 placeholder="Solicitud" required=""></textarea>
                                         </div>
-                                        <div class="col-md-6">
-                                            <button class="button" type="submit" name="envio"
-                                                id="envio_contacto">Enviar</button>
-                                        </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <div class="g-recaptcha"
                                                 data-sitekey="6LdKu3cdAAAAAH90uCiDajqV46gRmU2sqrj4O5VE">
                                             </div>
                                         </div>
+
+                                        <div class="col-md-8">
+                                            <button class="button" type="submit" name="envio"
+                                                id="envio_contacto">Enviar</button>
+                                        </div>
+
                                     </div>
                             </div>
                             </form>
@@ -369,6 +371,7 @@
 
     <?php include "views/footer/footer.php"; ?>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript" src="<?php echo constant('URL'); ?>/public/js/capcha.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

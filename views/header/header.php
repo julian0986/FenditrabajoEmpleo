@@ -38,7 +38,7 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">
-                                <i class="fas fa-user-tie"></i> NOTIFICACION DE PQRS
+                                <i class="fas fa-user-tie"></i> NOTIFICACIÓN DE PQRS
                             </a>
                         </div>
                     </li>

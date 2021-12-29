@@ -29,8 +29,7 @@ class Contactenos extends Controller
                 'pqr_tel' => $pqr_tel,
                 'pqr_mail' => $pqr_mail,
                 'pqr_asunto' => $pqr_asunto
-               
-            ])) {
+            ])){
                 $to = 'to:jairocastiblancos@gmail.com';
                 $from = 'From: soporte@fendipetroleo.com';
                 $subject = 'pqr';
@@ -44,17 +43,19 @@ class Contactenos extends Controller
                 email: '.$pqr_mail.'
                 -------------------------------
                 Novedad: '.$pqr_asunto.'';
-                mail($to, $subject, $message, $from);
+                $correo= mail($to, $subject, $message, $from);
+                if ($correo){
                 echo "<script type='text/javascript'>window.alert('Enviado exitosamente');</script>";
             } else {
                 echo "<script type='text/javascript'>window.alert('No se logro enviar el mensaje');</script>";
             }
             $this->render();
-            }
+         }
            
         }
 
     }
+}
 
     function listarTres()
     {
@@ -69,4 +70,5 @@ class Contactenos extends Controller
         $cursos = $this->model->listaUser();
         $this->view->cursos = $cursos;
     }
+    
 }
