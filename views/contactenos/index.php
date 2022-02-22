@@ -197,7 +197,7 @@
                         <div class="col-md-12 column">
                             <div class="title"> <span>Estamos aquí para ayudarte</span>
                                 <br /><br />
-                                <h2>CONTACTENOS</h2>
+                                <h2>CONTACTO Y PQRS</h2>
                             </div>
                         </div>
 
@@ -242,53 +242,63 @@
 
                             <div class="contact-form">
                                 <div id="message"></div>
-                                <form method="post" action="" name="contact_form" id="contact_form">
+                                <form method="post" action="<?php echo constant('URL'); ?>contactenos/contactos"
+                                    name="contact_form" id="contact_form" required="">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input type="text" name="cnt_nombre" id="cnt_nombre" placeholder="Nombre">
+                                            <input type="text" name="pqr_nombre" id="cnt_nombre" placeholder="Nombren"
+                                                required="">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" name="cnt_apellido" id="cnt_apellido"
-                                                placeholder="Apellido">
+                                            <input type="text" name="pqr_apellido" id="cnt_apellido"
+                                                placeholder="Apellido" required="">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" name="cnt_telefono" id="cnt_telefono"
-                                                placeholder="Número de Teléfono">
+                                            <input type="text" name="pqr_tel" id="cnt_telefono"
+                                                placeholder="Número de Teléfono" required="">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="email" name="cnt_email" id="cnt_email"
-                                                placeholder="Correco Electrónico">
+                                            <input type="email" name="pqr_mail" id="cnt_email"
+                                                placeholder="Correco Electrónico" required="">
                                         </div>
                                         <!--  <div class="col-md-6">
-                  <select class="form-control" name="cnt_tipodocumento" id="cnt_tipodocumento" required="required">
-                     <option value= "" >Tipo de Documento</option>
-                     <option value="CC">Cédula de Ciudania</option>
-                     <option value="CEX">Cédula de Extrajería</option>
-                    <option value="NUIT">Número de Identificación Tributaria</option> 
-                     <option value="NIT">NIT</option>
-                     <option value="SICOM" maxlength="6" >Código Sicom</option>
-                   </select>
-                </div>
-                <div class="col-md-6">
-                  <input  type="text" name="cnt_numerodocumento" id="cnt_numerodocumento" placeholder="Documento de Identidad">
-                </div> -->
+                                        <select class="form-control" name="cnt_tipodocumento" id="cnt_tipodocumento" required="required">
+                                            <option value= "" >Tipo de Documento</option>
+                                            <option value="CC">Cédula de Ciudania</option>
+                                            <option value="CEX">Cédula de Extrajería</option>
+                                            <option value="NUIT">Número de Identificación Tributaria</option> 
+                                            <option value="NIT">NIT</option>
+                                            <option value="SICOM" maxlength="6" >Código Sicom</option>
+                                        </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                        <input  type="text" name="cnt_numerodocumento" id="cnt_numerodocumento" placeholder="Documento de Identidad">
+                                        </div> -->
 
                                         <div class="col-md-12">
-                                            <textarea rows="4" name="cnt_solicitud" id="cnt_solicitud"
-                                                placeholder="Solicitud"></textarea>
+                                            <textarea rows="4" name="pqr_asunto" id="cnt_solicitud"
+                                                placeholder="Solicitud" required=""></textarea>
                                         </div>
-                                        <div class="col-md-12">
-                                            <button class="button" type="submit" name="envio_contacto"
+                                        <div class="col-md-4">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LdKu3cdAAAAAH90uCiDajqV46gRmU2sqrj4O5VE">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <button class="button" type="submit" name="envio"
                                                 id="envio_contacto">Enviar</button>
                                         </div>
+
                                     </div>
-                                </form>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -360,6 +370,8 @@
         </div> -->
 
     <?php include "views/footer/footer.php"; ?>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript" src="<?php echo constant('URL'); ?>/public/js/capcha.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

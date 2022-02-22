@@ -13,7 +13,8 @@
 <body>
     <header id="header" class="main-header">
         <div class="logito">
-            <a href="<?php echo constant('URL'); ?>buscarTrabajo"><img src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
+            <a href="<?php echo constant('URL'); ?>buscarTrabajo"><img
+                    src="<?php echo constant('URL'); ?>public/logos/logo.png" width="60%"></a>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light text-dark ">
@@ -26,17 +27,24 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo">
-                        <i class="fas fa-gas-pump"></i>
+                            <i class="fas fa-gas-pump"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>quienesSomos">
-                        <i class="far fa-newspaper"></i> QUIENES SOMOS
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown"
+                            href="<?php echo constant('URL'); ?>quienesSomos" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="far fa-newspaper"></i> QUIENES SOMOS
                         </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">
+                                <i class="fas fa-user-tie"></i> NOTIFICACIÓN DE PQRS
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>publicarOfertas">
-                        <i class="fas fa-user-edit"></i> PUBLICAR OFERTA
+                            <i class="fas fa-user-edit"></i> PUBLICAR OFERTA
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -46,16 +54,16 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>registroPersona">
-                            <i class="fas fa-user-tie"></i> PERSONA
+                                <i class="fas fa-user-tie"></i> PERSONA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>registroEmpresa">
-                            <i class="fas fa-building"></i> EMPRESA
+                                <i class="fas fa-building"></i> EMPRESA
                             </a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>quienesSomos">
-                        <i class="fas fa-gavel"></i> POLÍTICAS
+                            <i class="fas fa-gavel"></i> POLÍTICAS
                         </a>
                     </li>
                     <li class="nav-item dropdown">
@@ -65,13 +73,13 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginPersona">
-                            <i class="fas fa-user-tie"></i> PERSONA
+                                <i class="fas fa-user-tie"></i> PERSONA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginEmpresa">
-                            <i class="fas fa-building"></i> EMPRESA
+                                <i class="fas fa-building"></i> EMPRESA
                             </a>
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>loginPersona">
-                            <i class="fas fa-user-cog"></i> ADMINISTRADOR
+                                <i class="fas fa-user-cog"></i> ADMINISTRADOR
                             </a>
                         </div>
                     </li>
