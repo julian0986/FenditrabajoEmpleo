@@ -105,7 +105,7 @@ function myFunction() {
         <div class="col-md-6 col-md-offset-3">
           <div class="card shadow-lg p-3 mb-5 bg-white rounded">
             <div class="card-header socialLogin">
-              <img src="/public/images/logofenditrabajo.png" class="logo" width="50%" height="50%" alt="" />
+              <img src="./public/images/logofenditrabajo.png" class="logo" width="50%" height="50%" alt="" />
               <h4>Inicia sesión como Persona</h4>
             </div>
             <div class="card-body">
