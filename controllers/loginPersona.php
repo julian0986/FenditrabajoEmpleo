@@ -33,7 +33,10 @@ class LoginPersona extends Controller
 
             
         } else {
-            echo "<script type='text/javascript'>window.alert('Correo o contraseña incorrectos');location.href = '".constant('URL')."loginPersona';</script>";
+            //echo "<script type='text/javascript'>window.alert('Correo o contraseña incorrectos');location.href = '".constant('URL')."loginPersona';</script>";
+            $message = "Correo o contraseña incorrectos";
+            //$this->view->render('login-persona/index',$data);
+            require_once("./views/login-persona/index.php");
         }
     }
 

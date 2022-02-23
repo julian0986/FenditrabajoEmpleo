@@ -41,12 +41,14 @@ class AplicacionOferta extends Controller
     {
         $idOferta = $param[0];
         $usuario = $_SESSION['idUser'];
-        $correoE = $_POST['correoE'];
+        $correoE =  $this->model->obtener_correo($usuario);
         $fecha = date("Y-m-d");
-
-        if ($this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'correoE' => $correoE, 'fecha' => $fecha])) {
+       
+        $a = $this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha]);
+        
+        if ($a) {
             //Aqui se va a colocar el codigo para la notificacion via correo 
-             $to = $_POST['email'];
+            $to = $correoE;
             $from = 'From: soporte@fendipetroleo.com';
             $subject = 'Registrado de forma exitosa';
             $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/loginPersona ';

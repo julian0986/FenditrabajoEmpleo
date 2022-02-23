@@ -1,6 +1,7 @@
  <?php
 
     require 'models/entity/oferta.php';
+    require 'models/entity/empresa.php';
     require 'models/entity/persona.php';
     require 'models/entity/personaAsp.php';
 
@@ -12,16 +13,61 @@
             parent::__construct();
         }
 
+        // Pasar multiples ids separados por coma ejemplo '1,2,3'
+       /*  function obtener_correos($ids){
+            $query = $this->db->connect()->prepare('select tb_empresa.em_correo_e from tb_usuario 
+            left join tb_aspiracion on tb_aspiracion.fk_as_usuario = tb_usuario.us_id
+            left join tb_oferta on tb_oferta.of_id = tb_aspiracion.fk_as_oferta
+            left join tb_empresa on tb_empresa.em_id = tb_oferta.fk_of_empresa
+            WHERE tb_usuario.us_id IN (:id) limit 1');
+            $query->execute([$ids]);
+
+            $correo = array();
+            while($row = $query->fetch()){
+                array_push($row['em_correo_e'];
+            }
+
+            return $correo;
+        } */
+
+        function obtener_correo($id){
+           
+            // tb_usuario = us_id
+            // tb_empresa = 
+            $query = $this->db->connect()->prepare('select tb_empresa.em_correo_e from tb_usuario 
+            left join tb_aspiracion on tb_aspiracion.fk_as_usuario = tb_usuario.us_id
+            left join tb_oferta on tb_oferta.of_id = tb_aspiracion.fk_as_oferta
+            left join tb_empresa on tb_empresa.em_id = tb_oferta.fk_of_empresa
+            where tb_usuario.us_id = :id limit 1');
+            $query->execute([$id]);
+
+            $correo = "";
+            while($row = $query->fetch()){
+                $correo = $row['em_correo_e'];
+            }
+
+            return $correo;
+        }
+
         function aplicarOferta($datos)
         {
             try {
 
-                $query = $this->db->connect()->prepare('SELECT * FROM tb_aspiracion INNER JOIN tb_oferta ON tb_oferta.of_id = tb_aspiracion.fk_as_oferta INNER JOIN tb_empresa ON tb_empresa.em_id = tb_oferta.fk_of_empresa WHERE fk_as_usuario = :usuario AND fk_as_oferta = :oferta AND em_correo_e = :correoE');
+            
+
+                $query = $this->db->connect()->prepare('SELECT * FROM tb_aspiracion INNER JOIN tb_oferta ON tb_oferta.of_id = tb_aspiracion.fk_as_oferta INNER JOIN tb_empresa ON tb_empresa.em_id = tb_oferta.fk_of_empresa WHERE fk_as_usuario = :usuario AND fk_as_oferta = :oferta');
                 $query->execute([
                     'usuario' => $datos['usuario'],
-                    'oferta' => $datos['oferta'],
-                    'correoE' => $datos ['correoE']
+                    'oferta' => $datos['oferta']
+                
                 ]);
+                 
+                
+                //$respuesta = array();
+
+                /*while ($row = $query->fetch()) {
+                    array_push($respuesta, $row);
+                }*/
 
                 if (!$query->rowCount()) {
 
