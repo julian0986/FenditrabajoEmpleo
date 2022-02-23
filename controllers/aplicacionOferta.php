@@ -44,7 +44,6 @@ class AplicacionOferta extends Controller
         $correoE =  $this->model->obtener_correo($usuario);
         $fecha = date("Y-m-d"); 
 
-        var_dump($correoE);
         
        
         $a = $this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha]);
