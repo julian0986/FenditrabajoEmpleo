@@ -55,7 +55,7 @@ class AplicacionOferta extends Controller
             $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/loginPersona ';
              mail($to, $subject, $message, $from);
 
-            echo "<script type='text/javascript'>location.href = '" . constant('URL') . "aplicacionOferta';</script>";
+            echo "<script type='text/javascript'>alert('Aplicaste de forma exitosa');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
         } else {
             echo "no se pudo aplicar con exito";
         }
