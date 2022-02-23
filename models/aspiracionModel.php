@@ -34,7 +34,7 @@
            
             // tb_usuario = us_id
             // tb_empresa = 
-            $query = $this->db->connect()->prepare('select tb_empresa.us_correo from tb_usuario 
+            $query = $this->db->connect()->prepare('select tb_usuario.us_correo from tb_usuario 
             left join tb_aspiracion on tb_aspiracion.fk_as_usuario = tb_usuario.us_id
             left join tb_oferta on tb_oferta.of_id = tb_aspiracion.fk_as_oferta
             left join tb_empresa on tb_empresa.em_id = tb_oferta.fk_of_empresa

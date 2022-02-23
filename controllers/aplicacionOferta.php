@@ -44,7 +44,6 @@ class AplicacionOferta extends Controller
         $correoE =  $this->model->obtener_correo($usuario);
         $fecha = date("Y-m-d"); 
 
-        
        
         $a = $this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha]);
         
@@ -52,11 +51,9 @@ class AplicacionOferta extends Controller
             //Aqui se va a colocar el codigo para la notificacion via correo 
             $to = $correoE;
             $from = 'From: soporte@fendipetroleo.com';
-            $subject = 'Aplicacion exitosa a la oferta';
-            $message = 'Bienvenido a Fenditrabajo <br />
-            Has aplicado satisfactoriamente a la oferta por favor estar atento al estado de tu proceso.
-            https://empleo.fenditrabajo.com/loginPersona ';
-            mail($to, $subject, $message, $from);
+            $subject = 'Registrado de forma exitosa';
+            $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/loginPersona ';
+             mail($to, $subject, $message, $from);
 
             echo "<script type='text/javascript'>location.href = '" . constant('URL') . "aplicacionOferta';</script>";
         } else {
