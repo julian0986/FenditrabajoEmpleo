@@ -34,16 +34,17 @@
            
             // tb_usuario = us_id
             // tb_empresa = 
-            $query = $this->db->connect()->prepare('select tb_empresa.em_correo_e from tb_usuario 
+            $query = $this->db->connect()->prepare('select tb_empresa.us_correo from tb_usuario 
             left join tb_aspiracion on tb_aspiracion.fk_as_usuario = tb_usuario.us_id
             left join tb_oferta on tb_oferta.of_id = tb_aspiracion.fk_as_oferta
             left join tb_empresa on tb_empresa.em_id = tb_oferta.fk_of_empresa
-            where tb_usuario.us_id = :id limit 1');
-            $query->execute([$id]);
+            where tb_usuario.us_id = :id');
+            $query->execute([$id]);    
 
             $correo = "";
             while($row = $query->fetch()){
-                $correo = $row['em_correo_e'];
+                $correo = $row['us_correo'];
+                
             }
 
             return $correo;
