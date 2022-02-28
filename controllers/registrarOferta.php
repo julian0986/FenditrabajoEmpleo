@@ -36,6 +36,7 @@ class RegistrarOferta extends Controller
         $descripcion = $_POST['descripcion'];
         $tipofecha = $_POST['disponiblidad'];
         $fechaFin = date('Y-m-d');
+        
         if($tipofecha == 1){
             $fechaFin = date("Y-m-d",strtotime($fechaFin."+ 1 week")); 
         }
@@ -45,7 +46,7 @@ class RegistrarOferta extends Controller
         else{
             $fechaFin = date("Y-m-d",strtotime($fechaFin."+ 1 month"));
         }
-        $mensaje = "";
+
         if ($this->model->agregarOferta([
             'nombre' => $nombre,
             'departamento' => $departamento,

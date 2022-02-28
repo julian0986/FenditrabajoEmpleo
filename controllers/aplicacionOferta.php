@@ -41,23 +41,39 @@ class AplicacionOferta extends Controller
     {
         $idOferta = $param[0];
         $usuario = $_SESSION['idUser'];
-        $correoE =  $this->model->obtener_correo($usuario);
+        $correoUs =  $this->model->obtener_correo_usuario($usuario);
+        $correoEm =  $this->model->obtener_correo_empresa($idOferta);
+        $ValidarEstado=  $this->model->validar_estado_aplicacion($idOferta);
         $fecha = date("Y-m-d"); 
 
-       
+
+        $correoEm['em_correo_e'];
+        $correoEm['of_nombre'];
+        $ValidarEstado['as_estado'];
+
+        /* var_dump($ValidarEs);
+        die(); */
+         
         $a = $this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha]);
         
-        if ($a) {
+        if ($a && $ValidarEstado['as_estado'] == "") {
             //Aqui se va a colocar el codigo para la notificacion via correo 
-            $to = $correoE;
+            $to = $correoUs;
+            $from = 'From: soporte@fendipetroleo.com';
+            $subject = 'Registrado de forma exitosa';
+            $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/loginPersona ';
+             mail($to, $subject, $message, $from);
+
+            $to = $correoEm['em_correo_e'];
             $from = 'From: soporte@fendipetroleo.com';
             $subject = 'Registrado de forma exitosa';
             $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/loginPersona ';
              mail($to, $subject, $message, $from);
 
             echo "<script type='text/javascript'>alert('Aplicaste de forma exitosa');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
+            
         } else {
-            echo "no se pudo aplicar con exito";
+            echo "<script type='text/javascript'>alert('Ya estas aplicando a esta oferta');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
         }
     }
 
