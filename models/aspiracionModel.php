@@ -5,6 +5,7 @@
     require 'models/entity/persona.php';
     require 'models/entity/personaAsp.php';
 
+
     class AspiracionModel extends Model
     {
 
@@ -34,7 +35,7 @@
         
         function obtener_correo_empresa ($idOferta){
             
-            $query = $this->db->connect()->prepare(' select tb_empresa.em_correo_e,tb_oferta.of_nombre from tb_oferta 
+            $query = $this->db->connect()->prepare('select tb_empresa.em_correo_e,tb_oferta.of_nombre from tb_oferta 
             join  tb_empresa on tb_empresa.em_id = tb_oferta.fk_of_empresa where tb_oferta.of_id = :id
             ');
             $query->execute([$idOferta]);    
@@ -71,20 +72,21 @@
             return $correo;
         }  
 
-        function validar_estado_aplicacion ($estado){
+        function validar_estado_aplicacion ($idOferta, $idUsuario){
             
-            $query = $this->db->connect()->prepare('select tb_oferta.of_id, tb_aspiracion.as_estado from tb_aspiracion 
-            join  tb_oferta on tb_oferta.of_id = tb_aspiracion.fk_as_oferta where tb_aspiracion.as_id = :id
-            ');
-            $query->execute([$estado]);    
+            $query = $this->db->connect()->prepare('select * from tb_usuario 
+            left join tb_aspiracion on tb_aspiracion.fk_as_usuario = tb_usuario.us_id 
+            left join tb_oferta on tb_oferta.of_id = tb_aspiracion.fk_as_oferta 
+            left join tb_empresa on tb_empresa.em_id = tb_oferta.fk_of_empresa where tb_oferta.of_id = :idOferta and tb_usuario.us_id = :idUsuario');
+            $query->execute([
+                'idOferta' => $idOferta,
+                'idUsuario' => $idUsuario
+            ]);    
 
-            $validarEs = "";
-            while($row = $query->fetch()){
-                $validarEs = $row;
+            
                 
-            }
 
-            return $validarEs;
+            return count($query->fetchAll()) > 0 ? false : true;
 
         }
 
@@ -96,12 +98,10 @@
                 $query->execute([
                     'usuario' => $datos['usuario'],
                     'oferta' => $datos['oferta']
+
                 
                 ]);
 
-                
-                 
-               
                 
                 //$respuesta = array();
 
