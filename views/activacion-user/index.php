@@ -54,7 +54,7 @@
 
     <div class="card text-center mt mb" style="border-color: transparent">
         <div>
-            <h1>Cuanta activada</h1>
+            <h1>Cuenta activada</h1>
 
 
         </div>

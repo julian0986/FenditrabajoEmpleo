@@ -4,7 +4,7 @@
     require 'models/entity/empresa.php';
     require 'models/entity/persona.php';
     require 'models/entity/personaAsp.php';
-
+    require 'models/entity/hojaV.php';
 
     class AspiracionModel extends Model
     {
@@ -71,6 +71,20 @@
 
             return $correo;
         }  
+
+        function validar_estado_hojaVida ($idHv){
+            
+            $query = $this->db->connect()->prepare('select tb_hoja_vida.hv_id from tb_hoja_vida left join tb_usuario on tb_usuario.us_id = tb_hoja_vida.fk_hv_usuario where tb_usuario.us_id = :idHv');
+            $query->execute([
+                'idHv' => $idHv
+
+            ]);    
+
+           
+
+            return count($query->fetchAll());
+
+        }
 
         function validar_estado_aplicacion ($idOferta, $idUsuario){
             

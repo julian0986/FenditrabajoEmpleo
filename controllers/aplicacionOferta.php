@@ -44,19 +44,23 @@ class AplicacionOferta extends Controller
         $correoUs =  $this->model->obtener_correo_usuario($usuario);
         $correoEm =  $this->model->obtener_correo_empresa($idOferta);
         $ValidarEstado =  $this->model->validar_estado_aplicacion($idOferta, $usuario);
+        $validarHojaVida = $this->model->validar_estado_hojaVida($usuario);
         $fecha = date("Y-m-d"); 
-
         
         $correoEm['em_correo_e'];
         $correoEm['of_nombre'];
+        
+    
 
         
         if(!$ValidarEstado) {
           
         echo "<script type='text/javascript'>alert('Ya estas aplicando a esta oferta');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
+        } if($validarHojaVida < 1){
+
+        echo "<script type='text/javascript'>alert('primero registra tu hoja de vida para aplicar a las ofertas');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
+         } else {
         
-        } else {
-          
         $this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha]);
 
         
@@ -75,9 +79,9 @@ class AplicacionOferta extends Controller
 
             echo "<script type='text/javascript'>alert('Aplicaste de forma exitosa');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
             
-
+         }
         }
-    }
+    
 
     function eliminarOferta($param = null)
     {
