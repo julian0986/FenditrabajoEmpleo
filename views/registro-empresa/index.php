@@ -338,6 +338,27 @@
                                         title="Solo se aceptan numeros">
                                 </div>
                             </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="politicas" id="politicas"
+                                            value="1" required>
+                                        <label class="form-check-label" for="politicas">
+                                            Acepta las <a target="_blank" class="btn-link" href="">Condiciones de
+                                                uso </a> y la <a target="_blank" class="btn-link"
+                                                href="<?php echo constant('URL'); ?>quienesSomos">Política de
+                                                privacidad</a> de Fenditrabajo.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="g-recaptcha" data-sitekey="6LdKu3cdAAAAAH90uCiDajqV46gRmU2sqrj4O5VE">
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary btnregistro">Registrarse</button>
                             </div>
