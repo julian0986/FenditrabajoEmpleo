@@ -34,7 +34,7 @@
                         <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown"
                             href="<?php echo constant('URL'); ?>quienesSomos" role="button" aria-haspopup="true"
                             aria-expanded="false">
-                            <i class="far fa-newspaper"></i> QUIENES SOMOS
+                            <i class="far fa-newspaper"></i> QUIÉNES SOMOS
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">

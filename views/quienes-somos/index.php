@@ -138,12 +138,14 @@ h2 {
                     <br>
                     <h2>¿ Quiénes Somos ?</h2>
                     <p class="text-justify">La Federación Nacional de Distribuidores de Combustibles y Energéticos –
-                        Fendipetróleo, es una organización gremial, sin ánimo de lucro, creada en 1971 para representar
-                        los intereses de los distribuidores minoristas de combustibles líquidos y gas natural vehicular,
-                        promover la sostenibilidad del sector y contribuir al desarrollo social y económico del país. En
-                        el 2021 decide crear una bolsa de empleo virtual para la prestación de servicios de gestión y
-                        colocación del empleo denominado FENDITRABAJO generando un canal de comunicación entre
-                        potenciales empleadores y posibles candidatos a nivel sectorial.
+                        Fendipetróleo, es una organización gremial,
+                        creada en 1971 para representar los intereses de los empresarios distribuidores minoristas
+                        de combustibles líquidos y gas natural vehicular, promover la sostenibilidad del sector y
+                        contribuir al desarrollo social y económico del país.
+                        Como parte del desarrollo de su objeto social decide crear el portal web FENDITRABAJO para la
+                        prestación de servicios de gestión y colocación de empleo de forma gratuita a todos los
+                        distribuidores minorista de combustible y oferentes
+                        fomentando la generación de empleo para el sector a nivel nacional.
                         <br>
                         <br>
                     </p>
