@@ -76,7 +76,8 @@ class ExperienciaModel extends Model
 
     function agregar($datos){
         try {            
-            $query = $this->db->connect()->prepare('INSERT INTO tb_experiencia(ex_empresa, ex_pais, ex_departamento, ex_municipio, ex_sector, ex_cargo, ex_ocupacion, ex_area, ex_fecha_inicio, ex_fecha_fin, ex_total_expe, ex_perfil, fk_ex_usuario) VALUES (:empresa,:exPais,:departamento,:exmunicipio,:sector,:cargo,:exocupacion,:area,:fechaInicio,:fechaFin,:extotalexpe,:experfil,:usuario)');
+            $query = $this->db->connect()->prepare('INSERT INTO tb_experiencia(ex_empresa, ex_pais, ex_departamento, ex_municipio, ex_sector, ex_cargo, ex_ocupacion, ex_area, ex_fecha_inicio, ex_fecha_fin, ex_total_expe, ex_perfil, fk_ex_usuario)
+             VALUES (:empresa,:exPais,:departamento,:exmunicipio,:sector,:cargo,:exocupacion,:area,:fechaInicio,:fechaFin,:extotalexpe,:experfil,:usuario)');
             $query->execute([
                 'empresa' => $datos['empresa'],
                 'exPais' => $datos['exPais'],

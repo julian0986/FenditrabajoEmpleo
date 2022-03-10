@@ -47,6 +47,12 @@
     <meta name="twitter:image" content="https://fendipetroleo.com/nuevoF/public/icon/favicon.ico">
 
 </head>
+<style>
+.check {
+    margin-left: 20px;
+
+}
+</style>
 
 <script type="text/javascript">
 function confirmar() {
@@ -75,7 +81,12 @@ function confirmar() {
                             <div class="form-row">
                                 <div class="form-row col-md-8">
                                     <div class="form-group col-md-12">
-                                        <label for="inputNombre">Nombre<strong style="color:red">*</strong></label>
+                                        <strong> ¿Soy ciudadano Colombiano mayor de edad?</strong>
+                                        <input class="form-check-input check" type="checkbox" name="politicas"
+                                            id="politicas" value="1" required>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <label for="inputNombre">Nombres<strong style="color:red">*</strong></label>
                                         <input type="text" value="<?php echo $this->hoja->nombre; ?>" name="nombre"
                                             class="form-control" id="inputNombre"
                                             pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,50}" required
@@ -134,9 +145,15 @@ function confirmar() {
                                     <label for="inputDepartamentoNacimiento">Departamento de nacimiento<strong
                                             style="color:red">*</strong></label>
                                     <select id="departamentos" class=" dptos form-control" name="departamentoNacimiento"
-                                        aria-required="true" aria-invalid="false" onchange="cambia_departamento()"
-                                        required>
-                                        <option value=""><?php echo $this->hoja->departamentoNacimiento; ?></option>
+                                        aria-required="true" onchange="cambia_departamento()" required>
+                                        <option value="">
+                                            <?php 
+                                        if(isset($this->hoja->departamentoNacimiento)){
+                                             echo $this->hoja->departamentoNacimiento;
+                                        } else {
+                                            echo "seleccione";
+                                        }
+                                        ?></option>
                                         <option value="AMAZONAS">AMAZONAS</option>
                                         <option value="ANTIOQUIA">ANTIOQUIA</option>
                                         <option value="ARAUCA">ARAUCA</option>
@@ -177,18 +194,20 @@ function confirmar() {
                                             style="color:red">*</strong></label>
                                     <select id="minucipios" class=" muni form-control" name="ciudadNacimiento"
                                         aria-required="true" aria-invalid="false" required>
-                                        <option value=""><?php echo $this->hoja->ciudadNacimiento; ?></option>
+                                        <option value="">
+                                            <?php echo $this->hoja->ciudadNacimiento; ?></option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputPaisNacimiento">país de nacimiento<strong
                                             style="color:red">*</strong></label>
                                     <select class="form-control" name="paisNacimiento" id="paises" required>
-                                        <option value=""><?php echo $this->hoja->paisNacimiento; ?></option>
+                                        <option value="">
+                                            <?php echo $this->hoja->paisNacimiento; ?></option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputGenero">Genero<strong style="color:red">*</strong></label>
+                                    <label for="inputGenero">Género<strong style="color:red">*</strong></label>
                                     <select id="inputGenero" class="form-control" name="genero" aria-required="true"
                                         aria-invalid="false" required>
                                         <option value="">Seleccione</option>
@@ -245,7 +264,16 @@ function confirmar() {
                                     <select id="inputDepartamento" class=" dptores form-control" name="departamento"
                                         aria-required="true" aria-invalid="false" onchange="cambia_departamentores()"
                                         required>
-                                        <option value=""><?php echo $this->hoja->departamento; ?></option>
+                                        <option value="">
+                                            <?php 
+                                        if(isset($this->hoja->departamento)){
+                                            echo $this->hoja->departamento;
+                                         
+                                        } else {
+                                            echo'seleccione';
+                                           
+                                        }
+                                        ?></option>
                                         <option value="AMAZONAS">AMAZONAS</option>
                                         <option value="ANTIOQUIA">ANTIOQUIA</option>
                                         <option value="ARAUCA">ARAUCA</option>
@@ -286,7 +314,8 @@ function confirmar() {
                                             style="color:red">*</strong></label>
                                     <select id="inputCiudad" class="form-control" name="ciudad" aria-required="true"
                                         aria-invalid="false" required>
-                                        <option value=" "><?php echo $this->hoja->ciudad; ?></option>
+                                        <option value="<?php echo $this->hoja->ciudad; ?>">
+                                            <?php echo $this->hoja->ciudad; ?></option>
 
                                     </select>
                                 </div>
@@ -300,7 +329,8 @@ function confirmar() {
                                     <label for="inputNacionalidad">Nacionalidad<strong
                                             style="color:red">*</strong></label>
                                     <select class="form-control" name="nacionalidad" id="nacionalidad" required>
-                                        <option value=""><?php echo $this->hoja->nacionalidad; ?></option>
+                                        <option value="<?php echo $this->hoja->nacionalidad; ?>">
+                                            <?php echo $this->hoja->nacionalidad; ?></option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
@@ -342,6 +372,10 @@ function confirmar() {
                                             <?php if ($this->hoja->tipoPoblacion == 'Miembro de la comunidad LGBTIQ+') echo 'selected'; ?>
                                             value="Miembro de la comunidad LGBTIQ+">
                                             Miembro de la comunidad LGBTIQ+</option>
+                                        <option
+                                            <?php if ($this->hoja->tipoPoblacion == 'Ninguna de las anteriores') echo 'selected'; ?>
+                                            value="Ninguna de las anteriores">
+                                            Ninguna de las anteriores</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
@@ -483,7 +517,7 @@ function confirmar() {
                                         <select id="inputDepartamento" class="dptoexp form-control" name="departamento"
                                             aria-required="true" aria-invalid="false"
                                             onchange="cambia_departamentoExp()" required>
-                                            <option value="">Seleccione</option>
+                                            <option value="">Selecione</option>
                                             <option value="AMAZONAS">AMAZONAS</option>
                                             <option value="ANTIOQUIA">ANTIOQUIA</option>
                                             <option value="ARAUCA">ARAUCA</option>
@@ -601,13 +635,22 @@ function confirmar() {
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Total experiencia <strong style="color:red">*</strong></label>
+                                        <label>Total experiencia en meses <strong style="color:red">*</strong></label>
                                         <input type="number" name="extotalexpe" class="form-control" required>
                                     </div>
-                                    <div class="form-group col-md-12">
-                                        <label for="inputPeriodo">Período<strong style="color: red">*</strong></label>
+                                    <div class="form-group col-md-4">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">Empleo Actual
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-8">
+
                                         <div class="row">
                                             <div class="col-md-5">
+                                                <label for="inputPeriodo">Fecha de inicio<strong
+                                                        style="color: red">*</strong></label>
                                                 <input type="date" name="fechaInicio" class="form-control"
                                                     min="1920-01-01">
                                             </div>
@@ -615,6 +658,8 @@ function confirmar() {
                                                 <h2 class="text-center">-</h2>
                                             </div>
                                             <div class="col-md-5">
+                                                <label for="inputPeriodo">Fecha fin<strong
+                                                        style="color: red">*</strong></label>
                                                 <input type="date" name="fechaFin" class="form-control"
                                                     min="1920-01-01">
                                             </div>

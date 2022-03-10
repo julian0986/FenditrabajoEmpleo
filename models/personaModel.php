@@ -189,4 +189,15 @@ class PersonaModel extends Model
         }
     }
 
+   /*  function activarPersona($email = $_GET['email'],$pass = $_GET['pass']){
+
+        if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['pass']) && !empty($_GET['pass'])){
+        
+
+            $query = $this->db->connect()->prepare('SELECT COUNT(*) FROM tb_usuario WHERE us_correo = :email AND us_contrasena=:pass');
+            $query->execute(['email' => $email['email'], 'pass' => $pass['password']]);
+    }
+} */
+
+
 }
