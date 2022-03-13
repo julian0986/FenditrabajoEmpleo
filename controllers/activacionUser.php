@@ -6,6 +6,8 @@
             session_start();
         }
         function render(){
+            
+
             $this->view->render('activacion-user/index');
         }
     }

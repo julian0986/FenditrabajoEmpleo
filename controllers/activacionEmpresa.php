@@ -6,8 +6,12 @@
             session_start();
         }
         function render(){
+            
             $this->view->render('activacion-empresa/index');
         }
+      
+
+        
     }
 
 ?>

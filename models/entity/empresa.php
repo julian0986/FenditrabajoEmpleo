@@ -28,5 +28,6 @@ class Empresa
     public $numDocuContacto;
     public $correo;
     public $contrasena;
+    public $em_hash;
 
 }

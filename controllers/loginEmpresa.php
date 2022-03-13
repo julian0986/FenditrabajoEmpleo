@@ -81,6 +81,7 @@ class LoginEmpresa extends Controller
         $numEmpleadosEds = $_POST['numEmpleadosEds'];
         $tipoDocuContacto = $_POST['tipoDocuContacto'];
         $numDocuContacto = $_POST['numDocuContacto'];
+        $hashE = $this->generateToken();
 
         if ($this->model->nuevaEmpresa([
             'email' => $email,
@@ -107,16 +108,20 @@ class LoginEmpresa extends Controller
             'nivelRiesgoEds' => $nivelRiesgoEds,
             'numEmpleadosEds' => $numEmpleadosEds,
             'tipoDocuContacto' => $tipoDocuContacto,
-            'numDocuContacto' => $numDocuContacto
+            'numDocuContacto' => $numDocuContacto,
+            'em_hash' => $hashE
+
+             
+         
         ])) {
             $to = $_POST['email'];
             $from = 'From: soporte@fendipetroleo.com';
             $subject = 'registro exitoso';
-            $message = 'Accede al siguiente link para iniciar sesión http://localhost/FenditrabajoEmpleo/loginEmpresa ';
+            $message = 'Accede al siguiente link para iniciar sesión http://localhost/FenditrabajoEmpleo/activacionEmpresa?token=' . $hashE;
             mail($to, $subject, $message, $from);
-            echo "<script type='text/javascript'>window.alert('Se registro exitosamente, verifica tu correo');</script>";
+            //echo "<script type='text/javascript'>window.alert('Se registro exitosamente, verifica tu correo');</script>";
         } else {
-            echo "<script type='text/javascript'>window.alert('El correo ya existe');</script>";
+           /*  echo "<script type='text/javascript'>window.alert('El correo ya existe');</script>"; */
         }
         $this->render();
     }
@@ -166,6 +171,18 @@ class LoginEmpresa extends Controller
         return false;
     }
  }
+
+ public static function generateToken(){
+    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+    $pass = array(); //remember to declare $pass as an array
+    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    for ($i = 0; $i <= 8; $i++) {
+        $n = rand(0, $alphaLength);
+        $pass[] = $alphabet[$n];
+    }
+    $key = implode($pass); //turn the array into a string
+    return $key;
+}
 
     function cerrarSesion()
     {

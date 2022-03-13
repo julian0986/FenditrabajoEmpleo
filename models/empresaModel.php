@@ -42,7 +42,7 @@ class EmpresaModel extends Model
                 return false;
             }
 
-            $query = $this->db->connect()->prepare('INSERT INTO tb_empresa(em_nombre, em_descripcion, em_nit, em_isotipo, em_correo_con, em_departamento, em_ciudad, em_direccion, em_estado, em_nombre_e, em_apellido_e, em_cargo_e, em_correo_e, em_telefono_e, em_nombre_eds, em_sicom, em_tel_empresa, em_afiliado_fendi, em_dependencia, em_arl, em_nivel_riesgo, em_num_trabajador, em_tipo_docu, em_num_docu, em_correo, em_contrasena) VALUES (:nombre,:descripcion,:nit,:logo,:correoCon,:departamento,:ciudad,:direccion,:estado,:nombreE,:apellidoE,:cargoE,:correoE,:telefonoE,:nombreEds,:sicomEds,:telEds,:afiliadoEds,:dependenciaEds,:arlEds,:nivelRiesgoEds,:numEmpleadosEds,:tipoDocuContacto,:numDocuContacto,:email,:pass)');
+            $query = $this->db->connect()->prepare('INSERT INTO tb_empresa(em_nombre, em_descripcion, em_nit, em_isotipo, em_correo_con, em_departamento, em_ciudad, em_direccion, em_estado, em_nombre_e, em_apellido_e, em_cargo_e, em_correo_e, em_telefono_e, em_nombre_eds, em_sicom, em_tel_empresa, em_afiliado_fendi, em_dependencia, em_arl, em_nivel_riesgo, em_num_trabajador, em_tipo_docu, em_num_docu, em_correo, em_contrasena, em_hash) VALUES (:nombre,:descripcion,:nit,:logo,:correoCon,:departamento,:ciudad,:direccion,:estado,:nombreE,:apellidoE,:cargoE,:correoE,:telefonoE,:nombreEds,:sicomEds,:telEds,:afiliadoEds,:dependenciaEds,:arlEds,:nivelRiesgoEds,:numEmpleadosEds,:tipoDocuContacto,:numDocuContacto,:email,:pass,:em_hash)');
             $query->execute([
                 'nombre' => $datos['nombre'],
                 'descripcion' => $datos['descripcion'],
@@ -69,10 +69,14 @@ class EmpresaModel extends Model
                 'tipoDocuContacto' => $datos['tipoDocuContacto'],
                 'numDocuContacto' => $datos['numDocuContacto'],
                 'email' => $datos['email'],
-                'pass' => $datos['password']
+                'pass' => $datos['password'],
+                'em_hash' => $datos['em_hash']
             ]);
             return true;
         } catch (PDOException $e) {
+             var_dump($e);
+             die();
+           
             echo "error con el servidor";
         }
     }
@@ -262,4 +266,5 @@ class EmpresaModel extends Model
             echo "error con el servidor";
         }
     }
+
 }
