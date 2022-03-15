@@ -25,6 +25,7 @@ class RegistroPersona extends Controller
         $ip = getenv('REMOTE_ADDR');
         $navegador = getenv('HTTP_USER_AGENT');
         $fecha = date('l jS \of F Y h:i:s A');
+        $hashU = $this->generateToken();
         if ($this->model->nuevaPersona([
             'nombre' => $nombre,
             'apellido' => $apellido,
@@ -32,12 +33,13 @@ class RegistroPersona extends Controller
             'password' => $password,
             'ip' => $ip,
             'navegador' => $navegador,
-            'fecha' => $fecha
+            'fecha' => $fecha,
+            'us_hash' => $hashU
         ])) {
             $to = $_POST['email'];
             $from = 'From: soporte@fendipetroleo.com';
             $subject = 'Registrado de forma exitosa';
-            $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/loginPersona ';
+            $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/activaionUser?token=' . $hashU;
             mail($to, $subject, $message, $from);
             echo "<script type='text/javascript'>alert('Se registro exitosamente');</script>;";
         } else {

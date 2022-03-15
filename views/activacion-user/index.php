@@ -54,7 +54,14 @@
 
     <div class="card text-center mt mb" style="border-color: transparent">
         <div>
-            <h1>Cuenta activada</h1>
+            <?php 
+            if($this->active){
+                echo '<h2>Cuenta activada</h2>';
+            }else {
+                echo '<h2>Token inválido o la cuenta ya fue activada</h2>';
+            }
+        
+            ?>
 
 
         </div>
