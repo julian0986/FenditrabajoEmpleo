@@ -23,17 +23,18 @@ class LoginPersona extends Controller
         $md5pass = md5($password);
         $respuesta = $this->model->loginPersona(['email' => $email, 'password' => $md5pass]);
         if ($respuesta) {
-            $_SESSION['idUser'] = $respuesta['idUser'];
-            $_SESSION['rol'] = $respuesta['rol'];
-            if ($respuesta['estado'] == 1) {
-                echo "<script type='text/javascript'>window.alert('La cuenta aun está en proceso de validación.');</script>";
-                echo "<script type='text/javascript'>location.href = '" . constant('URL') . "loginPersona';</script>";
-            if($respuesta['rol'] == 1){
-                echo "<script type='text/javascript'>location.href = '".constant('URL')."inicioPersona';</script>";
-            }else{
+           
+            if($respuesta['rol'] != 1) {
                 echo "<script type='text/javascript'>location.href = '".constant('URL')."inicioAdmin';</script>";
             }
+            if ($respuesta['us_estado'] == 1) {
+                echo "<script type='text/javascript'>window.alert('activa tu cuenta desde tu correo');location.href = '".constant('URL')."loginPersona';</script>";
 
+        } else {
+            $_SESSION['idUser'] = $respuesta['idUser'];
+            $_SESSION['rol'] = $respuesta['rol'];
+            echo "<script type='text/javascript'>location.href = '".constant('URL')."inicioPersona';</script>";
+        }
             
         } else {
             //echo "<script type='text/javascript'>window.alert('Correo o contraseña incorrectos');location.href = '".constant('URL')."loginPersona';</script>";
@@ -41,8 +42,10 @@ class LoginPersona extends Controller
             //$this->view->render('login-persona/index',$data);
             require_once("./views/login-persona/index.php");
         }
-    }
-}
+
+
+ }
+
 
     function listarTres()
     {

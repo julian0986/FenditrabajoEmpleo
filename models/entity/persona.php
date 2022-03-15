@@ -11,4 +11,6 @@ class Persona
     public $ip;
     public $navegador;
     public $fecha;
+    public $us_hash;
+    public $us_estado;
 }

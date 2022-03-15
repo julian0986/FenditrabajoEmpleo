@@ -19,7 +19,8 @@ class PersonaModel extends Model
                 while ($row = $query->fetch()) {
                     $resultado = [
                         'idUser' =>  $row['us_id'],
-                        'rol' => $row['us_rol']
+                        'rol' => $row['us_rol'],
+                        'us_estado' => $row['us_estado']
                     ];
                     return $resultado;
                 }
