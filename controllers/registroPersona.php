@@ -39,7 +39,7 @@ class RegistroPersona extends Controller
             $to = $_POST['email'];
             $from = 'From: soporte@fendipetroleo.com';
             $subject = 'Registrado de forma exitosa';
-            $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/activaionUser?token=' . $hashU;
+            $message = 'Bienvenido a Fenditrabajo https://empleo.fenditrabajo.com/activacionUser?token=' . $hashU;
             mail($to, $subject, $message, $from);
             echo "<script type='text/javascript'>alert('Se registro exitosamente');</script>;";
         } else {

@@ -25,6 +25,9 @@ class LoginPersona extends Controller
         if ($respuesta) {
             $_SESSION['idUser'] = $respuesta['idUser'];
             $_SESSION['rol'] = $respuesta['rol'];
+            if ($respuesta['estado'] == 1) {
+                echo "<script type='text/javascript'>window.alert('La cuenta aun está en proceso de validación.');</script>";
+                echo "<script type='text/javascript'>location.href = '" . constant('URL') . "loginPersona';</script>";
             if($respuesta['rol'] == 1){
                 echo "<script type='text/javascript'>location.href = '".constant('URL')."inicioPersona';</script>";
             }else{
@@ -39,6 +42,7 @@ class LoginPersona extends Controller
             require_once("./views/login-persona/index.php");
         }
     }
+}
 
     function listarTres()
     {
