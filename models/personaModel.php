@@ -42,7 +42,7 @@ class PersonaModel extends Model
             if ($query->rowCount()) {
                 return false;
             }
-            $query = $this->db->connect()->prepare('INSERT INTO tb_usuario ( us_nombres, us_apellidos, us_correo,us_contrasena, us_rol, us_ip, us_navegador, us_fecha) VALUES (:nombre,:apellido,:email,:pass,:rol,:ip,:navegador,:fecha)');
+            $query = $this->db->connect()->prepare('INSERT INTO tb_usuario ( us_nombres, us_apellidos, us_correo,us_contrasena, us_rol, us_ip, us_navegador, us_fecha, us_hash, us_estado) VALUES (:nombre,:apellido,:email,:pass,:rol,:ip,:navegador,:fecha,:us_hash,:us_estado)');
             $query->execute([
                 'nombre' => $datos['nombre'],
                 'apellido' => $datos['apellido'],
@@ -51,7 +51,9 @@ class PersonaModel extends Model
                 'rol' => 1,
                 'ip' => $datos['ip'],
                 'navegador' => $datos['navegador'],
-                'fecha' => $datos['fecha']
+                'fecha' => $datos['fecha'],
+                'us_hash' => $datos['us_hash'],
+                'us_estado'=> 1
             ]);
             return true;
         } catch (PDOException $e) {
@@ -189,15 +191,28 @@ class PersonaModel extends Model
         }
     }
 
-   /*  function activarPersona($email = $_GET['email'],$pass = $_GET['pass']){
+    function activeToken($token){
 
-        if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['pass']) && !empty($_GET['pass'])){
-        
+        try {
+   
+           $query = $this->db->connect()->prepare('update tb_usuario set us_estado = 2 where us_hash = :us_hash');
+           $query->execute(['us_hash'=> $token]);
+   
+           if($query->rowCount()){
+               return true;
+           } else {
+               return false;
+           }
+           
+            
+           
+           } catch (PDOException $e) {
+               echo "error con el servidor";
+               die();
+           }
+       }
 
-            $query = $this->db->connect()->prepare('SELECT COUNT(*) FROM tb_usuario WHERE us_correo = :email AND us_contrasena=:pass');
-            $query->execute(['email' => $email['email'], 'pass' => $pass['password']]);
-    }
-} */
+   
 
 
 }

@@ -117,7 +117,7 @@ class LoginEmpresa extends Controller
             $to = $_POST['email'];
             $from = 'From: soporte@fendipetroleo.com';
             $subject = 'registro exitoso';
-            $message = 'Accede al siguiente link para iniciar sesión http://localhost/FenditrabajoEmpleo/activacionEmpresa?token=' . $hashE;
+            $message = 'Accede al siguiente link para iniciar sesión https://empleo.fenditrabajo.com/activacionEmpresa?token=' . $hashE;
             mail($to, $subject, $message, $from);
             //echo "<script type='text/javascript'>window.alert('Se registro exitosamente, verifica tu correo');</script>";
         } else {

@@ -267,4 +267,25 @@ class EmpresaModel extends Model
         }
     }
 
+    function activeToken($token){
+
+     try {
+
+        $query = $this->db->connect()->prepare('update tb_empresa set em_estado = 2 where em_hash = :em_hash');
+        $query->execute(['em_hash'=> $token]);
+
+        if($query->rowCount()){
+            return true;
+        } else {
+            return false;
+        }
+        
+         
+        
+        } catch (PDOException $e) {
+            echo "error con el servidor";
+            die();
+        }
+    }
+
 }
