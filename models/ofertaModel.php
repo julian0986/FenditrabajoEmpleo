@@ -1,6 +1,7 @@
 <?php
 
 require 'models/entity/oferta.php';
+require 'models/entity/empresa.php';
 
 class OfertaModel extends Model
 {
@@ -8,6 +9,26 @@ class OfertaModel extends Model
     function __construct()
     {
         parent::__construct();
+    }
+
+    function obtener_correo_empresa ($idOferta){
+            
+        $query = $this->db->connect()->prepare('select tb_empresa.em_correo_e from tb_oferta 
+        join  tb_empresa on tb_empresa.em_id = tb_oferta.fk_of_empresa where tb_empresa.em_id = :id
+        ');
+        $query->execute([$idOferta]);    
+
+        $correo = "";
+        while($row = $query->fetch()){
+            $correo = $row;
+            
+        }
+        
+
+        return $correo;
+
+        
+
     }
 
     function agregarOferta($datos)
