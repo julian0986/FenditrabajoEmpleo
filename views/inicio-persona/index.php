@@ -46,6 +46,11 @@
     <meta name="twitter:image" content="https://fendipetroleo.com/nuevoF/public/icon/favicon.ico">
 
 </head>
+<style>
+.colorurl {
+    color: #224b8b;
+}
+</style>
 
 <body>
     <?php require "views/header/header-usuario.php"; ?>
@@ -219,10 +224,15 @@
                                     <p><strong>Descripción: </strong><?php echo $curso->descripcion; ?></p>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="<?php echo $curso->link; ?>">
+                                    <a
+                                        href=<?php echo constant('URL') . 'aplicacionCursoUsuario/aplicarCursoUsuario/' . $curso->id ?>>
                                         <img style="border-radius: 10px;"
                                             src="<?php echo constant('URL') . $curso->isotipo; ?>" alt="" width="70%">
                                     </a>
+
+                                    <a class="colorurl start_download" curso="<?= $curso->id ?>"
+                                        href="<?= constant('URL') ?>" download>Descargar</a>
+
                                 </div>
                             </div>
                         </div>
@@ -230,6 +240,8 @@
                     </div>
                 </div>
             </div>
+
+            <input type="hidden" value="<?= constant('URL'); ?>" id="base_url">
 
         </div>
     </div>
@@ -243,6 +255,37 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+
+    </script>
+
+    <script>
+    $(document).ready(function() {
+
+        $('.start_download').click(function() {
+
+            var url = $('#base_url').val();
+            var curso_id = $(this).attr('curso');
+
+            $.ajax({
+                url: `${url}/aplicacionCursoUsuario/aplicarCursoUsuario`,
+                type: 'POST',
+                data: {
+                    curso_id: curso_id
+                },
+
+                success: function(data) {
+
+                },
+                error: function(error) {
+
+                }
+            });
+        });
+
+    });
+    </script>
+
 </body>
 
 </html>
