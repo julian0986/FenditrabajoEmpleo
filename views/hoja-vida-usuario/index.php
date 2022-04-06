@@ -215,6 +215,8 @@ function confirmar() {
                                             value="Hombre">Hombre</option>
                                         <option <?php if ($this->hoja->genero == 'Mujer') echo 'selected'; ?>
                                             value="Mujer">Mujer</option>
+                                        <option <?php if ($this->hoja->genero == 'Mujer') echo 'selected'; ?>
+                                            value="Mujer">Otro</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6 ">
@@ -334,7 +336,8 @@ function confirmar() {
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="inputOcupacion">Ocupación<strong style="color:red">*</strong></label>
+                                    <label for="inputOcupacion">Profesión u Oficio<strong
+                                            style="color:red">*</strong></label>
                                     <input type="text" value="<?php echo $this->hoja->ocupacion; ?>" name="ocupacion"
                                         class="form-control" id="inputOcupacion"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{3,20}" required

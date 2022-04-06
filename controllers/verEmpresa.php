@@ -30,7 +30,7 @@ class VerEmpresa extends Controller
     function cambiarEstado()
     {
         $this->loadModel('empresa');
-        $empresa = $this->model->informacionEmpresa($_SESSION['idEmpresa']);
+        $empresa = $this->model->informacionEmpresa();
         $id = $empresa->id;
         $estado = $empresa->estado;
         if ($estado == 1) {

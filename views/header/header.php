@@ -24,22 +24,50 @@
             </button>
 
             <div class="collapse navbar-collapse text-center justify-content-center " id="navbarSupportedContent">
+
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link link-m" href="<?php echo constant('URL'); ?>buscarTrabajo">
                             <i class="fas fa-gas-pump"></i>
                         </a>
                     </li>
+
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown"
-                            href="<?php echo constant('URL'); ?>quienesSomos" role="button" aria-haspopup="true"
-                            aria-expanded="false">
-                            <i class="far fa-newspaper"></i> QUIÉNES SOMOS
+
+
+
+                        <a class="nav-link dropdown-toggle link-m" data-toggle="dropdown" data-hover="dropdown"
+                            href="https://www.google.com" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-newspaper"></i>QUIÉNES SOMOS
                         </a>
+
                         <div class="dropdown-menu">
+
+                            <!-- <a class="dropdown-item" href="<?php echo constant('URL'); ?>quienesSomos">
+                                <i class="fas fa-user-tie"></i> NOSOTROS
+                            </a> -->
+
                             <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">
-                                <i class="fas fa-user-tie"></i> NOTIFICACIÓN DE PQRS
+                                <i class="fas fa-gavel"></i> Aviso de Privacidad
                             </a>
+                            <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">
+                                <i class="fas fa-gavel"></i> Política de cookies
+                            </a>
+                            <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">
+                                <i class="fas fa-gavel"></i> Condiciones de uso.
+                            </a>
+
+                            <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">
+                                <i class="fas fa-gavel"></i> Política de Protección de datos personales
+
+                            </a>
+                            <a class="dropdown-item" href="<?php echo constant('URL'); ?>contactenos">
+                                <i class="fas fa-gavel"></i> Atención de solicitudes por tratamiento de datos
+                                personales.
+                            </a>
+
+
                         </div>
                     </li>
                     <li class="nav-item">
@@ -62,8 +90,8 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>quienesSomos">
-                            <i class="fas fa-gavel"></i> POLÍTICAS
+                        <a class="nav-link link-m" href="<?php echo constant('URL'); ?>contactenos">
+                            <i class="fas fa-gavel"></i> CONTÁCTENOS
                         </a>
                     </li>
                     <li class="nav-item dropdown">

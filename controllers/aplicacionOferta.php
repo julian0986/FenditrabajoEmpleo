@@ -58,7 +58,7 @@ class AplicacionOferta extends Controller
         echo "<script type='text/javascript'>alert('Ya estas aplicando a esta oferta');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
         } if($validarHojaVida < 1){
 
-        echo "<script type='text/javascript'>alert('primero registra tu hoja de vida para aplicar a las ofertas');location.href = '" . constant('URL') . "aplicacionOferta';</script>";
+        echo "<script type='text/javascript'>alert('primero registra tu hoja de vida para aplicar a las ofertas');location.href = '" . constant('URL') . "inicioPersona';</script>";
          } else {
         
         $this->model->aplicarOferta(['oferta' => $idOferta, 'usuario' => $usuario, 'fecha' => $fecha]);

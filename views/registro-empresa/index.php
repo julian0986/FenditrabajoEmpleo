@@ -123,7 +123,7 @@
                                         title="Solo se aceptan letras">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputSicomEds">Numero sicom<strong style="color:red">*</strong></label>
+                                    <label for="inputSicomEds">Código SICOM<strong style="color:red">*</strong></label>
                                     <input type="text" class="form-control" name="sicomEds" class="form-control"
                                         id="inputSicomEds" pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{6,50}" maxlength="6"
                                         required title="Solo se aceptan numeros">
@@ -346,9 +346,10 @@
                                             value="1" required>
                                         <label class="form-check-label" for="politicas">
                                             Acepta las <a target="_blank" class="btn-link" href="">Condiciones de
-                                                uso </a> y la <a target="_blank" class="btn-link"
+                                                uso </a> y autoriza el uso de sus datos personales conforme a la <a
+                                                target="_blank" class="btn-link"
                                                 href="<?php echo constant('URL'); ?>quienesSomos">Política de
-                                                privacidad</a> de Fenditrabajo.
+                                                privacidad</a>
                                         </label>
                                     </div>
                                 </div>

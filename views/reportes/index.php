@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fenditrabajo.css">
-    <title>Panel de control - Fendipetroleo Nacional</title>
+    <title>Cursos - Fendipetroleo Nacional</title>
     <link rel="icon" href="<?php echo constant('URL'); ?>public/images/favicon.png" sizes="32x32">
 
     <!-- Generic -->
@@ -47,54 +46,109 @@
     <meta name="twitter:image" content="https://fendipetroleo.com/nuevoF/public/icon/favicon.ico">
 
 </head>
+<style>
+table {
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+thead {
+    background-color: #007bff;
+    border-bottom: solid 5px #3B83BD;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover td {
+    background-color: #cadffb;
+    color: white;
+}
+
+
+img {
+
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    box-align: center"
+
+}
+</style>
+
 
 <body>
     <?php require "views/header/header-admin.php"; ?>
-    <div class="container pd">
-        <table class="table table-bordered">
-            <tbody class="shadow-lg p-3 mb-5 bg-white rounded">
-                <tr class="text-center bg-blue rounded-top">
-                    <th class="rounded-top" colspan="5">
-                        <h2>Panel de Administración</h2>
-                    </th>
+    <div>
+        <div class="container pd">
+            <div class="col-md-12 text-center">
+                <h1>Reportes</h1>
+            </div>
+
+            <td bgcolor="#ffffff" valign="top">
+
+            </td>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOMBRE_REPORTE</th>
+                        <th>Reportes_TXT</th>
+                        <th>Reportes_CSV</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td># Numero Vacantes</td>
+                    <td><a href=<?php echo constant('URL') . 'reportes/numeroVacantestxt/'?>><i class="fas fa-file"
+                                style="font-size: 20px; color:#1b4573" aria-hidden="true"></i></a></td>
+                    <td><a href=<?php echo constant('URL') . 'reportes/numeroVacantescvs/'?>><i class="fas fa-file-csv"
+                                style="font-size: 20px; color:#1b4573" aria-hidden="true"></i>
+                        </a></td>
+
                 </tr>
-                <tr class="text-center">
-                    <td style="width:20%">
-                        <a href="<?php echo constant('URL'); ?>crudEmpresas/inicio">
-                            <h5 style="color:black">Empresas</h5>
-                            <i class="fas fa-building" style="font-size: 50px; color:#1b4573"></i>
-                        </a>
-                    </td>
-                    <td style="width:20%">
-                        <a href="<?php echo constant('URL'); ?>crudUsuarios/inicio">
-                            <h5 style="color:black">Usuarios</h5>
-                            <i class="fas fa-user-tie" style="font-size: 50px; color:#1b4573"></i>
-                        </a>
-                    </td>
-                    <td style="width:20%">
-                        <a href="<?php echo constant('URL'); ?>crudPublicidad/inicio">
-                            <h5 style="color:black">Publicidad</h5>
-                            <i class="fas fa-bullhorn" style="font-size: 50px; color:#1b4573"></i>
-                        </a>
-                    </td>
-                    <td style="width:20%">
-                        <a href="<?php echo constant('URL'); ?>crudCursos/inicio">
-                            <h5 style="color:black">Cursos</h5>
-                            <i class="fas fa-graduation-cap" style="font-size: 50px; color:#1b4573"></i>
-                        </a>
-                    </td>
-                    <td style="width:20%">
-                        <a href="<?php echo constant('URL'); ?>reportes/inicio">
-                            <h5 style="color:black">Reportes</h5>
-                            <i class="fas fa-file-csv" style="font-size: 50px; color:#1b4573"></i>
-                        </a>
-                    </td>
+                <tr>
+                    <td># hojas remitidas</td>
+                    <td><a href="https://example.com"><i class="fas fa-file" style="font-size: 20px; color:#1b4573"
+                                aria-hidden="true"></i>
+                            </i></a></td>
+                    <td><a href="https://example.com"><i class="fas fa-file-csv" style="font-size: 20px; color:#1b4573"
+                                aria-hidden="true"></i>
+                        </a></td>
                 </tr>
-            </tbody>
-        </table>
+                <tr>
+                    <td># Empleadores</td>
+                    <td><a href="https://example.com"><i class="fas fa-file" style="font-size: 20px; color:#1b4573"
+                                aria-hidden="true"></i>
+                        </a></td>
+                    <td><a href="https://example.com"><i class="fas fa-file-csv" style="font-size: 20px; color:#1b4573"
+                                aria-hidden="true"></i>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td># Peronas Registradas</td>
+                    <td><a href="https://example.com"><i class="fas fa-file" style="font-size: 20px; color:#1b4573"
+                                aria-hidden="true"></i></a></td>
+                    <td><a href="https://example.com"><i class="fas fa-file-csv" style="font-size: 20px; color:#1b4573"
+                                aria-hidden="true"></i>
+                        </a></td>
+                </tr>
+            </table>
+
+
+        </div>
     </div>
-    <?php require "views/footer/footer.php"; ?>
-    <script type="text/javascript" src="<?php echo constant('URL'); ?>/public/js/fenditrabajo.js"></script>
+    <?php include "views/footer/footer.php"; ?>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>

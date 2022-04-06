@@ -74,8 +74,6 @@ class EmpresaModel extends Model
             ]);
             return true;
         } catch (PDOException $e) {
-             var_dump($e);
-             die();
            
             echo "error con el servidor";
         }
@@ -285,6 +283,35 @@ class EmpresaModel extends Model
         } catch (PDOException $e) {
             echo "error con el servidor";
             die();
+        }
+    }
+
+    function contarEmpresatxt()
+    {
+        try {
+            $query = $this->db->connect('SELECT COUNT(*) FROM tb_empresa;');
+            $query->execute();
+            $total = $query->fetchColumn();
+
+            return $total;
+
+        } catch (PDOException $e) {
+            echo "error con el servidor";
+        }
+    }
+
+    function contarEmpresacsv()
+    {
+        try {
+            $query = $this->db->connect()->prepare('SELECT COUNT (*) FROM tb_empresa;');
+            $query->execute();
+            $total = $query->fetchColumn();
+            
+
+
+            return $total;
+        } catch (PDOException $e) {
+            echo "error con el servidor";
         }
     }
 
