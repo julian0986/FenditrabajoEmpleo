@@ -57,6 +57,7 @@ class LoginEmpresa extends Controller
         $password = md5($_POST['password']);
         $nombre = $_POST['nombre'];
         $nit = $_POST['nit'];
+        $emTipoDocu = $_POST['emTipoDocu'];
         $correoCon = $_POST['correoCon'];
         $descripcion = $_POST['descripcion'];
         $departamento = $_POST['departamento'];
@@ -88,6 +89,7 @@ class LoginEmpresa extends Controller
             'password' => $password,
             'nombre' => $nombre,
             'nit' => $nit,
+            'emTipoDocu' => $emTipoDocu,
             'descripcion' => $descripcion,
             'correoCon' => $correoCon,
             'departamento' => $departamento,

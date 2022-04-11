@@ -145,6 +145,10 @@ img {
                 </tr>
             </table>
 
+            <iframe width="900" height="2000"
+                src="https://datastudio.google.com/embed/reporting/861223a5-5904-446b-b030-79b7cf25627a/page/ZF9pC"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+
 
         </div>
     </div>

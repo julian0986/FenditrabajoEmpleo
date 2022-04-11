@@ -31,6 +31,7 @@ class EditarEmpresa extends Controller
         $this->loadModel('empresa');
         $nombre = $_POST['nombre'];
         $nit = $_POST['nit'];
+        $emTipoDocu = $_POST['emTipoDocu'];
         $correoCon = $_POST['correoCon'];
         $descripcion = $_POST['descripcion'];
         $departamento = $_POST['departamento'];
@@ -58,6 +59,7 @@ class EditarEmpresa extends Controller
             'id' => $_SESSION['idEmp'],
             'nombre' => $nombre,
             'nit' => $nit,
+            'emTipoDocu' => $emTipoDocu,
             'correoCon' => $correoCon,
             'descripcion' => $descripcion,
             'departamento' => $departamento,
@@ -79,7 +81,9 @@ class EditarEmpresa extends Controller
             'numEmpleadosEds' => $numEmpleadosEds,
             'tipoDocuContacto' => $tipoDocuContacto,
             'numDocuContacto' => $numDocuContacto
-        ])) {
+        ])) 
+        
+        {
             echo "<script type='text/javascript'>alert('Se actualizo correctamente');location.href = '" . constant('URL') . "crudEmpresas';</script>";
         } else {
             echo "<script type='text/javascript'>alert('Se presentó un error inténtelo más tarde');location.href = '" . constant('URL') . "crudEmpresas';</script>";

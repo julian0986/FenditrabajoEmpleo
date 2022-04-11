@@ -11,6 +11,12 @@
         public $municipio = '';
         public $salario = '';
         public $jornada = '';
+        public $ofTiempoExpe = '';
+        public $ofCantidad = '';
+        public $ofCargo = '';
+        public $ofNivelEstudio = '';
+        public $ofProfesion = '';
+        public $ofSectorEconomico = '';
         public $estado = '';
         public $empresa = '';
 

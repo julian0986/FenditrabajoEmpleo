@@ -42,6 +42,7 @@ class PerfilEmpresa extends Controller
         $this->loadModel('empresa');
         $nombre         = $_POST['nombre'];
         $nit            = $_POST['nit'];
+        $emTipoDocu     = $_POST['emTipoDocu'];
         $correoCon      = $_POST['correoCon'];
         $descripcion    = $_POST['descripcion'];
         $departamento   = $_POST['departamento'];
@@ -73,6 +74,7 @@ class PerfilEmpresa extends Controller
             'id'            => $_SESSION['idEmp'],
             'nombre'        => $nombre,
             'nit'           => $nit,
+            'emTipoDocu'    => $emTipoDocu,
             'correoCon'     => $correoCon,
             'descripcion'   => $descripcion,
             'departamento'  => $departamento,
@@ -96,7 +98,7 @@ class PerfilEmpresa extends Controller
             'numDocuContacto'     => $numDocuContacto
         ])) 
         {
-            echo "<script type='text/javascript'>location.href = '" . constant('URL') . "perfilEmpresa';</script>";
+            echo "<script type='text/javascript'>alert('Se actualizo correctamente');location.href = '" . constant('URL') . "inicioEmpresa';</script>";
         } else {
             echo "error";
         }

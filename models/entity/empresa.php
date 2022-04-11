@@ -5,6 +5,7 @@ class Empresa
     public $nombre;
     public $descripcion;
     public $nit;
+    public $emTipoDocu;
     public $isotipo;
     public $correoCon;
     public $departamento;

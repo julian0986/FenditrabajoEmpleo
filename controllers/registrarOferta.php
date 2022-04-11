@@ -11,6 +11,9 @@ class RegistrarOferta extends Controller
     function render()
     {
         if (isset($_SESSION['idEmp'])) {
+            $this->loadModel('empresa');
+            $empresa = $this->model->informacionEmpresa($_SESSION['idEmp']);
+            $this->view->empresa = $empresa;
             $this->cursos();
             $this->view->render('registrar-oferta-empresa/index');
         } else {
@@ -18,6 +21,8 @@ class RegistrarOferta extends Controller
         }
     }
 
+    
+    
     function cursos()
     {
         $this->loadModel('curso');
@@ -33,6 +38,12 @@ class RegistrarOferta extends Controller
         $municipio = $_POST['municipio'];
         $salario = $_POST['salario'];
         $jornada = $_POST['jornada'];
+        $ofTiempoExpe = $_POST['ofTiempoExpe'];
+        $ofCantidad = $_POST['ofCantidad'];
+        $ofCargo = $_POST['ofCargo'];
+        $ofNivelEstudio = $_POST['ofNivelEstudio'];
+        $ofProfesion = $_POST['ofProfesion'];
+        $ofSectorEconomico = $_POST['ofSectorEconomico'];
         $descripcion = $_POST['descripcion'];
         $tipofecha = $_POST['disponiblidad'];
         $fechaFin = date('Y-m-d');
@@ -57,6 +68,12 @@ class RegistrarOferta extends Controller
             'municipio' => $municipio,
             'salario' => $salario,
             'jornada' => $jornada,
+            'ofTiempoExpe' => $ofTiempoExpe,
+            'ofCantidad' => $ofCantidad,
+            'ofCargo' => $ofCargo,
+            'ofNivelEstudio' => $ofNivelEstudio,
+            'ofProfesion' => $ofProfesion,
+            'ofSectorEconomico' => $ofSectorEconomico,
             'descripcion' => $descripcion,
             'estado' => '1',
             'empresa' => $_SESSION['idEmp'],

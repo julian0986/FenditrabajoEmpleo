@@ -80,11 +80,17 @@
                                 class="form-control" id="inputNombreEmpresa" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputNIT">NIT o Numero de documento</label>
+                            <label for="inputEmTipoDocu">Tipo de documento<strong style="color:red">*</strong></label>
+                            <input type="text" value="<?php echo $this->empresa->emTipoDocu; ?>" id="inputEmTipoDocu"
+                                class="form-control" name="emTipoDocu" readonly>
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputNIT">Numero de documento</label>
                             <input type="text" value="<?php echo $this->empresa->nit; ?>" name="nit"
                                 class="form-control" id="inputNIT" readonly>
                         </div>
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-6">
                             <label for="inputNombreEds">Nombre de la EDS</label>
                             <input type="text" value="<?php echo $this->empresa->nombreEds; ?>" name="nombreEds"
                                 class="form-control" id="inputNombreEds" readonly>
@@ -175,7 +181,7 @@
                                 class="form-control" id="inputApellido" readonly>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPipoDocuContacto">Tipo de documento<strong
+                            <label for="inputPipoDocuContacto">Tipo de documento contacto<strong
                                     style="color:red">*</strong></label>
                             <input type="text" value="<?php echo $this->empresa->tipoDocuContacto; ?>"
                                 id="inputPipoDocuContacto" class="form-control" name="tipoDocuContacto" readonly>

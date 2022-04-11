@@ -35,6 +35,12 @@ class EditarOfertaPublicada extends Controller
         $municipio = $_POST['municipio'];
         $salario = $_POST['salario'];
         $jornada = $_POST['jornada'];
+        $ofTiempoExpe = $_POST['ofTiempoExpe'];
+        $ofCantidad = $_POST['ofCantidad'];
+        $ofCargo = $_POST['ofCargo'];
+        $ofNivelEstudio = $_POST['ofNivelEstudio'];
+        $ofProfesion = $_POST['ofProfesion'];
+        $ofSectorEconomico = $_POST['ofSectorEconomico'];
         $descripcion = $_POST['descripcion'];
         if ($this->model->editar([
             'id' => $id,
@@ -43,6 +49,12 @@ class EditarOfertaPublicada extends Controller
             'municipio' => $municipio,
             'salario' => $salario,
             'jornada' => $jornada,
+            'ofTiempoExpe' => $ofTiempoExpe,
+            'ofCantidad' => $ofCantidad,
+            'ofCargo' => $ofCargo,
+            'ofNivelEstudio' => $ofNivelEstudio,
+            'ofProfesion' => $ofProfesion,
+            'ofSectorEconomico' => $ofSectorEconomico,
             'descripcion' => $descripcion,
         ])) {
             echo "<script type='text/javascript'>alert('Se modifico con exito.');location.href = '" . constant('URL') . "ofertasPublicadas';</script>";

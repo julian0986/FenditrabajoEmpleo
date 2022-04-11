@@ -34,7 +34,8 @@ class OfertaModel extends Model
     function agregarOferta($datos)
     {
         try {
-            $query = $this->db->connect()->prepare('INSERT INTO tb_oferta( of_nombre, of_descripcion, of_fecha_publicacion, of_fecha_final, of_departamento, of_municipio, of_salario, of_tipo_jornada,of_estado, fk_of_empresa) VALUES (:nombre,:descripcion,:fecha,:fechaFin,:departamento,:municipio,:salario,:jornada,:estado,:empresa)');
+            $query = $this->db->connect()->prepare('INSERT INTO tb_oferta( of_nombre, of_descripcion, of_fecha_publicacion, of_fecha_final, of_departamento, of_municipio, of_salario, of_tipo_jornada, of_tiempo_expe,	of_cantidad, of_cargo, of_nivel_estudios, of_profesion,	of_sector_eco, of_estado, fk_of_empresa)
+             VALUES (:nombre,:descripcion,:fecha,:fechaFin,:departamento,:municipio,:salario,:jornada,:ofTiempoExpe,:ofCantidad,:ofCargo,:ofNivelEstudio,:ofProfesion,:ofSectorEconomico,:estado,:empresa)');
             $query->execute([
                 'nombre' => $datos['nombre'],
                 'descripcion' => $datos['descripcion'],
@@ -43,7 +44,12 @@ class OfertaModel extends Model
                 'departamento' => $datos['departamento'],
                 'municipio' => $datos['municipio'],
                 'salario' => $datos['salario'],
-                'jornada' => $datos['jornada'],
+                'ofTiempoExpe' => $datos['ofTiempoExpe'],
+                'ofCantidad' => $datos['ofCantidad'],
+                'ofCargo' => $datos['ofCargo'],
+                'ofNivelEstudio' => $datos['ofNivelEstudio'],
+                'ofProfesion' => $datos['ofProfesion'],
+                'ofSectorEconomico' => $datos['ofSectorEconomico'],
                 'estado' => $datos['estado'],
                 'empresa' => $datos['empresa']
             ]);
@@ -57,7 +63,7 @@ class OfertaModel extends Model
     function editar($datos)
     {
         try {
-            $query = $this->db->connect()->prepare('UPDATE tb_oferta SET of_nombre=:nombre, of_descripcion=:descripcion, of_departamento=:departamento, of_municipio=:municipio, of_salario=:salario, of_tipo_jornada=:jornada WHERE of_id = :id');
+            $query = $this->db->connect()->prepare('UPDATE tb_oferta SET of_nombre=:nombre, of_descripcion=:descripcion, of_departamento=:departamento, of_municipio=:municipio, of_salario=:salario, of_tipo_jornada=:jornada, of_tiempo_expe=:ofTiempoExpe, of_cantidad=:ofCantidad, of_cargo=:ofCargo, of_nivel_estudios=:ofNivelEstudio, of_profesion=:ofProfesion, of_sector_eco=:ofSectorEconomico WHERE of_id = :id');
             $query->execute([
                 'id' => $datos['id'],
                 'nombre' => $datos['nombre'],
@@ -65,7 +71,13 @@ class OfertaModel extends Model
                 'departamento' => $datos['departamento'],
                 'municipio' => $datos['municipio'],
                 'salario' => $datos['salario'],
-                'jornada' => $datos['jornada']
+                'jornada' => $datos['jornada'],
+                'ofTiempoExpe' => $datos['ofTiempoExpe'],
+                'ofCantidad' => $datos['ofCantidad'],
+                'ofCargo' => $datos['ofCargo'],
+                'ofNivelEstudio' => $datos['ofNivelEstudio'],
+                'ofProfesion' => $datos['ofProfesion'],
+                'ofSectorEconomico' => $datos['ofSectorEconomico']
             ]);
 
             return true;

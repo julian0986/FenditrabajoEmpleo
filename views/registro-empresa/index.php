@@ -109,19 +109,33 @@
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,100}" required
                                         title="Solo se aceptan letras">
                                 </div>
+
                                 <div class="form-group col-md-6">
-                                    <label for="inputNit">NIT o Numero de documento<strong
-                                            style="color:red">*</strong></label>
-                                    <input type="text" name="nit" class="form-control" id="inputNit"
-                                        pattern="[0-9.- ]{8,50}" title="Solo se aceptan numeros">
-                                </div>
-                                <div class="form-group col-md-12">
                                     <label for="inputNombreEds">Nombre de la EDS<strong
                                             style="color:red">*</strong></label>
                                     <input type="text" name="nombreEds" class="form-control" id="inputNombreEds"
                                         pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,50}" required
                                         title="Solo se aceptan letras">
                                 </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmTipoDocu">Tipo de documento<strong
+                                            style="color:red">*</strong></label>
+                                    <select id="inputEmTipoDocu" class="form-control" name="emTipoDocu" required>
+                                        <option value="">Seleccione</option>
+                                        <option value="cc">Cédula de ciudadanía</option>
+                                        <option value="ce">Cédula de extranjería</option>
+                                        <option value="Nit">Nit</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputNit">Numero de documento<strong
+                                            style="color:red">*</strong></label>
+                                    <input type="number" name="nit" class="form-control" id="inputNit"
+                                        pattern="[0-9.- ]{8,50}" required title="Solo se aceptan numeros">
+                                </div>
+
+
                                 <div class="form-group col-md-6">
                                     <label for="inputSicomEds">Código SICOM<strong style="color:red">*</strong></label>
                                     <input type="text" class="form-control" name="sicomEds" class="form-control"

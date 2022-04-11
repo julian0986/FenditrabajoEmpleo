@@ -42,11 +42,12 @@ class EmpresaModel extends Model
                 return false;
             }
 
-            $query = $this->db->connect()->prepare('INSERT INTO tb_empresa(em_nombre, em_descripcion, em_nit, em_isotipo, em_correo_con, em_departamento, em_ciudad, em_direccion, em_estado, em_nombre_e, em_apellido_e, em_cargo_e, em_correo_e, em_telefono_e, em_nombre_eds, em_sicom, em_tel_empresa, em_afiliado_fendi, em_dependencia, em_arl, em_nivel_riesgo, em_num_trabajador, em_tipo_docu, em_num_docu, em_correo, em_contrasena, em_hash) VALUES (:nombre,:descripcion,:nit,:logo,:correoCon,:departamento,:ciudad,:direccion,:estado,:nombreE,:apellidoE,:cargoE,:correoE,:telefonoE,:nombreEds,:sicomEds,:telEds,:afiliadoEds,:dependenciaEds,:arlEds,:nivelRiesgoEds,:numEmpleadosEds,:tipoDocuContacto,:numDocuContacto,:email,:pass,:em_hash)');
+            $query = $this->db->connect()->prepare('INSERT INTO tb_empresa(em_nombre, em_descripcion, em_nit, em_tipo_docu, em_isotipo, em_correo_con, em_departamento, em_ciudad, em_direccion, em_estado, em_nombre_e, em_apellido_e, em_cargo_e, em_correo_e, em_telefono_e, em_nombre_eds, em_sicom, em_tel_empresa, em_afiliado_fendi, em_dependencia, em_arl, em_nivel_riesgo, em_num_trabajador, em_tipodocu_contacto, em_num_docu, em_correo, em_contrasena, em_hash) VALUES (:nombre,:descripcion,:nit,:emTipoDocu,:logo,:correoCon,:departamento,:ciudad,:direccion,:estado,:nombreE,:apellidoE,:cargoE,:correoE,:telefonoE,:nombreEds,:sicomEds,:telEds,:afiliadoEds,:dependenciaEds,:arlEds,:nivelRiesgoEds,:numEmpleadosEds,:tipoDocuContacto,:numDocuContacto,:email,:pass,:em_hash)');
             $query->execute([
                 'nombre' => $datos['nombre'],
                 'descripcion' => $datos['descripcion'],
                 'nit' => $datos['nit'],
+                'emTipoDocu' => $datos['emTipoDocu'],
                 'logo' => $datos['logo'],
                 'correoCon' => $datos['correoCon'],
                 'departamento' => $datos['departamento'],
@@ -82,12 +83,13 @@ class EmpresaModel extends Model
     function editarEmpresa($datos)
     {
         try {
-            $query = $this->db->connect()->prepare('UPDATE `tb_empresa` SET em_nombre=:nombre,em_descripcion=:descripcion,em_nit=:nit,em_isotipo=:logo,em_correo_con=:correoCon,em_departamento=:departamento,em_ciudad=:ciudad,em_direccion=:direccion,em_nombre_e=:nombreE,em_apellido_e=:apellidoE,em_cargo_e=:cargoE,em_correo_e=:correoE,em_nombre_eds=:nombreEds,em_sicom=:sicomEds,em_tel_empresa=:telEds,em_afiliado_fendi=:afiliadoEds,em_dependencia=:dependenciaEds,em_arl=:arlEds,em_nivel_riesgo=:nivelRiesgoEds,em_num_trabajador=:numEmpleadosEds,em_tipo_docu=:tipoDocuContacto,em_num_docu=:numDocuContacto,em_telefono_e=:telefonoE  WHERE em_id = :id');
+            $query = $this->db->connect()->prepare('UPDATE `tb_empresa` SET em_nombre=:nombre,em_descripcion=:descripcion,em_nit=:nit,em_tipo_docu=:emTipoDocu,em_isotipo=:logo,em_correo_con=:correoCon,em_departamento=:departamento,em_ciudad=:ciudad,em_direccion=:direccion,em_nombre_e=:nombreE,em_apellido_e=:apellidoE,em_cargo_e=:cargoE,em_correo_e=:correoE,em_nombre_eds=:nombreEds,em_sicom=:sicomEds,em_tel_empresa=:telEds,em_afiliado_fendi=:afiliadoEds,em_dependencia=:dependenciaEds,em_arl=:arlEds,em_nivel_riesgo=:nivelRiesgoEds,em_num_trabajador=:numEmpleadosEds,em_tipodocu_contacto=:tipoDocuContacto,em_num_docu=:numDocuContacto,em_telefono_e=:telefonoE  WHERE em_id = :id');
             $query->execute([
                 'id' => $datos['id'],
                 'nombre' => $datos['nombre'],
                 'descripcion' => $datos['descripcion'],
                 'nit' => $datos['nit'],
+                'emTipoDocu' => $datos['emTipoDocu'],
                 'logo' => $datos['logo'],
                 'correoCon' => $datos['correoCon'],
                 'departamento' => $datos['departamento'],
@@ -126,6 +128,7 @@ class EmpresaModel extends Model
                 $item->nombre = $row['em_nombre'];
                 $item->descripcion = $row['em_descripcion'];
                 $item->nit = $row['em_nit'];
+                $item->emTipoDocu = $row['em_tipo_docu'];
                 $item->isotipo = $row['em_isotipo'];
                 $item->correoCon = $row['em_correo_con'];
                 $item->departamento = $row['em_departamento'];
@@ -145,7 +148,7 @@ class EmpresaModel extends Model
                 $item->arlEds = $row['em_arl'];
                 $item->nivelRiesgoEds = $row['em_nivel_riesgo'];
                 $item->numEmpleadosEds = $row['em_num_trabajador'];
-                $item->tipoDocuContacto = $row['em_tipo_docu'];
+                $item->tipoDocuContacto = $row['em_tipodocu_contacto'];
                 $item->numDocuContacto = $row['em_num_docu'];
                 $item->correo = $row['em_correo'];
                 $item->contrasena = $row['em_contrasena'];
@@ -169,6 +172,7 @@ class EmpresaModel extends Model
                 $item->nombre = $row['em_nombre'];
                 $item->descripcion = $row['em_descripcion'];
                 $item->nit = $row['em_nit'];
+                $item->emTipoDocu = $row['em_tipo_docu'];
                 $item->isotipo = $row['em_isotipo'];
                 $item->correoCon = $row['em_correo_con'];
                 $item->departamento = $row['em_departamento'];
@@ -188,7 +192,7 @@ class EmpresaModel extends Model
                 $item->arlEds = $row['em_arl'];
                 $item->nivelRiesgoEds = $row['em_nivel_riesgo'];
                 $item->numEmpleadosEds = $row['em_num_trabajador'];
-                $item->tipoDocuContacto = $row['em_tipo_docu'];
+                $item->tipoDocuContacto = $row['em_tipodocu_contacto'];
                 $item->numDocuContacto = $row['em_num_docu'];
                 $item->correo = $row['em_correo'];
                 $item->contrasena = $row['em_contrasena'];

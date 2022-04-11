@@ -72,8 +72,20 @@
                                             pattern="[a-zA-Záéíóúüñ0-9_-,.\$% ]{4,50}" required
                                             title="Solo se aceptan letras">
                                     </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmTipoDocu">Tipo de documento<strong
+                                                style="color:red">*</strong></label>
+                                        <select id="inputEmTipoDocu" class="form-control" name="emTipoDocu" required>
+                                            <option value="">Seleccione</option>
+                                            <option <?php if ($this->empresa->emTipoDocu == 'cc') echo 'selected'; ?>
+                                                value="cc">Cédula de ciudadanía</option>
+                                            <option <?php if ($this->empresa->emTipoDocu == 'Nit') echo 'selected'; ?>
+                                                value="Nit">Nit</option>
+                                        </select>
+                                    </div>
                                     <div class="form-group col-md-12">
-                                        <label for="inputNIT">NIT o Numero de documento <strong
+                                        <label for="inputNIT">Numero de documento <strong
                                                 style="color:red">*</strong></label>
                                         <input type="text" value="<?php echo $this->empresa->nit; ?>" name="nit"
                                             class="form-control" id="inputNIT" pattern="[0-9.- ]{8,50}"
@@ -381,7 +393,7 @@
                                         title="Solo se aceptan letras">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputPipoDocuContacto">Tipo de documento<strong
+                                    <label for="inputPipoDocuContacto">Tipo de documento contacto<strong
                                             style="color:red">*</strong></label>
                                     <select id="inputPipoDocuContacto" class="form-control" name="tipoDocuContacto"
                                         required>
@@ -476,7 +488,8 @@
                                     <img style="border-radius: 10px;"
                                         src="<?php echo constant('URL') . $curso->isotipo; ?>" class="card-img-top"
                                         width="300px" height="200px">
-                                    <div class="card-footer btninicioper" style="border-color: transparent; background: transparent">
+                                    <div class="card-footer btninicioper"
+                                        style="border-color: transparent; background: transparent">
                                         <h5 class="card-title"><?php echo $curso->nombre; ?></h5>
                                         <a href="<?php echo $curso->link; ?>" class="btn btn-primary">Ir al Curso</a>
                                     </div>
